@@ -2,6 +2,7 @@ package valueobject
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"html/template"
 	"reflect"
@@ -121,7 +122,7 @@ func ToStringMapE(in any) (map[string]any, error) {
 	switch vv := in.(type) {
 	case Params:
 		return vv, nil
-	case map[string]string:
+	case map[string]any:
 		var m = map[string]any{}
 		for k, v := range vv {
 			m[k] = v
@@ -129,8 +130,7 @@ func ToStringMapE(in any) (map[string]any, error) {
 		return m, nil
 
 	default:
-		fmt.Println("value type not supported yet")
-		return nil, nil
+		return nil, errors.New("value type not supported yet")
 	}
 }
 

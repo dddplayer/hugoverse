@@ -51,7 +51,7 @@ func (oc *buildCmd) Run() error {
 	}
 
 	l := log.NewStdLogger()
-	if err = application.GenerateStaticSite(*oc.hugoProjPath); err != nil {
+	if err = application.GenerateStaticSite(*oc.hugoProjPath, l); err != nil {
 		l.Fatalf("failed to generate static site: %v", err)
 		return err
 	}

@@ -9,5 +9,5 @@ import (
 func AllConfigurationInformation(projPath string) (config.Provider, error) {
 	c := entity.Config{Path: path.Join(projPath, "config.toml")}
 
-	return c.All()
+	return c.Load()
 }

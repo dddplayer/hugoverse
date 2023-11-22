@@ -13,8 +13,9 @@ func New() error {
 	topLevel.Usage = func() {
 		fmt.Println("Usage:\n  hugov [command]")
 		fmt.Println("\nCommands:")
-		fmt.Println("    build:  generate static site for hugo project")
+		fmt.Println("    build:  generate static site for Hugo project")
 		fmt.Println("   server:  start the headless CMS server")
+		fmt.Println("     demo:  create demo Hugo project")
 		fmt.Println("  version:  show hugoverse command version")
 
 		fmt.Println("\nExample:")
@@ -50,6 +51,14 @@ func New() error {
 				return err
 			}
 			if err := openCmd.Run(); err != nil {
+				return err
+			}
+		case "demo":
+			demoCmd, err := cmd.NewDemoCmd(topLevel)
+			if err != nil {
+				return err
+			}
+			if err := demoCmd.Run(); err != nil {
 				return err
 			}
 		case "build":

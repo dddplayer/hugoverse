@@ -6,6 +6,7 @@ import (
 	"github.com/dddplayer/hugoverse/internal/domain/config"
 	"github.com/dddplayer/hugoverse/internal/domain/config/factory"
 	"github.com/dddplayer/hugoverse/internal/domain/config/valueobject"
+	"github.com/dddplayer/hugoverse/pkg/log"
 	"github.com/pelletier/go-toml/v2"
 	"os"
 	"path"
@@ -24,10 +25,10 @@ const (
 type Config struct {
 	Path    string
 	Modules valueobject.Modules
+	Logger  log.Logger
 }
 
-func (c *Config) All() (config.Provider, error) {
-
+func (c *Config) Load() (config.Provider, error) {
 	m, err := c.loadConfigFromDisk()
 	if err != nil {
 		return nil, err
@@ -47,6 +48,9 @@ func (c *Config) All() (config.Provider, error) {
 			return nil, err
 		}
 		provider.Set("modules", modules)
+		for _, m := range modules {
+			c.Logger.Printf("module: %+v", m)
+		}
 	}
 
 	return provider, nil
@@ -77,7 +81,7 @@ func (c *Config) loadModules(theme string) (valueobject.Modules, error) {
 }
 
 func (c *Config) loadConfigFromDisk() (map[string]any, error) {
-	content, err := os.ReadFile("example.txt")
+	content, err := os.ReadFile(c.Path)
 	if err != nil {
 		return nil, err
 	}
