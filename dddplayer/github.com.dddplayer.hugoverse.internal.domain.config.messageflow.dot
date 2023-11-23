@@ -1,0 +1,974 @@
+digraph {
+	node [style=dotted shape=rect]
+
+    subgraph cluster_ddd_concept{
+		node [color=white]
+
+        ddd_concept [label=<
+        <table border="0" cellpadding="10">
+		<tr>
+			<td bgcolor="#ffffff00" rowspan="1" colspan="1">BoundedContext</td>
+			<td bgcolor="#ffd966ff" rowspan="1" colspan="1">AggregateRoot</td>
+			<td bgcolor="#ffe599ff" rowspan="1" colspan="1">Entity</td>
+			<td bgcolor="#a2c4c9ff" rowspan="1" colspan="1">ValueObject</td>
+			<td bgcolor="#e69138ff" rowspan="1" colspan="1">Service</td>
+		</tr>
+		<tr>
+			<td bgcolor="white" rowspan="1" colspan="1"></td>
+			<td bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Command</td>
+			<td bgcolor="#f6b26bff" rowspan="1" colspan="1">Event</td>
+			<td bgcolor="#cfe2f3ff" rowspan="1" colspan="1">Factory</td>
+			<td bgcolor="#b4a7d6ff" rowspan="1" colspan="1">Class</td>
+			
+		</tr>
+		<tr>
+			<td bgcolor="white" rowspan="1" colspan="1"></td>
+			<td bgcolor="#f4ccccff" rowspan="1" colspan="1">General</td>
+			<td bgcolor="#ead1dcff" rowspan="1" colspan="1">Function</td>
+			<td bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Interface</td>
+			<td bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Attribute</td>
+		</tr>
+        </table>
+        > ]
+	}
+
+    
+		subgraph cluster_dUQ30Z {
+	
+		
+    	dUQ30Z [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">hugoverse</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse"
+
+	
+		subgraph cluster_dbPwjkq {
+	
+		
+    	dbPwjkq [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcdc8xt" bgcolor="#ead1dcff" rowspan="1" colspan="4">main</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/function"
+
+	
+    }
+		subgraph cluster_di7GIv {
+	
+		
+    	di7GIv [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">internal</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal"
+
+	
+		subgraph cluster_dWutTC {
+	
+		
+    	dWutTC [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">interfaces</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/interfaces"
+
+	
+		subgraph cluster_dbFIgov {
+	
+		
+    	dbFIgov [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcRNaFV" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">ServeHTTP</td>
+			<td port="dd6Itnh" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">registerHandler</td>
+			<td port="ddEFKA" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">handleConfig</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcrVIRt" bgcolor="#b4a7d6ff" rowspan="2" colspan="1">Server</td>
+			<td port="ddIJ7CG" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">mux</td>
+			<td port="dc8h396" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">cache</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dj0Eoa" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">writeJSONResponse</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dd7nIzo" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Log</td>
+			<td port="dboWVeI" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">ProjPath</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="10">api</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/interfaces/api"
+
+	
+		subgraph cluster_ddtvzaY {
+	
+		
+    	ddtvzaY [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="degUkn5" bgcolor="#ead1dcff" rowspan="1" colspan="4">NewServer</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/interfaces/api/function"
+
+	
+    }
+    }
+		subgraph cluster_dcUGxVR {
+	
+		
+    	dcUGxVR [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dFJoku" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Run</td>
+			<td port="dbNAO7S" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Usage</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbgRDfG" bgcolor="#b4a7d6ff" rowspan="1" colspan="1">buildCmd</td>
+			<td port="dRDn7X" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">parent</td>
+			<td port="deFLls1" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">cmd</td>
+			<td port="dFl7Os" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">hugoProjPath</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbtwUMD" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Run</td>
+			<td port="dcD6rbH" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Usage</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc8vUbT" bgcolor="#b4a7d6ff" rowspan="1" colspan="1">serverCmd</td>
+			<td port="denK8hY" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">parent</td>
+			<td port="dbhKWDM" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">cmd</td>
+			<td port="db78v3J" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">hugoProjPath</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="9">cmd</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/interfaces/cmd"
+
+	
+    }
+    }
+		subgraph cluster_dbYmF3O {
+	
+		
+    	dbYmF3O [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">domain</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain"
+
+	
+		subgraph cluster_dctHGkf {
+	
+		
+    	dctHGkf [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">config</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/config"
+
+	
+		subgraph cluster_dbvalZB {
+	
+		
+    	dbvalZB [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dympBu" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">loadConfigFromDisk</td>
+			<td port="dcMQkpO" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">loadModules</td>
+			<td port="deIyBAf" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Load</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dxeIu0" bgcolor="#b4a7d6ff" rowspan="1" colspan="1">Config</td>
+			<td port="dbOwdfO" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Path</td>
+			<td port="dcasrN4" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Modules</td>
+			<td port="ddac06n" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Logger</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="10">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/config/entity"
+
+	
+    }
+    }
+    }
+		subgraph cluster_dCbZAW {
+	
+		
+    	dCbZAW [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">application</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/application"
+
+	
+		subgraph cluster_ddeNuT {
+	
+		
+    	ddeNuT [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d6GWrL" bgcolor="#ead1dcff" rowspan="1" colspan="2">GenerateStaticSite</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbsclp6" bgcolor="#ead1dcff" rowspan="1" colspan="2">AllConfigurationInformation</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="7">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/application/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_d5iImG {
+	
+		
+    	d5iImG [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">cmd</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/cmd"
+
+	
+		subgraph cluster_ddREsL {
+	
+		
+    	ddREsL [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcvzibt" bgcolor="#ead1dcff" rowspan="1" colspan="4">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/cmd/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_dbPwjkq {
+	
+		
+    	dbPwjkq [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcdc8xt" bgcolor="#ead1dcff" rowspan="1" colspan="4">main</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/function"
+
+	
+    }
+		subgraph cluster_di7GIv {
+	
+		
+    	di7GIv [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">internal</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal"
+
+	
+		subgraph cluster_dWutTC {
+	
+		
+    	dWutTC [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">interfaces</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/interfaces"
+
+	
+		subgraph cluster_dbFIgov {
+	
+		
+    	dbFIgov [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcRNaFV" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">ServeHTTP</td>
+			<td port="dd6Itnh" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">registerHandler</td>
+			<td port="ddEFKA" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">handleConfig</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcrVIRt" bgcolor="#b4a7d6ff" rowspan="2" colspan="1">Server</td>
+			<td port="ddIJ7CG" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">mux</td>
+			<td port="dc8h396" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">cache</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dj0Eoa" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">writeJSONResponse</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dd7nIzo" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Log</td>
+			<td port="dboWVeI" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">ProjPath</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="10">api</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/interfaces/api"
+
+	
+		subgraph cluster_ddtvzaY {
+	
+		
+    	ddtvzaY [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="degUkn5" bgcolor="#ead1dcff" rowspan="1" colspan="4">NewServer</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/interfaces/api/function"
+
+	
+    }
+    }
+		subgraph cluster_dcUGxVR {
+	
+		
+    	dcUGxVR [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dFJoku" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Run</td>
+			<td port="dbNAO7S" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Usage</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbgRDfG" bgcolor="#b4a7d6ff" rowspan="1" colspan="1">buildCmd</td>
+			<td port="dRDn7X" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">parent</td>
+			<td port="deFLls1" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">cmd</td>
+			<td port="dFl7Os" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">hugoProjPath</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbtwUMD" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Run</td>
+			<td port="dcD6rbH" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Usage</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc8vUbT" bgcolor="#b4a7d6ff" rowspan="1" colspan="1">serverCmd</td>
+			<td port="denK8hY" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">parent</td>
+			<td port="dbhKWDM" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">cmd</td>
+			<td port="db78v3J" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">hugoProjPath</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="9">cmd</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/interfaces/cmd"
+
+	
+    }
+    }
+		subgraph cluster_dbYmF3O {
+	
+		
+    	dbYmF3O [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">domain</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain"
+
+	
+		subgraph cluster_dctHGkf {
+	
+		
+    	dctHGkf [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">config</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/config"
+
+	
+		subgraph cluster_dbvalZB {
+	
+		
+    	dbvalZB [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dympBu" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">loadConfigFromDisk</td>
+			<td port="dcMQkpO" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">loadModules</td>
+			<td port="deIyBAf" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Load</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dxeIu0" bgcolor="#b4a7d6ff" rowspan="1" colspan="1">Config</td>
+			<td port="dbOwdfO" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Path</td>
+			<td port="dcasrN4" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Modules</td>
+			<td port="ddac06n" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Logger</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="10">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/config/entity"
+
+	
+    }
+    }
+    }
+		subgraph cluster_dCbZAW {
+	
+		
+    	dCbZAW [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">application</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/application"
+
+	
+		subgraph cluster_ddeNuT {
+	
+		
+    	ddeNuT [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d6GWrL" bgcolor="#ead1dcff" rowspan="1" colspan="2">GenerateStaticSite</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbsclp6" bgcolor="#ead1dcff" rowspan="1" colspan="2">AllConfigurationInformation</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="7">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/application/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_d5iImG {
+	
+		
+    	d5iImG [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">cmd</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/cmd"
+
+	
+		subgraph cluster_ddREsL {
+	
+		
+    	ddREsL [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcvzibt" bgcolor="#ead1dcff" rowspan="1" colspan="4">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/cmd/function"
+
+	
+    }
+    }
+
+	
+		dcUGxVR:dbtwUMD -> ddtvzaY:degUkn5  [style=solid arrowhead=normal label="1" tooltip="serverCmd.Run -> NewServer: \n\nFrom: server.go (Line: 56, Column: 25) To: server.go (Line: 19, Column: 6)\n"]
+		ddREsL:dcvzibt -> dcUGxVR:dbtwUMD  [style=solid arrowhead=normal label="1" tooltip="New -> serverCmd.Run: \n\nFrom: command.go (Line: 53, Column: 25) To: server.go (Line: 40, Column: 22)\n"]
+		ddeNuT:d6GWrL -> dbvalZB:deIyBAf  [style=solid arrowhead=normal label="1" tooltip="GenerateStaticSite -> Config.Load: \n\nFrom: ssg.go (Line: 14, Column: 25) To: config.go (Line: 31, Column: 18)\n"]
+		dcUGxVR:dFJoku -> ddeNuT:d6GWrL  [style=solid arrowhead=normal label="1" tooltip="buildCmd.Run -> GenerateStaticSite: \n\nFrom: build.go (Line: 54, Column: 41) To: ssg.go (Line: 9, Column: 6)\n"]
+		dbFIgov -> ddtvzaY  [style=dotted arrowhead=normal label="1" tooltip="api -> function: \n\n"]
+		dctHGkf -> dbvalZB  [style=dotted arrowhead=diamond label="1" tooltip="config -> entity: \n\n"]
+		dUQ30Z -> d5iImG  [style=dotted arrowhead=diamond label="1" tooltip="hugoverse -> cmd: \n\n"]
+		ddeNuT:dbsclp6 -> dbvalZB:deIyBAf  [style=solid arrowhead=normal label="1" tooltip="AllConfigurationInformation -> Config.Load: \n\nFrom: config.go (Line: 12, Column: 15) To: config.go (Line: 31, Column: 18)\n"]
+		ddtvzaY:degUkn5 -> dbFIgov:dd6Itnh  [style=solid arrowhead=normal label="1" tooltip="NewServer -> Server.registerHandler: \n\nFrom: server.go (Line: 29, Column: 19) To: server.go (Line: 33, Column: 18)\n"]
+		dbPwjkq:dcdc8xt -> ddREsL:dcvzibt  [style=solid arrowhead=normal label="2" tooltip="main -> New: \n\nFrom: main.go (Line: 10, Column: 16) To: command.go (Line: 11, Column: 6)\n"]
+		dWutTC -> dbFIgov  [style=dotted arrowhead=diamond label="1" tooltip="interfaces -> api: \n\n"]
+		di7GIv -> dbYmF3O  [style=dotted arrowhead=diamond label="1" tooltip="internal -> domain: \n\n"]
+		dUQ30Z -> di7GIv  [style=dotted arrowhead=diamond label="1" tooltip="hugoverse -> internal: \n\n"]
+		dWutTC -> dcUGxVR  [style=dotted arrowhead=diamond label="1" tooltip="interfaces -> cmd: \n\n"]
+		di7GIv -> dWutTC  [style=dotted arrowhead=diamond label="1" tooltip="internal -> interfaces: \n\n"]
+		d5iImG -> ddREsL  [style=dotted arrowhead=normal label="1" tooltip="cmd -> function: \n\n"]
+		dbFIgov:ddEFKA -> ddeNuT:dbsclp6  [style=solid arrowhead=normal label="1" tooltip="Server.handleConfig -> AllConfigurationInformation: \n\nFrom: config.go (Line: 11, Column: 60) To: config.go (Line: 9, Column: 6)\n"]
+		dbFIgov:dd6Itnh -> dbFIgov:ddEFKA  [style=solid arrowhead=normal label="1" tooltip="Server.registerHandler -> Server.handleConfig: \n\nFrom: server.go (Line: 34, Column: 18) To: config.go (Line: 8, Column: 18)\n"]
+		ddREsL:dcvzibt -> dcUGxVR:dFJoku  [style=solid arrowhead=normal label="1" tooltip="New -> buildCmd.Run: \n\nFrom: command.go (Line: 69, Column: 25) To: build.go (Line: 38, Column: 21)\n"]
+		dUQ30Z -> dbPwjkq  [style=dotted arrowhead=normal label="1" tooltip="hugoverse -> function: \n\n"]
+		dbYmF3O -> dctHGkf  [style=dotted arrowhead=diamond label="1" tooltip="domain -> config: \n\n"]
+		dCbZAW -> ddeNuT  [style=dotted arrowhead=normal label="1" tooltip="application -> function: \n\n"]
+		di7GIv -> dCbZAW  [style=dotted arrowhead=diamond label="1" tooltip="internal -> application: \n\n"]
+
+	label = "\n\ngithub.com/dddplayer/hugoverse\nDomain Model\n\nPowered by DDD Player";
+    fontsize=20;
+}
