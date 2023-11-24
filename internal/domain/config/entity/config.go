@@ -36,7 +36,7 @@ func (c *Config) Load() (config.Provider, error) {
 
 	provider := factory.New()
 	provider.Set("", m)
-	provider.SetDefaults(valueobject.Params{
+	provider.SetDefaults(config.Params{
 		"Path":    c.Path,
 		"timeout": "30s",
 	})

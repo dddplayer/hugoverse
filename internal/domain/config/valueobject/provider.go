@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/dddplayer/hugoverse/internal/domain/config"
 	"html/template"
 	"reflect"
 	"strconv"
@@ -12,7 +13,7 @@ import (
 
 // DefaultConfigProvider Provider接口实现对象
 type DefaultConfigProvider struct {
-	Root Params
+	Root config.Params
 }
 
 // Get 按key获取值
@@ -38,8 +39,7 @@ func (c *DefaultConfigProvider) GetString(k string) string {
 
 // getNestedKeyAndMap 支持多级查询
 // 通过分隔符"."获取查询路径
-func (c *DefaultConfigProvider) getNestedKeyAndMap(
-	key string) (string, Params) {
+func (c *DefaultConfigProvider) getNestedKeyAndMap(key string) (string, config.Params) {
 	var parts []string
 	parts = strings.Split(key, ".")
 	current := c.Root
@@ -49,7 +49,7 @@ func (c *DefaultConfigProvider) getNestedKeyAndMap(
 			return "", nil
 		}
 		var ok bool
-		current, ok = next.(Params)
+		current, ok = next.(config.Params)
 		if !ok {
 			return "", nil
 		}
@@ -75,8 +75,7 @@ func (c *DefaultConfigProvider) Set(k string, v any) {
 }
 
 // SetDefaults will set values from params if not already set.
-func (c *DefaultConfigProvider) SetDefaults(
-	params Params) {
+func (c *DefaultConfigProvider) SetDefaults(params config.Params) {
 	PrepareParams(params)
 	for k, v := range params {
 		if _, found := c.Root[k]; !found {
@@ -85,12 +84,21 @@ func (c *DefaultConfigProvider) SetDefaults(
 	}
 }
 
+func (c *DefaultConfigProvider) IsSet(k string) bool {
+	var found bool
+	key, m := c.getNestedKeyAndMap(strings.ToLower(k))
+	if m != nil {
+		_, found = m[key]
+	}
+	return found
+}
+
 // ToParamsAndPrepare converts in to Params and prepares it for use.
 // If in is nil, an empty map is returned.
 // See PrepareParams.
-func ToParamsAndPrepare(in any) (Params, bool) {
+func ToParamsAndPrepare(in any) (config.Params, bool) {
 	if IsNil(in) {
-		return Params{}, true
+		return config.Params{}, true
 	}
 	m, err := ToStringMapE(in)
 	if err != nil {
@@ -120,7 +128,7 @@ func IsNil(v any) bool {
 // ToStringMapE converts in to map[string]interface{}.
 func ToStringMapE(in any) (map[string]any, error) {
 	switch vv := in.(type) {
-	case Params:
+	case config.Params:
 		return vv, nil
 	case map[string]any:
 		var m = map[string]any{}
@@ -139,19 +147,19 @@ func ToStringMapE(in any) (map[string]any, error) {
 // * This will modify the map given.
 // * Any nested map[string]interface{}, map[string]string
 // * will be converted to Params.
-func PrepareParams(m Params) {
+func PrepareParams(m config.Params) {
 	for k, v := range m {
 		var retyped bool
 		lKey := strings.ToLower(k)
 
 		switch vv := v.(type) {
 		case map[string]any:
-			var p Params = v.(map[string]any)
+			var p config.Params = v.(map[string]any)
 			v = p
 			PrepareParams(p)
 			retyped = true
 		case map[string]string:
-			p := make(Params)
+			p := make(config.Params)
 			for k, v := range vv {
 				p[k] = v
 			}
