@@ -6,6 +6,7 @@ import (
 	"github.com/dddplayer/hugoverse/internal/domain/fs"
 	hugoSitesVO "github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject"
 	lang "github.com/dddplayer/hugoverse/internal/domain/language/entity"
+	"github.com/dddplayer/hugoverse/internal/domain/site"
 )
 
 // DepsCfg contains configuration options that can be used to configure Hugo
@@ -17,6 +18,9 @@ type DepsCfg struct {
 
 	// The configuration to use.
 	Cfg config.Provider
+
+	// The Site in use
+	Site site.Site
 
 	// The language to use.
 	Language *lang.Language

@@ -56,7 +56,11 @@ func New(cfg valueobject.DepsCfg) (deps.Deps, error) {
 	//sp := source.NewSourceSpec(ps, nil, originFs.Source)
 
 	d := &entity.Deps{
+		Cfg:                 cfg.Language,
+		Language:            cfg.Language,
+		Site:                cfg.Site,
 		OutputFormatsConfig: cfg.OutputFormats,
+		TemplateProvider:    cfg.TemplateProvider,
 	}
 
 	return d, nil

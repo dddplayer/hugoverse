@@ -6,7 +6,6 @@ import (
 )
 
 type Deps interface {
-	Config() Cfg
 	Tmpl() template.Handler
 }
 
