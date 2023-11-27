@@ -1,52 +1,22 @@
 package valueobject
 
-type Mount struct {
-	// relative path in source repo, e.g. "scss"
-	Source string
-	// relative target path, e.g. "assets/bootstrap/scss"
-	Target string
-	// any language code associated with this mount.
-	Lang string
-}
-
-type Import struct {
-	// Module path
-	Path string
-}
-
-// ModuleConfig holds a module config.
-type ModuleConfig struct {
-	Mounts  []Mount
-	Imports []Import
-}
-
-type Module interface {
-	// Config The decoded module config and mounts.
-	Config() ModuleConfig
-	// Owner In the dependency tree, this is the first module that defines this module
-	// as a dependency.
-	Owner() Module
-	// Mounts Any directory remappings.
-	Mounts() []Mount
-}
-
-type Modules []Module
+import "github.com/dddplayer/hugoverse/internal/domain/config"
 
 // moduleAdapter implemented Module interface
 type moduleAdapter struct {
 	projectMod bool
-	owner      Module
-	mounts     []Mount
-	config     ModuleConfig
+	owner      config.Module
+	mounts     []config.Mount
+	config     config.ModuleConfig
 }
 
-func (m *moduleAdapter) Config() ModuleConfig {
+func (m *moduleAdapter) Config() config.ModuleConfig {
 	return m.config
 }
-func (m *moduleAdapter) Mounts() []Mount {
+func (m *moduleAdapter) Mounts() []config.Mount {
 	return m.mounts
 }
-func (m *moduleAdapter) Owner() Module {
+func (m *moduleAdapter) Owner() config.Module {
 	return m.owner
 }
 
@@ -63,7 +33,7 @@ const (
 
 // ApplyProjectConfigDefaults applies default/missing module configuration for
 // the main project.
-func ApplyProjectConfigDefaults(mod Module) {
+func ApplyProjectConfigDefaults(mod config.Module) {
 	projectMod := mod.(*moduleAdapter)
 
 	type dirKeyComponent struct {
@@ -83,22 +53,24 @@ func ApplyProjectConfigDefaults(mod Module) {
 		{"", ComponentFolderStatic, false},
 	}
 
-	var mounts []Mount
+	var mounts []config.Mount
 	for _, d := range dirKeys {
 		if d.multilingual {
 			// based on language content configuration
 			// multiple language has multiple source folders
 			if d.component == ComponentFolderContent {
-				mounts = append(mounts, Mount{
+				mounts = append(mounts, config.Mount{
 					Lang:   "en",
 					Source: "mycontent",
-					Target: d.component})
+					Target: d.component},
+				)
 			}
 		} else {
 			mounts = append(mounts,
-				Mount{
+				config.Mount{
 					Source: d.component,
-					Target: d.component})
+					Target: d.component},
+			)
 		}
 	}
 

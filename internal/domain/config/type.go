@@ -47,3 +47,35 @@ func (p Params) Set(pp Params) {
 		}
 	}
 }
+
+type Mount struct {
+	// relative pathspec in source repo, e.g. "scss"
+	Source string
+	// relative target pathspec, e.g. "assets/bootstrap/scss"
+	Target string
+	// any language code associated with this mount.
+	Lang string
+}
+
+type Import struct {
+	// Module pathspec
+	Path string
+}
+
+// ModuleConfig holds a module config.
+type ModuleConfig struct {
+	Mounts  []Mount
+	Imports []Import
+}
+
+type Module interface {
+	// Config The decoded module config and mounts.
+	Config() ModuleConfig
+	// Owner In the dependency tree, this is the first module that defines this module
+	// as a dependency.
+	Owner() Module
+	// Mounts Any directory remappings.
+	Mounts() []Mount
+}
+
+type Modules []Module

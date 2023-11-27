@@ -29,7 +29,7 @@ Commands:
   version:  show hugoverse command version
 
 Example:
-  hugov build -p path/to/your/hugo/project
+  hugov build -p pathspec/to/your/hugo/project
 ```
 
 ## Create Hugo Demo Project

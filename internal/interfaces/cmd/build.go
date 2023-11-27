@@ -22,7 +22,7 @@ func NewBuildCmd(parent *flag.FlagSet) (*buildCmd, error) {
 
 	nCmd.cmd = flag.NewFlagSet("build", flag.ExitOnError)
 	nCmd.hugoProjPath = nCmd.cmd.String("p", "", fmt.Sprintf(
-		"[required] target hugo project path \n(e.g. %s)", "path/to/your/hugo/project"))
+		"[required] target hugo project pathspec \n(e.g. %s)", "pathspec/to/your/hugo/project"))
 	err := nCmd.cmd.Parse(parent.Args()[1:])
 	if err != nil {
 		return nil, err
@@ -38,7 +38,7 @@ func (oc *buildCmd) Usage() {
 func (oc *buildCmd) Run() error {
 	if *oc.hugoProjPath == "" {
 		oc.cmd.Usage()
-		return errors.New("please specify a target hugo project path")
+		return errors.New("please specify a target hugo project pathspec")
 	}
 
 	_, err := os.Stat(*oc.hugoProjPath)

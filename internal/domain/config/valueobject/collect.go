@@ -1,18 +1,21 @@
 package valueobject
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/dddplayer/hugoverse/internal/domain/config"
+)
 
 type ModuleCollector struct {
-	Modules Modules
+	Modules config.Modules
 }
 
 func NewModuleCollector() *ModuleCollector {
 	return &ModuleCollector{
-		Modules: Modules{},
+		Modules: config.Modules{},
 	}
 }
 
-func (mc *ModuleCollector) CollectModules(modConfig ModuleConfig, hookBeforeFinalize func(m Modules)) {
+func (mc *ModuleCollector) CollectModules(modConfig config.ModuleConfig, hookBeforeFinalize func(m config.Modules)) {
 	projectMod := &moduleAdapter{
 		projectMod: true,
 		config:     modConfig,
@@ -22,7 +25,7 @@ func (mc *ModuleCollector) CollectModules(modConfig ModuleConfig, hookBeforeFina
 	mc.addAndRecurse(projectMod)
 
 	// Add the project mod on top.
-	mc.Modules = append(Modules{projectMod}, mc.Modules...)
+	mc.Modules = append(config.Modules{projectMod}, mc.Modules...)
 
 	if hookBeforeFinalize != nil {
 		hookBeforeFinalize(mc.Modules)
@@ -45,14 +48,14 @@ func (mc *ModuleCollector) addAndRecurse(owner *moduleAdapter) {
 }
 
 func (mc *ModuleCollector) add(owner *moduleAdapter,
-	moduleImport Import) *moduleAdapter {
+	moduleImport config.Import) *moduleAdapter {
 
 	fmt.Printf("start to create `%s` module\n",
 		moduleImport.Path)
 	ma := &moduleAdapter{
 		owner: owner,
 		// in the example, mytheme has no other import
-		config: ModuleConfig{},
+		config: config.ModuleConfig{},
 	}
 	mc.Modules = append(mc.Modules, ma)
 	return ma

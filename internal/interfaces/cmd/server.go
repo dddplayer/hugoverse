@@ -23,7 +23,7 @@ func NewServerCmd(parent *flag.FlagSet) (*serverCmd, error) {
 
 	nCmd.cmd = flag.NewFlagSet("normal", flag.ExitOnError)
 	nCmd.hugoProjPath = nCmd.cmd.String("p", "", fmt.Sprintf(
-		"[required] target hugo project path \n(e.g. %s)", "path/to/your/hugo/project"))
+		"[required] target hugo project pathspec \n(e.g. %s)", "pathspec/to/your/hugo/project"))
 
 	err := nCmd.cmd.Parse(parent.Args()[1:])
 	if err != nil {
@@ -40,7 +40,7 @@ func (oc *serverCmd) Usage() {
 func (oc *serverCmd) Run() error {
 	if *oc.hugoProjPath == "" {
 		oc.cmd.Usage()
-		return errors.New("please specify a target hugo project path")
+		return errors.New("please specify a target hugo project pathspec")
 	}
 
 	_, err := os.Stat(*oc.hugoProjPath)

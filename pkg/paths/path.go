@@ -6,8 +6,8 @@ import (
 	"strings"
 )
 
-// AbsPathify creates an absolute path if given a working dir and a relative path.
-// If already absolute, the path is just cleaned.
+// AbsPathify creates an absolute pathspec if given a working dir and a relative pathspec.
+// If already absolute, the pathspec is just cleaned.
 func AbsPathify(workingDir, inPath string) string {
 	if filepath.IsAbs(inPath) {
 		return filepath.Clean(inPath)
@@ -46,7 +46,7 @@ func (filepathBridge) Separator() string {
 
 var fpb filepathBridge
 
-// Filename takes a file path, strips out the extension,
+// Filename takes a file pathspec, strips out the extension,
 // and returns the name of the file.
 func Filename(in string) (name string) {
 	name, _ = fileAndExt(in, fpb)
@@ -60,7 +60,7 @@ func fileAndExt(in string, b filepathPathBridge) (name string, ext string) {
 	return extractFilename(in, ext, base, b.Separator()), ext
 }
 
-// filepathPathBridge is a bridge for common functionality in filepath vs path
+// filepathPathBridge is a bridge for common functionality in filepath vs pathspec
 type filepathPathBridge interface {
 	Base(in string) string
 	Clean(in string) string
@@ -72,7 +72,7 @@ type filepathPathBridge interface {
 
 func extractFilename(in, ext, base, pathSeparator string) (name string) {
 	// No file name cases. These are defined as:
-	// 1. any "in" path that ends in a pathSeparator
+	// 1. any "in" pathspec that ends in a pathSeparator
 	// 2. any "base" consisting of just an pathSeparator
 	// 3. any "base" consisting of just an empty string
 	// 4. any "base" consisting of just the current directory i.e. "."
@@ -90,7 +90,7 @@ func extractFilename(in, ext, base, pathSeparator string) (name string) {
 	return
 }
 
-// PathNoExt takes a path, strips out the extension,
+// PathNoExt takes a pathspec, strips out the extension,
 // and returns the name of the file.
 func PathNoExt(in string) string {
 	return strings.TrimSuffix(in, path.Ext(in))

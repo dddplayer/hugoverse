@@ -1,6 +1,8 @@
 package fs
 
-import "github.com/spf13/afero"
+import (
+	"github.com/spf13/afero"
+)
 
 // Fs holds the core filesystems used by Hugo.
 type Fs interface {

@@ -12,7 +12,7 @@ type Language struct {
 
 	// If set per language, this tells Hugo that all content files without any
 	// language indicator (e.g. my-page.en.md) is in this language.
-	// This is usually a path relative to the working dir, but it can be an
+	// This is usually a pathspec relative to the working dir, but it can be an
 	// absolute directory reference. It is what we get.
 	// For internal use.
 	ContentDir string

@@ -24,7 +24,7 @@ const (
 
 type Config struct {
 	Path    string
-	Modules valueobject.Modules
+	Modules config.Modules
 	Logger  log.Logger
 }
 
@@ -56,13 +56,13 @@ func (c *Config) Load() (config.Provider, error) {
 	return provider, nil
 }
 
-func (c *Config) loadModules(theme string) (valueobject.Modules, error) {
+func (c *Config) loadModules(theme string) (config.Modules, error) {
 	// project module config
-	projModuleConfig := valueobject.ModuleConfig{}
+	projModuleConfig := config.ModuleConfig{}
 	imports := []string{theme}
 	for _, imp := range imports {
 		projModuleConfig.Imports = append(
-			projModuleConfig.Imports, valueobject.Import{
+			projModuleConfig.Imports, config.Import{
 				Path: imp,
 			})
 	}
@@ -70,7 +70,7 @@ func (c *Config) loadModules(theme string) (valueobject.Modules, error) {
 	mc := valueobject.NewModuleCollector()
 	// Need to run these after the modules are loaded, but before
 	// they are finalized.
-	collectHook := func(mods valueobject.Modules) {
+	collectHook := func(mods config.Modules) {
 		// Apply default project mounts.
 		// Default folder structure for hugo project
 		valueobject.ApplyProjectConfigDefaults(mods[0])

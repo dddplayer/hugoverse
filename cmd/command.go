@@ -19,7 +19,7 @@ func New() error {
 		fmt.Println("  version:  show hugoverse command version")
 
 		fmt.Println("\nExample:")
-		fmt.Println("  hugov build -p path/to/your/hugo/project")
+		fmt.Println("  hugov build -p pathspec/to/your/hugo/project")
 	}
 
 	err := topLevel.Parse(os.Args[1:])

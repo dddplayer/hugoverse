@@ -1,12 +1,14 @@
 package factory
 
 import (
+	"fmt"
 	"github.com/dddplayer/hugoverse/internal/domain/config"
 	"github.com/dddplayer/hugoverse/internal/domain/deps"
 	"github.com/dddplayer/hugoverse/internal/domain/deps/entity"
 	"github.com/dddplayer/hugoverse/internal/domain/deps/valueobject"
 	"github.com/dddplayer/hugoverse/internal/domain/fs"
-	hugositesVO "github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject"
+	hsVO "github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject"
+	psFactory "github.com/dddplayer/hugoverse/internal/domain/pathspec/factory"
 )
 
 func NewDepsCfg(cfg config.Provider, fs fs.Fs) *valueobject.DepsCfg {
@@ -30,30 +32,23 @@ func New(cfg valueobject.DepsCfg) (deps.Deps, error) {
 	}
 
 	if cfg.MediaTypes == nil {
-		cfg.MediaTypes = hugositesVO.DefaultTypes
+		cfg.MediaTypes = hsVO.DefaultTypes
 	}
 
 	if cfg.OutputFormats == nil {
-		cfg.OutputFormats = hugositesVO.DefaultFormats
+		cfg.OutputFormats = hsVO.DefaultFormats
 	}
 
-	//TODO
-	//ps, err := helpers.NewPathSpec(originFs, cfg.Language)
-	//if err != nil {
-	//	return nil, fmt.Errorf("create PathSpec: %w", err)
-	//}
-	//
-	//resourceSpec, err := resources.NewSpec(ps, cfg.OutputFormats, cfg.MediaTypes)
-	//if err != nil {
-	//	return nil, err
-	//}
-	//
+	ps, err := psFactory.NewPathSpec(originFs, cfg.Language)
+	if err != nil {
+		return nil, fmt.Errorf("create PathSpec: %w", err)
+	}
+
 	//contentSpec, err := helpers.NewContentSpec(cfg.Language, ps.BaseFs.Content.Fs)
 	//if err != nil {
 	//	return nil, err
 	//}
 	//
-	//sp := source.NewSourceSpec(ps, nil, originFs.Source)
 
 	d := &entity.Deps{
 		Cfg:                 cfg.Language,
@@ -61,6 +56,8 @@ func New(cfg valueobject.DepsCfg) (deps.Deps, error) {
 		Site:                cfg.Site,
 		OutputFormatsConfig: cfg.OutputFormats,
 		TemplateProvider:    cfg.TemplateProvider,
+
+		PathSpec: ps,
 	}
 
 	return d, nil
