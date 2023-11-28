@@ -1,6 +1,7 @@
 package entity
 
 import (
+	"fmt"
 	dfs "github.com/dddplayer/hugoverse/internal/domain/fs"
 	"github.com/dddplayer/hugoverse/internal/domain/fs/valueobject"
 	"github.com/dddplayer/hugoverse/pkg/radixtree"
@@ -16,8 +17,35 @@ import (
 // in Readdir and Readdirnames
 // in the order given.
 type RootMappingFs struct {
-	fs            afero.Fs
+	Fs            afero.Fs
 	RootMapToReal *radixtree.Tree
+}
+
+func (m *RootMappingFs) Dirs(base string) ([]valueobject.FileMetaInfo, error) {
+	base = dfs.FilepathSeparator + base
+	roots := m.getRootsWithPrefix(base)
+
+	if roots == nil {
+		return nil, nil
+	}
+
+	fss := make([]valueobject.FileMetaInfo, len(roots))
+	for i, r := range roots {
+		bfs := afero.NewBasePathFs(m.Fs, r.To)
+
+		fi, err := bfs.Stat("")
+		if err != nil {
+			return nil, fmt.Errorf("RootMappingFs.Dirs: %w", err)
+		}
+
+		fss[i] = fi.(valueobject.FileMetaInfo)
+	}
+
+	return fss, nil
+}
+
+func (m *RootMappingFs) getRootsWithPrefix(prefix string) []valueobject.RootMapping {
+	return valueobject.GetRms(m.RootMapToReal, prefix) // /content
 }
 
 func (m *RootMappingFs) Abs(name string) []string {

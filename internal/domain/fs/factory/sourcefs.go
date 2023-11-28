@@ -2,12 +2,22 @@ package factory
 
 import (
 	"fmt"
+	"github.com/dddplayer/hugoverse/internal/domain/fs"
 	"github.com/dddplayer/hugoverse/internal/domain/fs/entity"
 	"github.com/dddplayer/hugoverse/internal/domain/fs/valueobject"
 	psEntity "github.com/dddplayer/hugoverse/internal/domain/pathspec/entity"
 	"github.com/dddplayer/hugoverse/pkg/overlayfs"
 	"github.com/spf13/afero"
+	"strings"
 )
+
+func newSourceFilesystem(name string, fs afero.Fs, dirs []valueobject.FileMetaInfo) *entity.SourceFilesystem {
+	return &entity.SourceFilesystem{
+		Name: name,
+		Fs:   fs,
+		Dirs: dirs,
+	}
+}
 
 func newSourceFilesystemsBuilder(p *psEntity.Paths, b *entity.BaseFs) *sourceFilesystemsBuilder {
 	sourceFs := newBaseFileDecorator(p.Fs.Source())
@@ -18,7 +28,7 @@ type sourceFilesystemsBuilder struct {
 	p        *psEntity.Paths
 	sourceFs afero.Fs
 	result   *entity.SourceFilesystems
-	theBigFs *valueobject.FilesystemsCollector
+	theBigFs *entity.FilesystemsCollector
 }
 
 func (b *sourceFilesystemsBuilder) Build() (*entity.SourceFilesystems, error) {
@@ -31,22 +41,15 @@ func (b *sourceFilesystemsBuilder) Build() (*entity.SourceFilesystems, error) {
 
 		b.theBigFs = theBigFs
 	}
-	//
-	//createView := func(componentID string) *SourceFilesystem {
-	//	if b.theBigFs == nil || b.theBigFs.overlayMounts == nil {
-	//		return b.newSourceFilesystem(componentID, hugofs.NoOpFs, nil)
-	//	}
-	//
-	//	dirs := b.theBigFs.overlayDirs[componentID]
-	//
-	//	return b.newSourceFilesystem(componentID, afero.NewBasePathFs(b.theBigFs.overlayMounts, componentID), dirs)
-	//}
-	//
-	//b.result.Archetypes = createView(files.ComponentFolderArchetypes)
-	//b.result.Layouts = createView(files.ComponentFolderLayouts)
-	//b.result.Assets = createView(files.ComponentFolderAssets)
-	//b.result.ResourcesCache = b.theBigFs.overlayResources
-	//
+
+	createView := func(componentID string) *entity.SourceFilesystem {
+		dirs := b.theBigFs.OverlayDirs[componentID]
+
+		return newSourceFilesystem(componentID, afero.NewBasePathFs(b.theBigFs.OverlayMounts, componentID), dirs)
+	}
+
+	b.result.Layouts = createView(fs.ComponentFolderLayouts)
+
 	//// Data, i18n and content cannot use the overlay fs
 	//dataDirs := b.theBigFs.overlayDirs[files.ComponentFolderData]
 	//dataFs, err := hugofs.NewSliceFs(dataDirs...)
@@ -86,28 +89,61 @@ func (b *sourceFilesystemsBuilder) Build() (*entity.SourceFilesystems, error) {
 	return b.result, nil
 }
 
-func (b *sourceFilesystemsBuilder) createMainOverlayFs(p *psEntity.Paths) (*valueobject.FilesystemsCollector, error) {
-	collector := &valueobject.FilesystemsCollector{
+func (b *sourceFilesystemsBuilder) createMainOverlayFs(p *psEntity.Paths) (*entity.FilesystemsCollector, error) {
+	collector := &entity.FilesystemsCollector{
+		SourceProject:        b.sourceFs,
+		OverlayMounts:        overlayfs.New([]overlayfs.AbsStatFss{}),
 		OverlayMountsContent: overlayfs.New([]overlayfs.AbsStatFss{}),
+		OverlayDirs:          make(map[string][]valueobject.FileMetaInfo),
 	}
 	err := b.createOverlayFs(collector, p)
 
 	return collector, err
 }
 
-func (b *sourceFilesystemsBuilder) createOverlayFs(collector *valueobject.FilesystemsCollector, path *psEntity.Paths) error {
+func (b *sourceFilesystemsBuilder) createOverlayFs(collector *entity.FilesystemsCollector, path *psEntity.Paths) error {
 	for _, md := range path.AllModules {
-		var fromToContent []valueobject.RootMapping
+
+		var (
+			fromTo        []valueobject.RootMapping
+			fromToContent []valueobject.RootMapping
+		)
 
 		for _, mount := range md.Mounts() {
 			rm := valueobject.RootMapping{
 				From: mount.Target, // content
 				To:   mount.Source, // mycontent
 			}
+
+			isContentMount := b.isContentMount(mount.Target)
+			if isContentMount {
+				fromToContent = append(fromToContent, rm)
+			} else if b.isStaticMount(mount.Target) {
+				continue
+			} else {
+				fromTo = append(fromTo, rm)
+			}
+
 			fromToContent = append(fromToContent, rm)
 		}
-		rmfsContent := newRootMappingFs(fromToContent...)
+
+		rmfs := newRootMappingFs(collector.SourceProject, fromTo...)
+		rmfsContent := newRootMappingFs(collector.SourceProject, fromToContent...)
+
+		collector.AddDirs(rmfs)        // add other folders
+		collector.AddDirs(rmfsContent) // only has /content, why need to go through all components?
+
+		collector.OverlayMounts = collector.OverlayMounts.Append(rmfs)
 		collector.OverlayMountsContent = collector.OverlayMountsContent.Append(rmfsContent)
 	}
+
 	return nil
+}
+
+func (b *sourceFilesystemsBuilder) isContentMount(target string) bool {
+	return strings.HasPrefix(target, fs.ComponentFolderContent)
+}
+
+func (b *sourceFilesystemsBuilder) isStaticMount(target string) bool {
+	return strings.HasPrefix(target, fs.ComponentFolderStatic)
 }

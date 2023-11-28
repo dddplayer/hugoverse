@@ -1,7 +1,6 @@
 package entity
 
 import (
-	"github.com/dddplayer/hugoverse/internal/domain/fs/valueobject"
 	"github.com/spf13/afero"
 )
 
@@ -23,5 +22,5 @@ type BaseFs struct {
 	// A read-only filesystem starting from the project workDir.
 	WorkDir afero.Fs
 
-	TheBigFs *valueobject.FilesystemsCollector
+	TheBigFs *FilesystemsCollector
 }

@@ -1,11 +1,13 @@
 package overlayfs
 
 import (
+	"github.com/spf13/afero"
 	"io"
 	"io/fs"
 	"io/ioutil"
 	"os"
 	"sort"
+	"time"
 )
 
 type AbsStatFss interface {
@@ -22,6 +24,61 @@ type OverlayFs struct {
 	fss []AbsStatFss
 }
 
+func (ofs *OverlayFs) Create(name string) (afero.File, error) {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (ofs *OverlayFs) Mkdir(name string, perm os.FileMode) error {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (ofs *OverlayFs) MkdirAll(path string, perm os.FileMode) error {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (ofs *OverlayFs) OpenFile(name string, flag int, perm os.FileMode) (afero.File, error) {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (ofs *OverlayFs) Remove(name string) error {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (ofs *OverlayFs) RemoveAll(path string) error {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (ofs *OverlayFs) Rename(oldname, newname string) error {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (ofs *OverlayFs) Name() string {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (ofs *OverlayFs) Chmod(name string, mode os.FileMode) error {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (ofs *OverlayFs) Chown(name string, uid, gid int) error {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (ofs *OverlayFs) Chtimes(name string, atime time.Time, mtime time.Time) error {
+	//TODO implement me
+	panic("implement me")
+}
+
 // New creates a new OverlayFs with the given options.
 func New(fss []AbsStatFss) *OverlayFs {
 	return &OverlayFs{
@@ -29,15 +86,15 @@ func New(fss []AbsStatFss) *OverlayFs {
 	}
 }
 
-func (ofs OverlayFs) Append(fss ...AbsStatFss) *OverlayFs {
+func (ofs *OverlayFs) Append(fss ...AbsStatFss) *OverlayFs {
 	ofs.fss = append(ofs.fss, fss...)
-	return &ofs
+	return ofs
 }
 
 // Open opens a file, returning it or an error, if any happens.
 // If name is a directory, a *Dir is returned representing all directories matching name.
 // Note that a *Dir must not be used after it's closed.
-func (ofs *OverlayFs) Open(name string) (fs.File, error) {
+func (ofs *OverlayFs) Open(name string) (afero.File, error) {
 	bfs, fi, err := ofs.stat(name)
 	if err != nil {
 		return nil, err
@@ -47,7 +104,12 @@ func (ofs *OverlayFs) Open(name string) (fs.File, error) {
 		return nil, os.ErrInvalid
 	}
 
-	return bfs.Open(name)
+	f, err := bfs.Open(name)
+	if err != nil {
+		return nil, err
+	}
+
+	return &File{File: f}, err
 }
 
 func (ofs *OverlayFs) Stat(name string) (os.FileInfo, error) {
