@@ -1,6 +1,6 @@
 module github.com/dddplayer/hugoverse
 
-go 1.21.1
+go 1.21
 
 require (
 	github.com/bep/clocks v0.5.0

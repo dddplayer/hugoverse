@@ -25,7 +25,9 @@ func NewBaseFS(p *psEntity.Paths) (*entity.BaseFs, error) {
 	if err != nil {
 		return nil, fmt.Errorf("build filesystems: %w", err)
 	}
-	fmt.Println(sourceFilesystems)
+
+	b.SourceFilesystems = sourceFilesystems
+	b.TheBigFs = builder.theBigFs
 
 	return b, nil
 }

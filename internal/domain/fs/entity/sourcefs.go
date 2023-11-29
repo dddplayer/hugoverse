@@ -9,10 +9,10 @@ import (
 // composite file systems (theme and project etc.), and they have all root
 // set to the source type the provides: data, i18n, static, layouts.
 type SourceFilesystems struct {
-	Content    *SourceFilesystem
+	Content    *SourceFilesystem // set
 	Data       *SourceFilesystem
 	I18n       *SourceFilesystem
-	Layouts    *SourceFilesystem
+	Layouts    *SourceFilesystem // set
 	Archetypes *SourceFilesystem
 	Assets     *SourceFilesystem
 

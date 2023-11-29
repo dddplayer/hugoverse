@@ -110,6 +110,8 @@ func applyDeps(cfg *depsVO.DepsCfg, log log.Logger, sites ...*entity.Site) error
 			log.Printf("applyDeps-onCreate: %s", "set site publisher as DestinationPublisher")
 			//TODO
 
+			// d.Site = s.Info
+
 			return nil
 		}
 

@@ -44,6 +44,7 @@ func New(cfg valueobject.DepsCfg) (deps.Deps, error) {
 		return nil, fmt.Errorf("create PathSpec: %w", err)
 	}
 
+	// TODO
 	//contentSpec, err := helpers.NewContentSpec(cfg.Language, ps.BaseFs.Content.Fs)
 	//if err != nil {
 	//	return nil, err
@@ -53,7 +54,7 @@ func New(cfg valueobject.DepsCfg) (deps.Deps, error) {
 	d := &entity.Deps{
 		Cfg:                 cfg.Language,
 		Language:            cfg.Language,
-		Site:                cfg.Site,
+		Site:                cfg.Site, // nil
 		OutputFormatsConfig: cfg.OutputFormats,
 		TemplateProvider:    cfg.TemplateProvider,
 

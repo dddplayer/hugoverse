@@ -1,0 +1,266 @@
+digraph {
+	node [style=dotted shape=rect]
+
+    subgraph cluster_ddd_concept{
+		node [color=white]
+
+        ddd_concept [label=<
+        <table border="0" cellpadding="10">
+		<tr>
+			<td bgcolor="#ffffff00" rowspan="1" colspan="1">BoundedContext</td>
+			<td bgcolor="#ffd966ff" rowspan="1" colspan="1">AggregateRoot</td>
+			<td bgcolor="#ffe599ff" rowspan="1" colspan="1">Entity</td>
+			<td bgcolor="#a2c4c9ff" rowspan="1" colspan="1">ValueObject</td>
+			<td bgcolor="#e69138ff" rowspan="1" colspan="1">Service</td>
+		</tr>
+		<tr>
+			<td bgcolor="white" rowspan="1" colspan="1"></td>
+			<td bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Command</td>
+			<td bgcolor="#f6b26bff" rowspan="1" colspan="1">Event</td>
+			<td bgcolor="#cfe2f3ff" rowspan="1" colspan="1">Factory</td>
+			<td bgcolor="#b4a7d6ff" rowspan="1" colspan="1">Class</td>
+			
+		</tr>
+		<tr>
+			<td bgcolor="white" rowspan="1" colspan="1"></td>
+			<td bgcolor="#f4ccccff" rowspan="1" colspan="1">General</td>
+			<td bgcolor="#ead1dcff" rowspan="1" colspan="1">Function</td>
+			<td bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Interface</td>
+			<td bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Attribute</td>
+		</tr>
+        </table>
+        > ]
+	}
+
+    
+		subgraph cluster_ddyVTic {
+	
+		
+    	ddyVTic [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="debUf7" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Write</td>
+			<td port="dbXlgcY" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Seek</td>
+			<td port="deAWgBz" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">ReadAt</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="debJ3y5" bgcolor="#b4a7d6ff" rowspan="4" colspan="1">File</td>
+			<td port="dmxdNA" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">File</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbRJh73" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Readdir</td>
+			<td port="dcpISPN" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Name</td>
+			<td port="dUKpwS" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">WriteAt</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddZFN6C" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Truncate</td>
+			<td port="dcrVnij" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Sync</td>
+			<td port="db3fkUR" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Readdirnames</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deqzS7k" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">WriteString</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcbLxF3" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">MkdirAll</td>
+			<td port="dcJwFb0" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Mkdir</td>
+			<td port="deov2U7" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Create</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dN0q4I" bgcolor="#b4a7d6ff" rowspan="6" colspan="1">OverlayFs</td>
+			<td port="dc17YGP" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">fss</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddeHbNa" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">RemoveAll</td>
+			<td port="dcobgn1" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Remove</td>
+			<td port="ddGWJlV" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">OpenFile</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dKQ06e" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Chmod</td>
+			<td port="dmJKOC" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Name</td>
+			<td port="dcmwoCn" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Rename</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcjDfjf" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Append</td>
+			<td port="db1LAGk" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Chtimes</td>
+			<td port="dem3IuK" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Chown</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deOpFlV" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">stat</td>
+			<td port="dcsSRw9" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Stat</td>
+			<td port="dNSeJX" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Open</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dFF6uY" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">ReadDir</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dV4cV4" bgcolor="#ead1dcff" rowspan="1" colspan="1">Fss</td>
+			<td port="ddJRZi6" bgcolor="#ead1dcff" rowspan="1" colspan="1">Abs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="diPTEb" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">AbsStatFss</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">overlayfs</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/pkg/overlayfs"
+
+	
+		subgraph cluster_dexw6vf {
+	
+		
+    	dexw6vf [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcRKIQf" bgcolor="#ead1dcff" rowspan="1" colspan="1">readFile</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcWfO9t" bgcolor="#ead1dcff" rowspan="1" colspan="1">merge</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dclQBTb" bgcolor="#ead1dcff" rowspan="1" colspan="1">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/pkg/overlayfs/function"
+
+	
+    }
+    }
+		subgraph cluster_dexw6vf {
+	
+		
+    	dexw6vf [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcRKIQf" bgcolor="#ead1dcff" rowspan="1" colspan="1">readFile</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcWfO9t" bgcolor="#ead1dcff" rowspan="1" colspan="1">merge</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dclQBTb" bgcolor="#ead1dcff" rowspan="1" colspan="1">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/pkg/overlayfs/function"
+
+	
+    }
+
+	
+		ddyVTic -> dexw6vf  [style=dotted arrowhead=normal label="1" tooltip="overlayfs -> function: \n\n"]
+		ddyVTic:dc17YGP -> ddyVTic:diPTEb  [style=dotted arrowhead=normal label="1" tooltip="OverlayFs.fss -> AbsStatFss: \n\nFrom: overlayfs.go (Line: 24, Column: 2) To: . (Line: -1, Column: 0)\n"]
+
+	label = "\n\ngithub.com/dddplayer/hugoverse/pkg/overlayfs\nDomain Model\n\nPowered by DDD Player";
+    fontsize=20;
+}

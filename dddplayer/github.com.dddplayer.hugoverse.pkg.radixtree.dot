@@ -1,0 +1,292 @@
+digraph {
+	node [style=dotted shape=rect]
+
+    subgraph cluster_ddd_concept{
+		node [color=white]
+
+        ddd_concept [label=<
+        <table border="0" cellpadding="10">
+		<tr>
+			<td bgcolor="#ffffff00" rowspan="1" colspan="1">BoundedContext</td>
+			<td bgcolor="#ffd966ff" rowspan="1" colspan="1">AggregateRoot</td>
+			<td bgcolor="#ffe599ff" rowspan="1" colspan="1">Entity</td>
+			<td bgcolor="#a2c4c9ff" rowspan="1" colspan="1">ValueObject</td>
+			<td bgcolor="#e69138ff" rowspan="1" colspan="1">Service</td>
+		</tr>
+		<tr>
+			<td bgcolor="white" rowspan="1" colspan="1"></td>
+			<td bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Command</td>
+			<td bgcolor="#f6b26bff" rowspan="1" colspan="1">Event</td>
+			<td bgcolor="#cfe2f3ff" rowspan="1" colspan="1">Factory</td>
+			<td bgcolor="#b4a7d6ff" rowspan="1" colspan="1">Class</td>
+			
+		</tr>
+		<tr>
+			<td bgcolor="white" rowspan="1" colspan="1"></td>
+			<td bgcolor="#f4ccccff" rowspan="1" colspan="1">General</td>
+			<td bgcolor="#ead1dcff" rowspan="1" colspan="1">Function</td>
+			<td bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Interface</td>
+			<td bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Attribute</td>
+		</tr>
+        </table>
+        > ]
+	}
+
+    
+		subgraph cluster_ddgWHk3 {
+	
+		
+    	ddgWHk3 [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbWOlIO" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Print</td>
+			<td port="dcHIMyy" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Insert</td>
+			<td port="deKxjqt" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Get</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dt5DLE" bgcolor="#b4a7d6ff" rowspan="1" colspan="1">Tree</td>
+			<td port="dclI0Ej" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">root</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbDNbIx" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">delEdge</td>
+			<td port="dmx41F" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">addEdge</td>
+			<td port="dcujpJG" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">getEdge</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcvnrBE" bgcolor="#b4a7d6ff" rowspan="1" colspan="1">node</td>
+			<td port="ddSI2ou" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">val</td>
+			<td port="dvaCYj" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">prefix</td>
+			<td port="ddldzoK" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">suffixes</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dBUFZN" bgcolor="#b4a7d6ff" rowspan="1" colspan="1">edge</td>
+			<td port="ddVuGDV" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">name</td>
+			<td port="dbLQz74" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">start</td>
+			<td port="dmDsyZ" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">end</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="10">radixtree</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/pkg/radixtree"
+
+	
+		subgraph cluster_dIGVl6 {
+	
+		
+    	dIGVl6 [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddOMDIQ" bgcolor="#f4ccccff" rowspan="1" colspan="4">edges</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">general</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/pkg/radixtree/general"
+
+	
+    }
+		subgraph cluster_ddbU50u {
+	
+		
+    	ddbU50u [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbsORmR" bgcolor="#ead1dcff" rowspan="1" colspan="1">printNode</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcJC8Vj" bgcolor="#ead1dcff" rowspan="1" colspan="1">newNodeEdge</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="devh1hO" bgcolor="#ead1dcff" rowspan="1" colspan="1">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcQlYSU" bgcolor="#ead1dcff" rowspan="1" colspan="1">sortAscending</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db7K5Wm" bgcolor="#ead1dcff" rowspan="1" colspan="1">getFirstByte</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbcElCS" bgcolor="#ead1dcff" rowspan="1" colspan="1">findEdgeWithSamePrefix</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddsdHqp" bgcolor="#ead1dcff" rowspan="1" colspan="2">recursivePrint</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcz3QxW" bgcolor="#ead1dcff" rowspan="1" colspan="2">longestPrefix</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/pkg/radixtree/function"
+
+	
+    }
+    }
+		subgraph cluster_dIGVl6 {
+	
+		
+    	dIGVl6 [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddOMDIQ" bgcolor="#f4ccccff" rowspan="1" colspan="4">edges</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">general</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/pkg/radixtree/general"
+
+	
+    }
+		subgraph cluster_ddbU50u {
+	
+		
+    	ddbU50u [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbsORmR" bgcolor="#ead1dcff" rowspan="1" colspan="1">printNode</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcJC8Vj" bgcolor="#ead1dcff" rowspan="1" colspan="1">newNodeEdge</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="devh1hO" bgcolor="#ead1dcff" rowspan="1" colspan="1">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcQlYSU" bgcolor="#ead1dcff" rowspan="1" colspan="1">sortAscending</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db7K5Wm" bgcolor="#ead1dcff" rowspan="1" colspan="1">getFirstByte</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbcElCS" bgcolor="#ead1dcff" rowspan="1" colspan="1">findEdgeWithSamePrefix</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddsdHqp" bgcolor="#ead1dcff" rowspan="1" colspan="2">recursivePrint</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcz3QxW" bgcolor="#ead1dcff" rowspan="1" colspan="2">longestPrefix</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/pkg/radixtree/function"
+
+	
+    }
+
+	
+		ddgWHk3 -> dIGVl6  [style=dotted arrowhead=normal label="1" tooltip="radixtree -> general: \n\n"]
+		ddgWHk3 -> ddbU50u  [style=dotted arrowhead=normal label="1" tooltip="radixtree -> function: \n\n"]
+
+	label = "\n\ngithub.com/dddplayer/hugoverse/pkg/radixtree\nDomain Model\n\nPowered by DDD Player";
+    fontsize=20;
+}

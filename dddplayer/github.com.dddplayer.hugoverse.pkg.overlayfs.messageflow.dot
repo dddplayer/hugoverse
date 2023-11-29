@@ -1,0 +1,1677 @@
+digraph {
+	node [style=dotted shape=rect]
+
+    subgraph cluster_ddd_concept{
+		node [color=white]
+
+        ddd_concept [label=<
+        <table border="0" cellpadding="10">
+		<tr>
+			<td bgcolor="#ffffff00" rowspan="1" colspan="1">BoundedContext</td>
+			<td bgcolor="#ffd966ff" rowspan="1" colspan="1">AggregateRoot</td>
+			<td bgcolor="#ffe599ff" rowspan="1" colspan="1">Entity</td>
+			<td bgcolor="#a2c4c9ff" rowspan="1" colspan="1">ValueObject</td>
+			<td bgcolor="#e69138ff" rowspan="1" colspan="1">Service</td>
+		</tr>
+		<tr>
+			<td bgcolor="white" rowspan="1" colspan="1"></td>
+			<td bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Command</td>
+			<td bgcolor="#f6b26bff" rowspan="1" colspan="1">Event</td>
+			<td bgcolor="#cfe2f3ff" rowspan="1" colspan="1">Factory</td>
+			<td bgcolor="#b4a7d6ff" rowspan="1" colspan="1">Class</td>
+			
+		</tr>
+		<tr>
+			<td bgcolor="white" rowspan="1" colspan="1"></td>
+			<td bgcolor="#f4ccccff" rowspan="1" colspan="1">General</td>
+			<td bgcolor="#ead1dcff" rowspan="1" colspan="1">Function</td>
+			<td bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Interface</td>
+			<td bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Attribute</td>
+		</tr>
+        </table>
+        > ]
+	}
+
+    
+		subgraph cluster_dUQ30Z {
+	
+		
+    	dUQ30Z [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">hugoverse</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse"
+
+	
+		subgraph cluster_dbPwjkq {
+	
+		
+    	dbPwjkq [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcdc8xt" bgcolor="#ead1dcff" rowspan="1" colspan="4">main</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/function"
+
+	
+    }
+		subgraph cluster_d2Iqwg {
+	
+		
+    	d2Iqwg [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">pkg</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/pkg"
+
+	
+		subgraph cluster_ddyVTic {
+	
+		
+    	ddyVTic [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcbLxF3" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">MkdirAll</td>
+			<td port="dcJwFb0" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Mkdir</td>
+			<td port="deov2U7" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Create</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dN0q4I" bgcolor="#b4a7d6ff" rowspan="6" colspan="1">OverlayFs</td>
+			<td port="dc17YGP" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">fss</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddeHbNa" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">RemoveAll</td>
+			<td port="dcobgn1" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Remove</td>
+			<td port="ddGWJlV" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">OpenFile</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dKQ06e" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Chmod</td>
+			<td port="dmJKOC" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Name</td>
+			<td port="dcmwoCn" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Rename</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcjDfjf" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Append</td>
+			<td port="db1LAGk" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Chtimes</td>
+			<td port="dem3IuK" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Chown</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deOpFlV" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">stat</td>
+			<td port="dcsSRw9" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Stat</td>
+			<td port="dNSeJX" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Open</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dFF6uY" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">ReadDir</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">overlayfs</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/pkg/overlayfs"
+
+	
+		subgraph cluster_dexw6vf {
+	
+		
+    	dexw6vf [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dclQBTb" bgcolor="#ead1dcff" rowspan="1" colspan="4">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/pkg/overlayfs/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_di7GIv {
+	
+		
+    	di7GIv [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">internal</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal"
+
+	
+		subgraph cluster_dbYmF3O {
+	
+		
+    	dbYmF3O [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">domain</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain"
+
+	
+		subgraph cluster_dcsgz25 {
+	
+		
+    	dcsgz25 [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">deps</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/deps"
+
+	
+		subgraph cluster_dbQLBV2 {
+	
+		
+    	dbQLBV2 [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">factory</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/deps/factory"
+
+	
+		subgraph cluster_dDvPFV {
+	
+		
+    	dDvPFV [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbP4wDx" bgcolor="#ead1dcff" rowspan="1" colspan="4">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/deps/factory/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_demwjcF {
+	
+		
+    	demwjcF [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">pathspec</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/pathspec"
+
+	
+		subgraph cluster_dbae8za {
+	
+		
+    	dbae8za [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">factory</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/pathspec/factory"
+
+	
+		subgraph cluster_dF72rL {
+	
+		
+    	dF72rL [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dIrEGN" bgcolor="#ead1dcff" rowspan="1" colspan="4">NewPathSpec</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/pathspec/factory/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_dehGEGK {
+	
+		
+    	dehGEGK [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">fs</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/fs"
+
+	
+		subgraph cluster_deAV5Nt {
+	
+		
+    	deAV5Nt [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc0GhTo" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">createOverlayFs</td>
+			<td port="dcV3I7T" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">createMainOverlayFs</td>
+			<td port="dcIOY0p" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Build</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcj7jkm" bgcolor="#b4a7d6ff" rowspan="2" colspan="1">sourceFilesystemsBuilder</td>
+			<td port="dRrZdf" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">p</td>
+			<td port="dcw5XXD" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">sourceFs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deCP2zY" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">isStaticMount</td>
+			<td port="dbKvo3L" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">isContentMount</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddGdFsG" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">result</td>
+			<td port="ddG8FBB" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">theBigFs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="10">factory</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/fs/factory"
+
+	
+		subgraph cluster_dbXvtGQ {
+	
+		
+    	dbXvtGQ [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db7Bwf8" bgcolor="#ead1dcff" rowspan="1" colspan="4">NewBaseFS</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/fs/factory/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_ddaltgo {
+	
+		
+    	ddaltgo [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">hugosites</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites"
+
+	
+		subgraph cluster_dmhopf {
+	
+		
+    	dmhopf [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">factory</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites/factory"
+
+	
+		subgraph cluster_ddyjrVs {
+	
+		
+    	ddyjrVs [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddmxdgz" bgcolor="#ead1dcff" rowspan="1" colspan="1">newHugoSites</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc2o0aH" bgcolor="#ead1dcff" rowspan="1" colspan="1">NewHugoSites</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcdFe5C" bgcolor="#ead1dcff" rowspan="1" colspan="1">applyDeps</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites/factory/function"
+
+	
+    }
+    }
+    }
+    }
+		subgraph cluster_dWutTC {
+	
+		
+    	dWutTC [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">interfaces</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/interfaces"
+
+	
+		subgraph cluster_dcUGxVR {
+	
+		
+    	dcUGxVR [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dFJoku" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Run</td>
+			<td port="dbNAO7S" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Usage</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbgRDfG" bgcolor="#b4a7d6ff" rowspan="1" colspan="1">buildCmd</td>
+			<td port="dRDn7X" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">parent</td>
+			<td port="deFLls1" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">cmd</td>
+			<td port="dFl7Os" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">hugoProjPath</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="9">cmd</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/interfaces/cmd"
+
+	
+    }
+    }
+		subgraph cluster_dCbZAW {
+	
+		
+    	dCbZAW [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">application</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/application"
+
+	
+		subgraph cluster_ddeNuT {
+	
+		
+    	ddeNuT [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d6GWrL" bgcolor="#ead1dcff" rowspan="1" colspan="4">GenerateStaticSite</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/application/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_d5iImG {
+	
+		
+    	d5iImG [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">cmd</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/cmd"
+
+	
+		subgraph cluster_ddREsL {
+	
+		
+    	ddREsL [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcvzibt" bgcolor="#ead1dcff" rowspan="1" colspan="4">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/cmd/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_dbPwjkq {
+	
+		
+    	dbPwjkq [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcdc8xt" bgcolor="#ead1dcff" rowspan="1" colspan="4">main</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/function"
+
+	
+    }
+		subgraph cluster_d2Iqwg {
+	
+		
+    	d2Iqwg [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">pkg</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/pkg"
+
+	
+		subgraph cluster_ddyVTic {
+	
+		
+    	ddyVTic [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcbLxF3" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">MkdirAll</td>
+			<td port="dcJwFb0" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Mkdir</td>
+			<td port="deov2U7" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Create</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dN0q4I" bgcolor="#b4a7d6ff" rowspan="6" colspan="1">OverlayFs</td>
+			<td port="dc17YGP" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">fss</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddeHbNa" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">RemoveAll</td>
+			<td port="dcobgn1" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Remove</td>
+			<td port="ddGWJlV" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">OpenFile</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dKQ06e" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Chmod</td>
+			<td port="dmJKOC" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Name</td>
+			<td port="dcmwoCn" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Rename</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcjDfjf" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Append</td>
+			<td port="db1LAGk" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Chtimes</td>
+			<td port="dem3IuK" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Chown</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deOpFlV" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">stat</td>
+			<td port="dcsSRw9" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Stat</td>
+			<td port="dNSeJX" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Open</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dFF6uY" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">ReadDir</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">overlayfs</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/pkg/overlayfs"
+
+	
+		subgraph cluster_dexw6vf {
+	
+		
+    	dexw6vf [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dclQBTb" bgcolor="#ead1dcff" rowspan="1" colspan="4">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/pkg/overlayfs/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_di7GIv {
+	
+		
+    	di7GIv [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">internal</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal"
+
+	
+		subgraph cluster_dbYmF3O {
+	
+		
+    	dbYmF3O [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">domain</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain"
+
+	
+		subgraph cluster_dcsgz25 {
+	
+		
+    	dcsgz25 [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">deps</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/deps"
+
+	
+		subgraph cluster_dbQLBV2 {
+	
+		
+    	dbQLBV2 [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">factory</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/deps/factory"
+
+	
+		subgraph cluster_dDvPFV {
+	
+		
+    	dDvPFV [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbP4wDx" bgcolor="#ead1dcff" rowspan="1" colspan="4">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/deps/factory/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_demwjcF {
+	
+		
+    	demwjcF [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">pathspec</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/pathspec"
+
+	
+		subgraph cluster_dbae8za {
+	
+		
+    	dbae8za [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">factory</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/pathspec/factory"
+
+	
+		subgraph cluster_dF72rL {
+	
+		
+    	dF72rL [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dIrEGN" bgcolor="#ead1dcff" rowspan="1" colspan="4">NewPathSpec</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/pathspec/factory/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_dehGEGK {
+	
+		
+    	dehGEGK [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">fs</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/fs"
+
+	
+		subgraph cluster_deAV5Nt {
+	
+		
+    	deAV5Nt [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc0GhTo" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">createOverlayFs</td>
+			<td port="dcV3I7T" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">createMainOverlayFs</td>
+			<td port="dcIOY0p" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Build</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcj7jkm" bgcolor="#b4a7d6ff" rowspan="2" colspan="1">sourceFilesystemsBuilder</td>
+			<td port="dRrZdf" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">p</td>
+			<td port="dcw5XXD" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">sourceFs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deCP2zY" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">isStaticMount</td>
+			<td port="dbKvo3L" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">isContentMount</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddGdFsG" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">result</td>
+			<td port="ddG8FBB" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">theBigFs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="10">factory</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/fs/factory"
+
+	
+		subgraph cluster_dbXvtGQ {
+	
+		
+    	dbXvtGQ [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db7Bwf8" bgcolor="#ead1dcff" rowspan="1" colspan="4">NewBaseFS</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/fs/factory/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_ddaltgo {
+	
+		
+    	ddaltgo [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">hugosites</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites"
+
+	
+		subgraph cluster_dmhopf {
+	
+		
+    	dmhopf [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">factory</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites/factory"
+
+	
+		subgraph cluster_ddyjrVs {
+	
+		
+    	ddyjrVs [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddmxdgz" bgcolor="#ead1dcff" rowspan="1" colspan="1">newHugoSites</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc2o0aH" bgcolor="#ead1dcff" rowspan="1" colspan="1">NewHugoSites</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcdFe5C" bgcolor="#ead1dcff" rowspan="1" colspan="1">applyDeps</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites/factory/function"
+
+	
+    }
+    }
+    }
+    }
+		subgraph cluster_dWutTC {
+	
+		
+    	dWutTC [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">interfaces</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/interfaces"
+
+	
+		subgraph cluster_dcUGxVR {
+	
+		
+    	dcUGxVR [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dFJoku" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Run</td>
+			<td port="dbNAO7S" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Usage</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbgRDfG" bgcolor="#b4a7d6ff" rowspan="1" colspan="1">buildCmd</td>
+			<td port="dRDn7X" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">parent</td>
+			<td port="deFLls1" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">cmd</td>
+			<td port="dFl7Os" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">hugoProjPath</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="9">cmd</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/interfaces/cmd"
+
+	
+    }
+    }
+		subgraph cluster_dCbZAW {
+	
+		
+    	dCbZAW [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">application</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/application"
+
+	
+		subgraph cluster_ddeNuT {
+	
+		
+    	ddeNuT [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d6GWrL" bgcolor="#ead1dcff" rowspan="1" colspan="4">GenerateStaticSite</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/application/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_d5iImG {
+	
+		
+    	d5iImG [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">cmd</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/cmd"
+
+	
+		subgraph cluster_ddREsL {
+	
+		
+    	ddREsL [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcvzibt" bgcolor="#ead1dcff" rowspan="1" colspan="4">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/cmd/function"
+
+	
+    }
+    }
+
+	
+		deAV5Nt:dcIOY0p -> deAV5Nt:dcV3I7T  [style=solid arrowhead=normal label="4" tooltip="sourceFilesystemsBuilder.Build -> sourceFilesystemsBuilder.createMainOverlayFs: \n\nFrom: sourcefs.go (Line: 37, Column: 41) To: sourcefs.go (Line: 56, Column: 36)\n"]
+		demwjcF -> dbae8za  [style=dotted arrowhead=diamond label="1" tooltip="pathspec -> factory: \n\n"]
+		dbYmF3O -> demwjcF  [style=dotted arrowhead=diamond label="1" tooltip="domain -> pathspec: \n\n"]
+		dWutTC -> dcUGxVR  [style=dotted arrowhead=diamond label="1" tooltip="interfaces -> cmd: \n\n"]
+		dbXvtGQ:db7Bwf8 -> deAV5Nt:dcIOY0p  [style=solid arrowhead=normal label="4" tooltip="NewBaseFS -> sourceFilesystemsBuilder.Build: \n\nFrom: basefs.go (Line: 24, Column: 41) To: sourcefs.go (Line: 34, Column: 36)\n"]
+		ddREsL:dcvzibt -> dcUGxVR:dFJoku  [style=solid arrowhead=normal label="4" tooltip="New -> buildCmd.Run: \n\nFrom: command.go (Line: 69, Column: 25) To: build.go (Line: 38, Column: 21)\n"]
+		dehGEGK -> deAV5Nt  [style=dotted arrowhead=diamond label="1" tooltip="fs -> factory: \n\n"]
+		dUQ30Z -> d5iImG  [style=dotted arrowhead=diamond label="1" tooltip="hugoverse -> cmd: \n\n"]
+		deAV5Nt:dcV3I7T -> dexw6vf:dclQBTb  [style=solid arrowhead=normal label="2" tooltip="sourceFilesystemsBuilder.createMainOverlayFs -> New: \n\nFrom: sourcefs.go (Line: 60, Column: 38) To: overlayfs.go (Line: 83, Column: 6)\n"]
+		deAV5Nt:dc0GhTo -> ddyVTic:dcjDfjf  [style=solid arrowhead=normal label="2" tooltip="sourceFilesystemsBuilder.createOverlayFs -> OverlayFs.Append: \n\nFrom: sourcefs.go (Line: 99, Column: 73) To: overlayfs.go (Line: 89, Column: 23)\n"]
+		dUQ30Z -> d2Iqwg  [style=dotted arrowhead=diamond label="1" tooltip="hugoverse -> pkg: \n\n"]
+		dcsgz25 -> dbQLBV2  [style=dotted arrowhead=diamond label="1" tooltip="deps -> factory: \n\n"]
+		dCbZAW -> ddeNuT  [style=dotted arrowhead=normal label="1" tooltip="application -> function: \n\n"]
+		di7GIv -> dCbZAW  [style=dotted arrowhead=diamond label="1" tooltip="internal -> application: \n\n"]
+		d5iImG -> ddREsL  [style=dotted arrowhead=normal label="1" tooltip="cmd -> function: \n\n"]
+		deAV5Nt:dcV3I7T -> deAV5Nt:dc0GhTo  [style=solid arrowhead=normal label="2" tooltip="sourceFilesystemsBuilder.createMainOverlayFs -> sourceFilesystemsBuilder.createOverlayFs: \n\nFrom: sourcefs.go (Line: 63, Column: 26) To: sourcefs.go (Line: 68, Column: 36)\n"]
+		dF72rL:dIrEGN -> dbXvtGQ:db7Bwf8  [style=solid arrowhead=normal label="4" tooltip="NewPathSpec -> NewBaseFS: \n\nFrom: pathspec.go (Line: 16, Column: 31) To: basefs.go (Line: 11, Column: 6)\n"]
+		dcUGxVR:dFJoku -> ddeNuT:d6GWrL  [style=solid arrowhead=normal label="4" tooltip="buildCmd.Run -> GenerateStaticSite: \n\nFrom: build.go (Line: 54, Column: 41) To: ssg.go (Line: 13, Column: 6)\n"]
+		dUQ30Z -> dbPwjkq  [style=dotted arrowhead=normal label="1" tooltip="hugoverse -> function: \n\n"]
+		ddyjrVs:ddmxdgz -> ddyjrVs:dcdFe5C  [style=solid arrowhead=normal label="4" tooltip="newHugoSites -> applyDeps: \n\nFrom: sites.go (Line: 78, Column: 21) To: sites.go (Line: 91, Column: 6)\n"]
+		ddeNuT:d6GWrL -> ddyjrVs:dc2o0aH  [style=solid arrowhead=normal label="4" tooltip="GenerateStaticSite -> NewHugoSites: \n\nFrom: ssg.go (Line: 29, Column: 49) To: sites.go (Line: 15, Column: 6)\n"]
+		dbPwjkq:dcdc8xt -> ddREsL:dcvzibt  [style=solid arrowhead=normal label="4" tooltip="main -> New: \n\nFrom: main.go (Line: 10, Column: 16) To: command.go (Line: 11, Column: 6)\n"]
+		dmhopf -> ddyjrVs  [style=dotted arrowhead=normal label="1" tooltip="factory -> function: \n\n"]
+		dDvPFV:dbP4wDx -> dF72rL:dIrEGN  [style=solid arrowhead=normal label="4" tooltip="New -> NewPathSpec: \n\nFrom: deps.go (Line: 42, Column: 34) To: pathspec.go (Line: 10, Column: 6)\n"]
+		ddyjrVs:dc2o0aH -> ddyjrVs:ddmxdgz  [style=solid arrowhead=normal label="4" tooltip="NewHugoSites -> newHugoSites: \n\nFrom: sites.go (Line: 21, Column: 21) To: sites.go (Line: 50, Column: 6)\n"]
+		dbQLBV2 -> dDvPFV  [style=dotted arrowhead=normal label="1" tooltip="factory -> function: \n\n"]
+		deAV5Nt -> dbXvtGQ  [style=dotted arrowhead=normal label="1" tooltip="factory -> function: \n\n"]
+		ddaltgo -> dmhopf  [style=dotted arrowhead=diamond label="1" tooltip="hugosites -> factory: \n\n"]
+		dbYmF3O -> ddaltgo  [style=dotted arrowhead=diamond label="1" tooltip="domain -> hugosites: \n\n"]
+		di7GIv -> dWutTC  [style=dotted arrowhead=diamond label="1" tooltip="internal -> interfaces: \n\n"]
+		dUQ30Z -> di7GIv  [style=dotted arrowhead=diamond label="1" tooltip="hugoverse -> internal: \n\n"]
+		ddyVTic -> dexw6vf  [style=dotted arrowhead=normal label="1" tooltip="overlayfs -> function: \n\n"]
+		d2Iqwg -> ddyVTic  [style=dotted arrowhead=diamond label="1" tooltip="pkg -> overlayfs: \n\n"]
+		dbYmF3O -> dcsgz25  [style=dotted arrowhead=diamond label="1" tooltip="domain -> deps: \n\n"]
+		dbYmF3O -> dehGEGK  [style=dotted arrowhead=diamond label="1" tooltip="domain -> fs: \n\n"]
+		ddyjrVs:dcdFe5C -> dDvPFV:dbP4wDx  [style=solid arrowhead=normal label="4" tooltip="applyDeps -> New: \n\nFrom: sites.go (Line: 123, Column: 27) To: deps.go (Line: 21, Column: 6)\n"]
+		dbae8za -> dF72rL  [style=dotted arrowhead=normal label="1" tooltip="factory -> function: \n\n"]
+		di7GIv -> dbYmF3O  [style=dotted arrowhead=diamond label="1" tooltip="internal -> domain: \n\n"]
+
+	label = "\n\ngithub.com/dddplayer/hugoverse\nDomain Model\n\nPowered by DDD Player";
+    fontsize=20;
+}

@@ -42,49 +42,13 @@ func (b *sourceFilesystemsBuilder) Build() (*entity.SourceFilesystems, error) {
 		b.theBigFs = theBigFs
 	}
 
-	createView := func(componentID string) *entity.SourceFilesystem {
+	createView := func(componentID string, ofs *overlayfs.OverlayFs) *entity.SourceFilesystem {
 		dirs := b.theBigFs.OverlayDirs[componentID]
-
-		return newSourceFilesystem(componentID, afero.NewBasePathFs(b.theBigFs.OverlayMounts, componentID), dirs)
+		return newSourceFilesystem(componentID, afero.NewBasePathFs(ofs, componentID), dirs)
 	}
 
-	b.result.Layouts = createView(fs.ComponentFolderLayouts)
-
-	//// Data, i18n and content cannot use the overlay fs
-	//dataDirs := b.theBigFs.overlayDirs[files.ComponentFolderData]
-	//dataFs, err := hugofs.NewSliceFs(dataDirs...)
-	//if err != nil {
-	//	return nil, err
-	//}
-	//
-	//b.result.Data = b.newSourceFilesystem(files.ComponentFolderData, dataFs, dataDirs)
-	//
-	//i18nDirs := b.theBigFs.overlayDirs[files.ComponentFolderI18n]
-	//i18nFs, err := hugofs.NewSliceFs(i18nDirs...)
-	//if err != nil {
-	//	return nil, err
-	//}
-	//b.result.I18n = b.newSourceFilesystem(files.ComponentFolderI18n, i18nFs, i18nDirs)
-	//
-	//contentDirs := b.theBigFs.overlayDirs[files.ComponentFolderContent]
-	//contentBfs := afero.NewBasePathFs(b.theBigFs.overlayMountsContent, files.ComponentFolderContent)
-	//
-	//contentFs, err := hugofs.NewLanguageFs(b.p.LanguagesDefaultFirst.AsOrdinalSet(), contentBfs)
-	//if err != nil {
-	//	return nil, fmt.Errorf("create content filesystem: %w", err)
-	//}
-	//
-	//b.result.Content = b.newSourceFilesystem(files.ComponentFolderContent, contentFs, contentDirs)
-	//
-	//b.result.Work = afero.NewReadOnlyFs(b.theBigFs.overlayFull)
-	//
-	//// Create static filesystem(s)
-	//ms := make(map[string]*SourceFilesystem)
-	//b.result.Static = ms
-	//b.result.StaticDirs = b.theBigFs.overlayDirs[files.ComponentFolderStatic]
-	//
-	//bfs := afero.NewBasePathFs(b.theBigFs.overlayMountsStatic, files.ComponentFolderStatic)
-	//ms[""] = b.newSourceFilesystem(files.ComponentFolderStatic, bfs, b.result.StaticDirs)
+	b.result.Layouts = createView(fs.ComponentFolderLayouts, b.theBigFs.OverlayMounts)
+	b.result.Content = createView(fs.ComponentFolderContent, b.theBigFs.OverlayMountsContent)
 
 	return b.result, nil
 }
@@ -123,14 +87,12 @@ func (b *sourceFilesystemsBuilder) createOverlayFs(collector *entity.Filesystems
 			} else {
 				fromTo = append(fromTo, rm)
 			}
-
-			fromToContent = append(fromToContent, rm)
 		}
 
 		rmfs := newRootMappingFs(collector.SourceProject, fromTo...)
 		rmfsContent := newRootMappingFs(collector.SourceProject, fromToContent...)
 
-		collector.AddDirs(rmfs)        // add other folders
+		collector.AddDirs(rmfs)        // add other folders, /layouts etc
 		collector.AddDirs(rmfsContent) // only has /content, why need to go through all components?
 
 		collector.OverlayMounts = collector.OverlayMounts.Append(rmfs)

@@ -1,0 +1,663 @@
+digraph {
+	node [style=dotted shape=rect]
+
+    subgraph cluster_ddd_concept{
+		node [color=white]
+
+        ddd_concept [label=<
+        <table border="0" cellpadding="10">
+		<tr>
+			<td bgcolor="#ffffff00" rowspan="1" colspan="1">BoundedContext</td>
+			<td bgcolor="#ffd966ff" rowspan="1" colspan="1">AggregateRoot</td>
+			<td bgcolor="#ffe599ff" rowspan="1" colspan="1">Entity</td>
+			<td bgcolor="#a2c4c9ff" rowspan="1" colspan="1">ValueObject</td>
+			<td bgcolor="#e69138ff" rowspan="1" colspan="1">Service</td>
+		</tr>
+		<tr>
+			<td bgcolor="white" rowspan="1" colspan="1"></td>
+			<td bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Command</td>
+			<td bgcolor="#f6b26bff" rowspan="1" colspan="1">Event</td>
+			<td bgcolor="#cfe2f3ff" rowspan="1" colspan="1">Factory</td>
+			<td bgcolor="#b4a7d6ff" rowspan="1" colspan="1">Class</td>
+			
+		</tr>
+		<tr>
+			<td bgcolor="white" rowspan="1" colspan="1"></td>
+			<td bgcolor="#f4ccccff" rowspan="1" colspan="1">General</td>
+			<td bgcolor="#ead1dcff" rowspan="1" colspan="1">Function</td>
+			<td bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Interface</td>
+			<td bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Attribute</td>
+		</tr>
+        </table>
+        > ]
+	}
+
+    
+		subgraph cluster_ddaltgo {
+	
+		
+    	ddaltgo [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">hugosites</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites"
+
+	
+		subgraph cluster_dmhopf {
+	
+		
+    	dmhopf [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">factory</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites/factory"
+
+	
+		subgraph cluster_ddyjrVs {
+	
+		
+    	ddyjrVs [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc2o0aH" bgcolor="#ead1dcff" rowspan="1" colspan="1">NewHugoSites</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddmxdgz" bgcolor="#ead1dcff" rowspan="1" colspan="1">newHugoSites</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deasGT" bgcolor="#ead1dcff" rowspan="1" colspan="1">newSite</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db9Cw0Y" bgcolor="#ead1dcff" rowspan="1" colspan="2">createSitesFromConfig</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcdFe5C" bgcolor="#ead1dcff" rowspan="1" colspan="2">applyDeps</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites/factory/function"
+
+	
+    }
+    }
+		subgraph cluster_dcXbdqa {
+	
+		
+    	dcXbdqa [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dptxwc" bgcolor="#b4a7d6ff" rowspan="2" colspan="1">Site</td>
+			<td port="dVjh05" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Deps</td>
+			<td port="d64FHR" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">H</td>
+			<td port="dr942v" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Language</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db6Uz7y" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OutputFormats</td>
+			<td port="dpy3em" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OutputFormatsConfig</td>
+			<td port="dcRw6eO" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">MediaTypesConfig</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddVmjZu" bgcolor="#b4a7d6ff" rowspan="1" colspan="1">HugoSitesInit</td>
+			<td port="dds6LCE" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Layouts</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dwFPd6" bgcolor="#b4a7d6ff" rowspan="2" colspan="1">HugoSites</td>
+			<td port="deBwPpb" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Deps</td>
+			<td port="dbj4glD" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Sites</td>
+			<td port="dcbN1xT" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Init</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbSsP4I" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">NumWorkers</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites/entity"
+
+	
+    }
+		subgraph cluster_ddHuJhX {
+	
+		
+    	ddHuJhX [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deoNZd1" bgcolor="#b4a7d6ff" rowspan="1" colspan="1">Format</td>
+			<td port="dl0cpv" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Name</td>
+			<td port="dbtcWqq" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">MediaType</td>
+			<td port="dwawrK" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">BaseName</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbWD7YD" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Type</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddHCZiC" bgcolor="#b4a7d6ff" rowspan="1" colspan="1">Type</td>
+			<td port="dcVdEE8" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">MainType</td>
+			<td port="ddJYRvl" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">SubType</td>
+			<td port="dcjUyFi" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Delimiter</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">valueobject</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject"
+
+	
+		subgraph cluster_dcJEOZo {
+	
+		
+    	dcJEOZo [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dOhu2v" bgcolor="#f4ccccff" rowspan="1" colspan="2">Types</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddumFBQ" bgcolor="#f4ccccff" rowspan="1" colspan="2">Formats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="7">general</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject/general"
+
+	
+    }
+		subgraph cluster_dcE4YYK {
+	
+		
+    	dcE4YYK [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddk9bnK" bgcolor="#ead1dcff" rowspan="1" colspan="1">DecodeFormats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="drxnVW" bgcolor="#ead1dcff" rowspan="1" colspan="1">newMediaType</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dEWTiF" bgcolor="#ead1dcff" rowspan="1" colspan="1">DecodeTypes</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbPjerQ" bgcolor="#ead1dcff" rowspan="1" colspan="2">createDefaultOutputFormats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deJD9aQ" bgcolor="#ead1dcff" rowspan="1" colspan="2">CreateSiteOutputFormats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_dmhopf {
+	
+		
+    	dmhopf [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">factory</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites/factory"
+
+	
+		subgraph cluster_ddyjrVs {
+	
+		
+    	ddyjrVs [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc2o0aH" bgcolor="#ead1dcff" rowspan="1" colspan="1">NewHugoSites</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddmxdgz" bgcolor="#ead1dcff" rowspan="1" colspan="1">newHugoSites</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deasGT" bgcolor="#ead1dcff" rowspan="1" colspan="1">newSite</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db9Cw0Y" bgcolor="#ead1dcff" rowspan="1" colspan="2">createSitesFromConfig</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcdFe5C" bgcolor="#ead1dcff" rowspan="1" colspan="2">applyDeps</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites/factory/function"
+
+	
+    }
+    }
+		subgraph cluster_dcXbdqa {
+	
+		
+    	dcXbdqa [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dptxwc" bgcolor="#b4a7d6ff" rowspan="2" colspan="1">Site</td>
+			<td port="dVjh05" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Deps</td>
+			<td port="d64FHR" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">H</td>
+			<td port="dr942v" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Language</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db6Uz7y" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OutputFormats</td>
+			<td port="dpy3em" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OutputFormatsConfig</td>
+			<td port="dcRw6eO" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">MediaTypesConfig</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddVmjZu" bgcolor="#b4a7d6ff" rowspan="1" colspan="1">HugoSitesInit</td>
+			<td port="dds6LCE" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Layouts</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dwFPd6" bgcolor="#b4a7d6ff" rowspan="2" colspan="1">HugoSites</td>
+			<td port="deBwPpb" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Deps</td>
+			<td port="dbj4glD" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Sites</td>
+			<td port="dcbN1xT" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Init</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbSsP4I" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">NumWorkers</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites/entity"
+
+	
+    }
+		subgraph cluster_ddHuJhX {
+	
+		
+    	ddHuJhX [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deoNZd1" bgcolor="#b4a7d6ff" rowspan="1" colspan="1">Format</td>
+			<td port="dl0cpv" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Name</td>
+			<td port="dbtcWqq" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">MediaType</td>
+			<td port="dwawrK" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">BaseName</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbWD7YD" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Type</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddHCZiC" bgcolor="#b4a7d6ff" rowspan="1" colspan="1">Type</td>
+			<td port="dcVdEE8" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">MainType</td>
+			<td port="ddJYRvl" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">SubType</td>
+			<td port="dcjUyFi" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Delimiter</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">valueobject</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject"
+
+	
+		subgraph cluster_dcJEOZo {
+	
+		
+    	dcJEOZo [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dOhu2v" bgcolor="#f4ccccff" rowspan="1" colspan="2">Types</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddumFBQ" bgcolor="#f4ccccff" rowspan="1" colspan="2">Formats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="7">general</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject/general"
+
+	
+    }
+		subgraph cluster_dcE4YYK {
+	
+		
+    	dcE4YYK [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddk9bnK" bgcolor="#ead1dcff" rowspan="1" colspan="1">DecodeFormats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="drxnVW" bgcolor="#ead1dcff" rowspan="1" colspan="1">newMediaType</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dEWTiF" bgcolor="#ead1dcff" rowspan="1" colspan="1">DecodeTypes</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbPjerQ" bgcolor="#ead1dcff" rowspan="1" colspan="2">createDefaultOutputFormats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deJD9aQ" bgcolor="#ead1dcff" rowspan="1" colspan="2">CreateSiteOutputFormats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject/function"
+
+	
+    }
+    }
+
+	
+		dmhopf -> ddyjrVs  [style=dotted arrowhead=normal label="1" tooltip="factory -> function: \n\n"]
+		ddaltgo -> dmhopf  [style=dotted arrowhead=diamond label="1" tooltip="hugosites -> factory: \n\n"]
+		ddaltgo -> dcXbdqa  [style=dotted arrowhead=diamond label="1" tooltip="hugosites -> entity: \n\n"]
+		ddHuJhX -> dcJEOZo  [style=dotted arrowhead=normal label="1" tooltip="valueobject -> general: \n\n"]
+		ddHuJhX -> dcE4YYK  [style=dotted arrowhead=normal label="1" tooltip="valueobject -> function: \n\n"]
+		ddaltgo -> ddHuJhX  [style=dotted arrowhead=diamond label="1" tooltip="hugosites -> valueobject: \n\n"]
+
+	label = "\n\ngithub.com/dddplayer/hugoverse/internal/domain/hugosites\nDomain Model\n\nPowered by DDD Player";
+    fontsize=20;
+}
