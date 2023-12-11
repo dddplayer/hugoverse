@@ -47,14 +47,12 @@ func (mc *ModuleCollector) addAndRecurse(owner *moduleAdapter) {
 	}
 }
 
-func (mc *ModuleCollector) add(owner *moduleAdapter,
-	moduleImport config.Import) *moduleAdapter {
-
-	fmt.Printf("start to create `%s` module\n",
-		moduleImport.Path)
+func (mc *ModuleCollector) add(owner *moduleAdapter, moduleImport config.Import) *moduleAdapter {
+	fmt.Printf("--- start to create `%s` module\n", moduleImport.Path)
 	ma := &moduleAdapter{
 		owner: owner,
-		// in the example, mytheme has no other import
+		// In the example, "mytheme" has no other import
+		// In the real world, we need to parse the theme config and download the theme repo
 		config: config.ModuleConfig{},
 	}
 	mc.Modules = append(mc.Modules, ma)

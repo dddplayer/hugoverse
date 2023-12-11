@@ -48,9 +48,6 @@ func (c *Config) Load() (config.Provider, error) {
 			return nil, err
 		}
 		provider.Set("modules", modules)
-		for _, m := range modules {
-			c.Logger.Printf("module: %+v", m)
-		}
 	}
 
 	return provider, nil

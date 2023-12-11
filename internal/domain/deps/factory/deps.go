@@ -39,10 +39,16 @@ func New(cfg valueobject.DepsCfg) (deps.Deps, error) {
 		cfg.OutputFormats = hsVO.DefaultFormats
 	}
 
+	cfg.Logger.Printf("NewPathSpec: %s", "")
 	ps, err := psFactory.NewPathSpec(originFs, cfg.Language)
 	if err != nil {
 		return nil, fmt.Errorf("create PathSpec: %w", err)
 	}
+	cfg.Logger.Printf("PathSpec: %+v", ps)
+	cfg.Logger.Printf("PathSpec Paths: %+v", ps.Paths)
+	cfg.Logger.Printf("PathSpec BaseFs: %+v", ps.BaseFs)
+	cfg.Logger.Printf("PathSpec Fs: %+v", ps.Fs)
+	cfg.Logger.Printf("PathSpec Cfg: %+v", ps.Cfg)
 
 	// TODO
 	//contentSpec, err := helpers.NewContentSpec(cfg.Language, ps.BaseFs.Content.Fs)

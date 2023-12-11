@@ -7,6 +7,7 @@ import (
 	hugoSitesVO "github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject"
 	lang "github.com/dddplayer/hugoverse/internal/domain/language/entity"
 	"github.com/dddplayer/hugoverse/internal/domain/site"
+	"github.com/dddplayer/hugoverse/pkg/log"
 )
 
 // DepsCfg contains configuration options that can be used to configure Hugo
@@ -33,6 +34,8 @@ type DepsCfg struct {
 
 	// Template handling.
 	TemplateProvider deps.ResourceProvider
+
+	Logger log.Logger
 }
 
 func (dc *DepsCfg) Provider() config.Provider {

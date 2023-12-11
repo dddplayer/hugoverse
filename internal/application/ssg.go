@@ -20,9 +20,12 @@ func GenerateStaticSite(projPath string, logger log.Logger) error {
 		return err
 	}
 
-	logger.Printf("theme: %s", provider.GetString("theme"))
-	logger.Printf("modules: %s", provider.Get("modules"))
+	logger.Printf("=-= Section Config: %s", "start ==>")
+	logger.Printf("--- theme: %s", provider.GetString("theme"))
+	logger.Printf("=== modules: %s", provider.Get("modules"))
+	logger.Printf("=-= Section Config: %s", "end <==")
 
+	logger.Printf("=-= Section Site: %s", "start ==>")
 	fs := fsFactory.NewFs(projPath, provider)
 	depsCfg := depsFactory.NewDepsCfg(provider, fs)
 
@@ -31,6 +34,8 @@ func GenerateStaticSite(projPath string, logger log.Logger) error {
 		return err
 	}
 	fmt.Println(hugoSites)
+
+	logger.Printf("=-= Section Site: %s", "end <==")
 
 	return nil
 }

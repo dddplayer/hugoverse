@@ -118,6 +118,7 @@ func applyDeps(cfg *depsVO.DepsCfg, log log.Logger, sites ...*entity.Site) error
 		cfg.Language = s.Language
 		cfg.MediaTypes = s.MediaTypesConfig
 		cfg.OutputFormats = s.OutputFormatsConfig
+		cfg.Logger = log
 
 		log.Printf("applyDeps: %s", "new deps")
 
