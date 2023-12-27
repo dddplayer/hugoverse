@@ -2,6 +2,7 @@ package entity
 
 import (
 	"github.com/dddplayer/hugoverse/internal/domain/config"
+	csEntity "github.com/dddplayer/hugoverse/internal/domain/contentspec/entity"
 	"github.com/dddplayer/hugoverse/internal/domain/deps"
 	hugoSitesVO "github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject"
 	lang "github.com/dddplayer/hugoverse/internal/domain/language/entity"
@@ -25,6 +26,9 @@ type Deps struct {
 
 	// The PathSpec to use
 	PathSpec *psEntity.PathSpec
+
+	// The ContentSpec to use
+	*csEntity.ContentSpec `json:"-"`
 }
 
 func (d *Deps) Tmpl() template.Handler {

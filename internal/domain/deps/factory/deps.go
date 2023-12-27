@@ -3,6 +3,7 @@ package factory
 import (
 	"fmt"
 	"github.com/dddplayer/hugoverse/internal/domain/config"
+	csFactory "github.com/dddplayer/hugoverse/internal/domain/contentspec/factory"
 	"github.com/dddplayer/hugoverse/internal/domain/deps"
 	"github.com/dddplayer/hugoverse/internal/domain/deps/entity"
 	"github.com/dddplayer/hugoverse/internal/domain/deps/valueobject"
@@ -50,12 +51,10 @@ func New(cfg valueobject.DepsCfg) (deps.Deps, error) {
 	cfg.Logger.Printf("PathSpec Fs: %+v", ps.Fs)
 	cfg.Logger.Printf("PathSpec Cfg: %+v", ps.Cfg)
 
-	// TODO
-	//contentSpec, err := helpers.NewContentSpec(cfg.Language, ps.BaseFs.Content.Fs)
-	//if err != nil {
-	//	return nil, err
-	//}
-	//
+	contentSpec, err := csFactory.NewContentSpec(cfg.Language)
+	if err != nil {
+		return nil, err
+	}
 
 	d := &entity.Deps{
 		Cfg:                 cfg.Language,
@@ -64,7 +63,8 @@ func New(cfg valueobject.DepsCfg) (deps.Deps, error) {
 		OutputFormatsConfig: cfg.OutputFormats,
 		TemplateProvider:    cfg.TemplateProvider,
 
-		PathSpec: ps,
+		PathSpec:    ps,
+		ContentSpec: contentSpec,
 	}
 
 	return d, nil
