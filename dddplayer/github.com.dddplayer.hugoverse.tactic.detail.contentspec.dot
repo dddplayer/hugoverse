@@ -1,0 +1,4338 @@
+digraph {
+	node [style=dotted shape=rect]
+
+    subgraph cluster_ddd_concept{
+		node [color=white]
+
+        ddd_concept [label=<
+        <table border="0" cellpadding="10">
+		<tr>
+			<td bgcolor="#ffffff00" rowspan="1" colspan="1">BoundedContext</td>
+			<td bgcolor="#ffd966ff" rowspan="1" colspan="1">AggregateRoot</td>
+			<td bgcolor="#ffe599ff" rowspan="1" colspan="1">Entity</td>
+			<td bgcolor="#a2c4c9ff" rowspan="1" colspan="1">ValueObject</td>
+			<td bgcolor="#e69138ff" rowspan="1" colspan="1">Service</td>
+		</tr>
+		<tr>
+			<td bgcolor="white" rowspan="1" colspan="1"></td>
+			<td bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Command</td>
+			<td bgcolor="#f6b26bff" rowspan="1" colspan="1">Event</td>
+			<td bgcolor="#cfe2f3ff" rowspan="1" colspan="1">Factory</td>
+			<td bgcolor="#b4a7d6ff" rowspan="1" colspan="1">Class</td>
+			
+		</tr>
+		<tr>
+			<td bgcolor="white" rowspan="1" colspan="1"></td>
+			<td bgcolor="#f4ccccff" rowspan="1" colspan="1">General</td>
+			<td bgcolor="#ead1dcff" rowspan="1" colspan="1">Function</td>
+			<td bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Interface</td>
+			<td bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Attribute</td>
+		</tr>
+        </table>
+        > ]
+	}
+
+    
+		subgraph cluster_dUQ30Z {
+	
+		
+    	dUQ30Z [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">hugoverse</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse"
+
+	
+		subgraph cluster_dQal5L {
+	
+		
+    	dQal5L [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcZqAHx" bgcolor="#f4ccccff" rowspan="1" colspan="1">RenderContext</td>
+			<td port="deuaTsk" bgcolor="#f4ccccff" rowspan="1" colspan="1">DocumentContext</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddfgK1A" bgcolor="#ffd966ff" rowspan="1" colspan="1">ContentSpec</td>
+			<td port="dcNjZJU" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Converters</td>
+			<td port="ddAzs8r" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Cfg</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcc9xO7" bgcolor="#ead1dcff" rowspan="1" colspan="1">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddqBMVy" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">ProviderProvider</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddkQiRK" bgcolor="#ead1dcff" rowspan="1" colspan="1">Convert</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dHJeDG" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Converter</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dHvXah" bgcolor="#ead1dcff" rowspan="1" colspan="1">Bytes</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deDLG3T" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Result</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbv8XBu" bgcolor="#ead1dcff" rowspan="1" colspan="1">Get</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddHQivx" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">ConverterRegistry</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="devW5j1" bgcolor="#ead1dcff" rowspan="1" colspan="1">Name</td>
+			<td port="dcIPHHG" bgcolor="#ead1dcff" rowspan="1" colspan="1">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="doqypP" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Provider</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">contentspec</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/contentspec"
+
+	
+		subgraph cluster_dcOkvOz {
+	
+		
+    	dcOkvOz [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcamnEI" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Get</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="djj42j" bgcolor="#ffe599ff" rowspan="1" colspan="1">ConverterRegistry</td>
+			<td port="defRzcp" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Converters</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbCSqPb" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Name</td>
+			<td port="deiu8uQ" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc4BaeJ" bgcolor="#ffe599ff" rowspan="1" colspan="1">ConverterProvider</td>
+			<td port="ddVcqct" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">name</td>
+			<td port="dDEXPo" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">create</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcRx1LZ" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Convert</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbWVQuL" bgcolor="#ffe599ff" rowspan="1" colspan="1">mdConverter</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbSGnVm" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d2DrI7" bgcolor="#ffe599ff" rowspan="1" colspan="1">provide</td>
+			<td port="dfvbNH" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">name</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "contentspec/entity"
+
+	
+    }
+    }
+		subgraph cluster_ddaltgo {
+	
+		
+    	ddaltgo [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db0ygcI" bgcolor="#ffd966ff" rowspan="2" colspan="1">HugoSites</td>
+			<td port="db57M4b" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Deps</td>
+			<td port="dgPR0T" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Sites</td>
+			<td port="dcSmxW5" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Init</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddLSQFg" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">NumWorkers</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">hugosites</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites"
+
+	
+		subgraph cluster_dbyOpe {
+	
+		
+    	dbyOpe [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddgcF8m" bgcolor="#ffe599ff" rowspan="2" colspan="1">Site</td>
+			<td port="dccEg83" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Deps</td>
+			<td port="decaaE7" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">H</td>
+			<td port="dGJzp1" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Language</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbhVPgK" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OutputFormats</td>
+			<td port="d1xuz8" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OutputFormatsConfig</td>
+			<td port="dLrvDC" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">MediaTypesConfig</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dOjUuK" bgcolor="#ffe599ff" rowspan="1" colspan="1">HugoSitesInit</td>
+			<td port="dd8WFvo" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Layouts</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "hugosites/entity"
+
+	
+    }
+		subgraph cluster_db3kXmX {
+	
+		
+    	db3kXmX [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcebHzP" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Type</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc24NLe" bgcolor="#a2c4c9ff" rowspan="1" colspan="1">Type</td>
+			<td port="dedvjks" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">MainType</td>
+			<td port="dex3Jk3" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">SubType</td>
+			<td port="ddkjujc" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Delimiter</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddAqdaj" bgcolor="#a2c4c9ff" rowspan="1" colspan="1">Format</td>
+			<td port="deMwTo1" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Name</td>
+			<td port="db49g02" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">MediaType</td>
+			<td port="dbSwInk" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">BaseName</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">valueobject</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "hugosites/valueobject"
+
+	
+		subgraph cluster_dccG6AA {
+	
+		
+    	dccG6AA [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcSlbaZ" bgcolor="#f4ccccff" rowspan="1" colspan="2">Types</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deznck2" bgcolor="#f4ccccff" rowspan="1" colspan="2">Formats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="7">general</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "hugosites/valueobject/general"
+
+	
+    }
+		subgraph cluster_ddwukoU {
+	
+		
+    	ddwukoU [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcbOvP2" bgcolor="#ead1dcff" rowspan="1" colspan="1">CreateSiteOutputFormats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dqmLWS" bgcolor="#ead1dcff" rowspan="1" colspan="1">DecodeFormats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbqhKC8" bgcolor="#ead1dcff" rowspan="1" colspan="1">newMediaType</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddYnEHi" bgcolor="#ead1dcff" rowspan="1" colspan="2">createDefaultOutputFormats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dFBViT" bgcolor="#ead1dcff" rowspan="1" colspan="2">DecodeTypes</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "hugosites/valueobject/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_demwjcF {
+	
+		
+    	demwjcF [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc6sg9K" bgcolor="#ffd966ff" rowspan="2" colspan="1">PathSpec</td>
+			<td port="dcmgQv7" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Paths</td>
+			<td port="degZeO9" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">BaseFs</td>
+			<td port="db8lZU4" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Fs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddv1e6N" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Cfg</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">pathspec</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/pathspec"
+
+	
+		subgraph cluster_dcSDPdd {
+	
+		
+    	dcSDPdd [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcAH18s" bgcolor="#ffe599ff" rowspan="1" colspan="1">Paths</td>
+			<td port="dd8axE8" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Fs</td>
+			<td port="dAe52Z" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">AllModules</td>
+			<td port="dctnxn3" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">WorkingDir</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "pathspec/entity"
+
+	
+    }
+    }
+		subgraph cluster_dehGEGK {
+	
+		
+    	dehGEGK [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deqwXtb" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">WorkingDirReadOnly</td>
+			<td port="dP7VuH" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">PublishDir</td>
+			<td port="ddGu8W6" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Source</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dBzzq" bgcolor="#ffd966ff" rowspan="1" colspan="1">Fs</td>
+			<td port="dkdoeY" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">source</td>
+			<td port="dbQ60Ab" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">publishDir</td>
+			<td port="dHKmPb" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">workingDirReadOnly</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc6HtgH" bgcolor="#ead1dcff" rowspan="1" colspan="1">WorkingDirReadOnly</td>
+			<td port="duCQkF" bgcolor="#ead1dcff" rowspan="1" colspan="1">PublishDir</td>
+			<td port="deBU6Ge" bgcolor="#ead1dcff" rowspan="1" colspan="1">Source</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dev1CdI" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Fs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="10">fs</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/fs"
+
+	
+		subgraph cluster_dcrBkxD {
+	
+		
+    	dcrBkxD [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddNiqJj" bgcolor="#ead1dcff" rowspan="1" colspan="4">LstatIfPossible</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "fs/entity/Fs/function"
+
+	
+    }
+		subgraph cluster_d2GTbA {
+	
+		
+    	d2GTbA [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="debkWHk" bgcolor="#ffe599ff" rowspan="4" colspan="1">SourceFilesystems</td>
+			<td port="deiv7rq" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Content</td>
+			<td port="dnxmAb" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Data</td>
+			<td port="ddHB34n" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">I18n</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddST7uy" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Layouts</td>
+			<td port="db1k3S5" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Archetypes</td>
+			<td port="dbQin08" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Assets</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbDiPAG" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">ResourcesCache</td>
+			<td port="drjAYK" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Work</td>
+			<td port="dxulst" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Static</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcHZbxT" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">StaticDirs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="derVQnR" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Readdir</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dwtquj" bgcolor="#ffe599ff" rowspan="1" colspan="1">baseFileDecoratorFile</td>
+			<td port="ddT6UPE" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">File</td>
+			<td port="dcw7gh7" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">fs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db8GfFt" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Abs</td>
+			<td port="doCtKQ" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">getRootsWithPrefix</td>
+			<td port="dci9vpr" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Dirs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcupCqA" bgcolor="#ffe599ff" rowspan="2" colspan="1">RootMappingFs</td>
+			<td port="dbrqUma" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Fs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbxeKX7" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Fss</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbtn5Du" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">RootMapToReal</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db4stsZ" bgcolor="#ffe599ff" rowspan="2" colspan="1">SourceFilesystem</td>
+			<td port="dd5CzFb" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Name</td>
+			<td port="d8g9n9" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Fs</td>
+			<td port="ddSgQFg" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Dirs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dd9VAf1" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">PublishFolder</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dpvmeE" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">AddDirs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dd33y4k" bgcolor="#ffe599ff" rowspan="2" colspan="1">FilesystemsCollector</td>
+			<td port="dmej5r" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">SourceProject</td>
+			<td port="dcfdx83" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OverlayMounts</td>
+			<td port="dcg1yFA" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OverlayMountsContent</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbCpHF7" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">addDir</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dNrvxF" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OverlayDirs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d1Op1N" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">LstatIfPossible</td>
+			<td port="db09uQ7" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Stat</td>
+			<td port="dd2OmkL" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">UnwrapFilesystem</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dH8Bt6" bgcolor="#ffe599ff" rowspan="2" colspan="1">BaseFileDecoratorFs</td>
+			<td port="dbAAAIc" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Fs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcHSUyj" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Open</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d8dB0c" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Decorate</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dblbwUB" bgcolor="#ffe599ff" rowspan="2" colspan="1">BaseFs</td>
+			<td port="dbPRB5P" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">SourceFilesystems</td>
+			<td port="deoaVcg" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">SourceFs</td>
+			<td port="dbpHots" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">PublishFs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddNc9cS" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">WorkDir</td>
+			<td port="dbaNYFs" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">TheBigFs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="10">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "fs/entity"
+
+	
+		subgraph cluster_ddII2fp {
+	
+		
+    	ddII2fp [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddzh3Hk" bgcolor="#ead1dcff" rowspan="1" colspan="2">getWorkingDirFsReadOnly</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcVngkc" bgcolor="#ead1dcff" rowspan="1" colspan="2">NewFs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="7">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "fs/entity/function"
+
+	
+    }
+    }
+		subgraph cluster_dddRyrX {
+	
+		
+    	dddRyrX [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dCGvun" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Copy</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddWCIgh" bgcolor="#a2c4c9ff" rowspan="8" colspan="1">FileMeta</td>
+			<td port="dr08UR" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Name</td>
+			<td port="dbVSX09" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Filename</td>
+			<td port="dbCJjqx" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Path</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbkqte0" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Merge</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dWb4hK" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">PathWalk</td>
+			<td port="dbIUVj0" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OriginalFilename</td>
+			<td port="dem5XdA" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">BaseDir</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deLJzYC" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Open</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbDrkph" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">SourceRoot</td>
+			<td port="db1APG1" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">MountRoot</td>
+			<td port="dkBl0q" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Module</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="desqm7C" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">JoinStat</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcPdqTM" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Weight</td>
+			<td port="deiOMHp" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">IsOrdered</td>
+			<td port="dcoOIRL" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">IsSymlink</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddlFaxq" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">IsRootFile</td>
+			<td port="ddqRsvR" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">IsProject</td>
+			<td port="dd5O5xb" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Watch</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbWzAPC" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">SkipDir</td>
+			<td port="deoz0iW" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Lang</td>
+			<td port="dcmU1KT" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">TranslationBaseName</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbglf8O" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">TranslationBaseNameWithExt</td>
+			<td port="dch1uCe" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Translations</td>
+			<td port="ddYgxs3" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Fs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dElt6I" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OpenFunc</td>
+			<td port="ddwjmzQ" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">JoinStatFunc</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db6J349" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Meta</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcGlEaJ" bgcolor="#a2c4c9ff" rowspan="1" colspan="1">fileInfoMeta</td>
+			<td port="dcTJ2jC" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">FileInfo</td>
+			<td port="dezbgiR" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">m</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbuKw8o" bgcolor="#a2c4c9ff" rowspan="2" colspan="1">RootMapping</td>
+			<td port="dmR8EJ" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">From</td>
+			<td port="dccuI1W" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">To</td>
+			<td port="dPghW2" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">ToBasedir</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddG6NcC" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">IsProject</td>
+			<td port="ddcVaG8" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">path</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dLKyG9" bgcolor="#ead1dcff" rowspan="1" colspan="1">Meta</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcnXarr" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">FileMetaInfo</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="10">valueobject</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "fs/valueobject"
+
+	
+		subgraph cluster_dbbWL24 {
+	
+		
+    	dbbWL24 [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dnez5x" bgcolor="#ead1dcff" rowspan="1" colspan="1">DecorateFileInfo</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d6C8Kw" bgcolor="#ead1dcff" rowspan="1" colspan="1">normalizeFilename</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="depacRy" bgcolor="#ead1dcff" rowspan="1" colspan="1">GetRms</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcSoX6f" bgcolor="#ead1dcff" rowspan="1" colspan="2">NewFileMeta</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deD3xu5" bgcolor="#ead1dcff" rowspan="1" colspan="2">NewFileMetaInfo</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "fs/valueobject/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_dctHGkf {
+	
+		
+    	dctHGkf [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddK2640" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">loadConfigFromDisk</td>
+			<td port="dckXbYW" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">loadModules</td>
+			<td port="db2x0eV" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Load</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dco61II" bgcolor="#ffd966ff" rowspan="2" colspan="1">Config</td>
+			<td port="dcF2NpY" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Path</td>
+			<td port="dcJxkvA" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Modules</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db8dWbp" bgcolor="#f4ccccff" rowspan="1" colspan="1">Mount</td>
+			<td port="dcJ2g6" bgcolor="#f4ccccff" rowspan="1" colspan="1">ModuleConfig</td>
+			<td port="dds8Sgr" bgcolor="#f4ccccff" rowspan="1" colspan="1">Import</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="decCI5H" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Logger</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcxrnrE" bgcolor="#ead1dcff" rowspan="1" colspan="1">SetDefaults</td>
+			<td port="dcYRcdm" bgcolor="#ead1dcff" rowspan="1" colspan="1">Set</td>
+			<td port="dTt114" bgcolor="#ead1dcff" rowspan="1" colspan="1">Get</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc7deqD" bgcolor="#9fc5e8ff" rowspan="2" colspan="1">Provider</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deAFAhq" bgcolor="#ead1dcff" rowspan="1" colspan="1">IsSet</td>
+			<td port="dbRqrtf" bgcolor="#ead1dcff" rowspan="1" colspan="1">GetString</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddsDs87" bgcolor="#ead1dcff" rowspan="1" colspan="1">Mounts</td>
+			<td port="dJ7oVA" bgcolor="#ead1dcff" rowspan="1" colspan="1">Owner</td>
+			<td port="dOLanH" bgcolor="#ead1dcff" rowspan="1" colspan="1">Config</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcwtwk0" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Module</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deCpFgh" bgcolor="#ead1dcff" rowspan="1" colspan="1">Layer</td>
+			<td port="dc3bKhL" bgcolor="#ead1dcff" rowspan="1" colspan="1">Base</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dd7Tk1Z" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">CompositeConfig</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="10">config</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/config"
+
+	
+		subgraph cluster_dedfMdt {
+	
+		
+    	dedfMdt [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deARvAw" bgcolor="#f4ccccff" rowspan="1" colspan="2">Params</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddWQQBh" bgcolor="#f4ccccff" rowspan="1" colspan="2">Modules</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="7">general</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "config/entity/Config/general"
+
+	
+    }
+		subgraph cluster_dLI3Vv {
+	
+		
+    	dLI3Vv [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "config/entity"
+
+	
+		subgraph cluster_d97PCi {
+	
+		
+    	d97PCi [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcSLodT" bgcolor="#f4ccccff" rowspan="1" colspan="4">Format</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">general</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "config/entity/general"
+
+	
+    }
+		subgraph cluster_ddRsd1k {
+	
+		
+    	ddRsd1k [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddp1FjC" bgcolor="#ead1dcff" rowspan="1" colspan="2">FormatFromString</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcLWo4o" bgcolor="#ead1dcff" rowspan="1" colspan="2">UnmarshalTo</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="7">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "config/entity/function"
+
+	
+    }
+    }
+		subgraph cluster_dbjiWUc {
+	
+		
+    	dbjiWUc [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbaGVfW" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">add</td>
+			<td port="dePcT4q" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">addAndRecurse</td>
+			<td port="dAAwxA" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">CollectModules</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddJkLV8" bgcolor="#a2c4c9ff" rowspan="1" colspan="1">ModuleCollector</td>
+			<td port="dqgHw4" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Modules</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddPRYGD" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Mounts</td>
+			<td port="dbkZG3x" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Config</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbgAW26" bgcolor="#a2c4c9ff" rowspan="2" colspan="1">moduleAdapter</td>
+			<td port="ddn7udY" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">projectMod</td>
+			<td port="deFcLeA" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">owner</td>
+			<td port="dqLLYv" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">mounts</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dLYLze" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Owner</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddqNUt3" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">config</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddpLmGQ" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">GetString</td>
+			<td port="dbjiorT" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">IsSet</td>
+			<td port="defHcZn" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Get</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcG2zGK" bgcolor="#a2c4c9ff" rowspan="2" colspan="1">CompositeConfig</td>
+			<td port="dcny5Ns" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Base</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcpQcyn" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">SetDefaults</td>
+			<td port="dbEAiKB" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Set</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcZm1kg" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Layer</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deFWscJ" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">getNestedKeyAndMap</td>
+			<td port="drKUNB" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">GetString</td>
+			<td port="dbzoaUq" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Get</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbkVtat" bgcolor="#a2c4c9ff" rowspan="2" colspan="1">DefaultConfigProvider</td>
+			<td port="dbL6RM" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Root</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbinuO4" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">IsSet</td>
+			<td port="ddVelVe" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">SetDefaults</td>
+			<td port="db3VcFg" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Set</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="10">valueobject</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "config/valueobject"
+
+	
+		subgraph cluster_ddVref9 {
+	
+		
+    	ddVref9 [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dblMdE2" bgcolor="#ead1dcff" rowspan="1" colspan="1">IsNil</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="demTJ2" bgcolor="#ead1dcff" rowspan="1" colspan="1">ToParamsAndPrepare</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db0FSv2" bgcolor="#ead1dcff" rowspan="1" colspan="1">PrepareParams</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbhQG7W" bgcolor="#ead1dcff" rowspan="1" colspan="1">ApplyProjectConfigDefaults</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcCtgDq" bgcolor="#ead1dcff" rowspan="1" colspan="1">ToStringMapE</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deFli4o" bgcolor="#ead1dcff" rowspan="1" colspan="1">ToStringE</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db7pasJ" bgcolor="#ead1dcff" rowspan="1" colspan="2">indirectToStringerOrError</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dPIxy2" bgcolor="#ead1dcff" rowspan="1" colspan="2">NewModuleCollector</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "config/valueobject/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_dd3W6xt {
+	
+		
+    	dd3W6xt [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddz2rrG" bgcolor="#ffd966ff" rowspan="3" colspan="1">Language</td>
+			<td port="ddDoa3v" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Lang</td>
+			<td port="dcKdltv" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Weight</td>
+			<td port="dbzffh5" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">ContentDir</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddaBdy3" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Cfg</td>
+			<td port="doBOZs" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">LocalCfg</td>
+			<td port="demCWsA" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Provider</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deIImnI" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">initErr</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">language</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/language"
+
+	
+		subgraph cluster_dbsPqWF {
+	
+		
+    	dbsPqWF [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "language/entity"
+
+	
+		subgraph cluster_dd3H1no {
+	
+		
+    	dd3H1no [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d6HkeR" bgcolor="#f4ccccff" rowspan="1" colspan="4">Languages</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">general</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "language/entity/general"
+
+	
+    }
+		subgraph cluster_dcGdaYC {
+	
+		
+    	dcGdaYC [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddRGpCz" bgcolor="#ead1dcff" rowspan="1" colspan="2">NewDefaultLanguage</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc4yY0u" bgcolor="#ead1dcff" rowspan="1" colspan="2">NewLanguage</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="7">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "language/entity/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_dcsgz25 {
+	
+		
+    	dcsgz25 [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db3an6O" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Tmpl</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d1WLf4" bgcolor="#ffd966ff" rowspan="3" colspan="1">Deps</td>
+			<td port="ddtvEql" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Cfg</td>
+			<td port="d6qL6i" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OutputFormatsConfig</td>
+			<td port="dcO0GAT" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Language</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddYcVlr" bgcolor="#f4ccccff" rowspan="1" colspan="1">TemplateProvider</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dR6z8W" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Site</td>
+			<td port="dGVcRs" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">TemplateProvider</td>
+			<td port="ddIDyw3" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">TemplateHandler</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc9Gz31" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">PathSpec</td>
+			<td port="dF5GNH" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">ContentSpec</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddZdGym" bgcolor="#ead1dcff" rowspan="1" colspan="1">Tmpl</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcHG1bu" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Deps</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d7GOu3" bgcolor="#ead1dcff" rowspan="1" colspan="1">Clone</td>
+			<td port="defNrSp" bgcolor="#ead1dcff" rowspan="1" colspan="1">Update</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dd9IPQX" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">ResourceProvider</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d33u2g" bgcolor="#ead1dcff" rowspan="1" colspan="1">Provider</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcYsGAI" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Cfg</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="9">deps</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/deps"
+
+	
+		subgraph cluster_d76LJT {
+	
+		
+    	d76LJT [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "deps/entity"
+
+	
+    }
+		subgraph cluster_ddWOjsU {
+	
+		
+    	ddWOjsU [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="den807P" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Provider</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dPwrvt" bgcolor="#a2c4c9ff" rowspan="3" colspan="1">DepsCfg</td>
+			<td port="ddhwzpt" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Fs</td>
+			<td port="d9WotI" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Cfg</td>
+			<td port="dcel51d" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Site</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dKmPTk" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Language</td>
+			<td port="db77KmV" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">MediaTypes</td>
+			<td port="dd1TOhN" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OutputFormats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db8Mkr" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">TemplateProvider</td>
+			<td port="dna5R8" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Logger</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">valueobject</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "deps/valueobject"
+
+	
+    }
+    }
+		subgraph cluster_dcfkkVV {
+	
+		
+    	dcfkkVV [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcz4kLe" bgcolor="#ffd966ff" rowspan="1" colspan="1">Template</td>
+			<td port="debcBdU" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">name</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbyOCU8" bgcolor="#ead1dcff" rowspan="1" colspan="1">GetFunc</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deNHnMH" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">FuncGetter</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddQJgBK" bgcolor="#ead1dcff" rowspan="1" colspan="1">Prepare</td>
+			<td port="dbsfANU" bgcolor="#ead1dcff" rowspan="1" colspan="1">Name</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddxnV9C" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Template</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcSKhgH" bgcolor="#ead1dcff" rowspan="1" colspan="1">Lookup</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddMVrmU" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Lookup</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dgDeJx" bgcolor="#ead1dcff" rowspan="1" colspan="1">HasTemplate</td>
+			<td port="dbpQi8d" bgcolor="#ead1dcff" rowspan="1" colspan="1">ExecuteWithContext</td>
+			<td port="ddmqVfo" bgcolor="#ead1dcff" rowspan="1" colspan="1">Execute</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbNRDJ6" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Handler</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcewgSS" bgcolor="#ead1dcff" rowspan="1" colspan="1">MarkReady</td>
+			<td port="dc8de3J" bgcolor="#ead1dcff" rowspan="1" colspan="1">AddTemplate</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbGql7T" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Manager</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">template</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/template"
+
+	
+		subgraph cluster_dcb31pz {
+	
+		
+    	dcb31pz [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddXpoTx" bgcolor="#ffe599ff" rowspan="1" colspan="1">TextTemplate</td>
+			<td port="dbRL8BZ" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">name</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "template/entity"
+
+	
+    }
+    }
+    }
+		subgraph cluster_dQal5L {
+	
+		
+    	dQal5L [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcZqAHx" bgcolor="#f4ccccff" rowspan="1" colspan="1">RenderContext</td>
+			<td port="deuaTsk" bgcolor="#f4ccccff" rowspan="1" colspan="1">DocumentContext</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddfgK1A" bgcolor="#ffd966ff" rowspan="1" colspan="1">ContentSpec</td>
+			<td port="dcNjZJU" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Converters</td>
+			<td port="ddAzs8r" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Cfg</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcc9xO7" bgcolor="#ead1dcff" rowspan="1" colspan="1">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddqBMVy" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">ProviderProvider</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddkQiRK" bgcolor="#ead1dcff" rowspan="1" colspan="1">Convert</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dHJeDG" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Converter</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dHvXah" bgcolor="#ead1dcff" rowspan="1" colspan="1">Bytes</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deDLG3T" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Result</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbv8XBu" bgcolor="#ead1dcff" rowspan="1" colspan="1">Get</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddHQivx" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">ConverterRegistry</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="devW5j1" bgcolor="#ead1dcff" rowspan="1" colspan="1">Name</td>
+			<td port="dcIPHHG" bgcolor="#ead1dcff" rowspan="1" colspan="1">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="doqypP" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Provider</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">contentspec</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/contentspec"
+
+	
+		subgraph cluster_dcOkvOz {
+	
+		
+    	dcOkvOz [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcamnEI" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Get</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="djj42j" bgcolor="#ffe599ff" rowspan="1" colspan="1">ConverterRegistry</td>
+			<td port="defRzcp" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Converters</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbCSqPb" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Name</td>
+			<td port="deiu8uQ" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc4BaeJ" bgcolor="#ffe599ff" rowspan="1" colspan="1">ConverterProvider</td>
+			<td port="ddVcqct" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">name</td>
+			<td port="dDEXPo" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">create</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcRx1LZ" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Convert</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbWVQuL" bgcolor="#ffe599ff" rowspan="1" colspan="1">mdConverter</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbSGnVm" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">New</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d2DrI7" bgcolor="#ffe599ff" rowspan="1" colspan="1">provide</td>
+			<td port="dfvbNH" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">name</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "contentspec/entity"
+
+	
+    }
+    }
+		subgraph cluster_ddaltgo {
+	
+		
+    	ddaltgo [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db0ygcI" bgcolor="#ffd966ff" rowspan="2" colspan="1">HugoSites</td>
+			<td port="db57M4b" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Deps</td>
+			<td port="dgPR0T" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Sites</td>
+			<td port="dcSmxW5" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Init</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddLSQFg" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">NumWorkers</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">hugosites</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/hugosites"
+
+	
+		subgraph cluster_dbyOpe {
+	
+		
+    	dbyOpe [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddgcF8m" bgcolor="#ffe599ff" rowspan="2" colspan="1">Site</td>
+			<td port="dccEg83" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Deps</td>
+			<td port="decaaE7" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">H</td>
+			<td port="dGJzp1" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Language</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbhVPgK" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OutputFormats</td>
+			<td port="d1xuz8" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OutputFormatsConfig</td>
+			<td port="dLrvDC" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">MediaTypesConfig</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dOjUuK" bgcolor="#ffe599ff" rowspan="1" colspan="1">HugoSitesInit</td>
+			<td port="dd8WFvo" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Layouts</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "hugosites/entity"
+
+	
+    }
+		subgraph cluster_db3kXmX {
+	
+		
+    	db3kXmX [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcebHzP" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Type</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc24NLe" bgcolor="#a2c4c9ff" rowspan="1" colspan="1">Type</td>
+			<td port="dedvjks" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">MainType</td>
+			<td port="dex3Jk3" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">SubType</td>
+			<td port="ddkjujc" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Delimiter</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddAqdaj" bgcolor="#a2c4c9ff" rowspan="1" colspan="1">Format</td>
+			<td port="deMwTo1" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Name</td>
+			<td port="db49g02" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">MediaType</td>
+			<td port="dbSwInk" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">BaseName</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">valueobject</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "hugosites/valueobject"
+
+	
+		subgraph cluster_dccG6AA {
+	
+		
+    	dccG6AA [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcSlbaZ" bgcolor="#f4ccccff" rowspan="1" colspan="2">Types</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deznck2" bgcolor="#f4ccccff" rowspan="1" colspan="2">Formats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="7">general</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "hugosites/valueobject/general"
+
+	
+    }
+		subgraph cluster_ddwukoU {
+	
+		
+    	ddwukoU [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcbOvP2" bgcolor="#ead1dcff" rowspan="1" colspan="1">CreateSiteOutputFormats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dqmLWS" bgcolor="#ead1dcff" rowspan="1" colspan="1">DecodeFormats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbqhKC8" bgcolor="#ead1dcff" rowspan="1" colspan="1">newMediaType</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddYnEHi" bgcolor="#ead1dcff" rowspan="1" colspan="2">createDefaultOutputFormats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dFBViT" bgcolor="#ead1dcff" rowspan="1" colspan="2">DecodeTypes</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "hugosites/valueobject/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_demwjcF {
+	
+		
+    	demwjcF [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc6sg9K" bgcolor="#ffd966ff" rowspan="2" colspan="1">PathSpec</td>
+			<td port="dcmgQv7" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Paths</td>
+			<td port="degZeO9" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">BaseFs</td>
+			<td port="db8lZU4" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Fs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddv1e6N" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Cfg</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">pathspec</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/pathspec"
+
+	
+		subgraph cluster_dcSDPdd {
+	
+		
+    	dcSDPdd [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcAH18s" bgcolor="#ffe599ff" rowspan="1" colspan="1">Paths</td>
+			<td port="dd8axE8" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Fs</td>
+			<td port="dAe52Z" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">AllModules</td>
+			<td port="dctnxn3" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">WorkingDir</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "pathspec/entity"
+
+	
+    }
+    }
+		subgraph cluster_dehGEGK {
+	
+		
+    	dehGEGK [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deqwXtb" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">WorkingDirReadOnly</td>
+			<td port="dP7VuH" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">PublishDir</td>
+			<td port="ddGu8W6" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Source</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dBzzq" bgcolor="#ffd966ff" rowspan="1" colspan="1">Fs</td>
+			<td port="dkdoeY" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">source</td>
+			<td port="dbQ60Ab" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">publishDir</td>
+			<td port="dHKmPb" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">workingDirReadOnly</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc6HtgH" bgcolor="#ead1dcff" rowspan="1" colspan="1">WorkingDirReadOnly</td>
+			<td port="duCQkF" bgcolor="#ead1dcff" rowspan="1" colspan="1">PublishDir</td>
+			<td port="deBU6Ge" bgcolor="#ead1dcff" rowspan="1" colspan="1">Source</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dev1CdI" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Fs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="10">fs</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/fs"
+
+	
+		subgraph cluster_dcrBkxD {
+	
+		
+    	dcrBkxD [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddNiqJj" bgcolor="#ead1dcff" rowspan="1" colspan="4">LstatIfPossible</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "fs/entity/Fs/function"
+
+	
+    }
+		subgraph cluster_d2GTbA {
+	
+		
+    	d2GTbA [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="debkWHk" bgcolor="#ffe599ff" rowspan="4" colspan="1">SourceFilesystems</td>
+			<td port="deiv7rq" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Content</td>
+			<td port="dnxmAb" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Data</td>
+			<td port="ddHB34n" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">I18n</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddST7uy" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Layouts</td>
+			<td port="db1k3S5" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Archetypes</td>
+			<td port="dbQin08" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Assets</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbDiPAG" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">ResourcesCache</td>
+			<td port="drjAYK" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Work</td>
+			<td port="dxulst" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Static</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcHZbxT" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">StaticDirs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="derVQnR" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Readdir</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dwtquj" bgcolor="#ffe599ff" rowspan="1" colspan="1">baseFileDecoratorFile</td>
+			<td port="ddT6UPE" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">File</td>
+			<td port="dcw7gh7" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">fs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db8GfFt" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Abs</td>
+			<td port="doCtKQ" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">getRootsWithPrefix</td>
+			<td port="dci9vpr" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Dirs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcupCqA" bgcolor="#ffe599ff" rowspan="2" colspan="1">RootMappingFs</td>
+			<td port="dbrqUma" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Fs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbxeKX7" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Fss</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbtn5Du" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">RootMapToReal</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db4stsZ" bgcolor="#ffe599ff" rowspan="2" colspan="1">SourceFilesystem</td>
+			<td port="dd5CzFb" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Name</td>
+			<td port="d8g9n9" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Fs</td>
+			<td port="ddSgQFg" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Dirs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dd9VAf1" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">PublishFolder</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dpvmeE" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">AddDirs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dd33y4k" bgcolor="#ffe599ff" rowspan="2" colspan="1">FilesystemsCollector</td>
+			<td port="dmej5r" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">SourceProject</td>
+			<td port="dcfdx83" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OverlayMounts</td>
+			<td port="dcg1yFA" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OverlayMountsContent</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbCpHF7" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">addDir</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dNrvxF" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OverlayDirs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d1Op1N" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">LstatIfPossible</td>
+			<td port="db09uQ7" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Stat</td>
+			<td port="dd2OmkL" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">UnwrapFilesystem</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dH8Bt6" bgcolor="#ffe599ff" rowspan="2" colspan="1">BaseFileDecoratorFs</td>
+			<td port="dbAAAIc" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Fs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcHSUyj" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Open</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d8dB0c" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Decorate</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dblbwUB" bgcolor="#ffe599ff" rowspan="2" colspan="1">BaseFs</td>
+			<td port="dbPRB5P" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">SourceFilesystems</td>
+			<td port="deoaVcg" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">SourceFs</td>
+			<td port="dbpHots" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">PublishFs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddNc9cS" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">WorkDir</td>
+			<td port="dbaNYFs" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">TheBigFs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="10">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "fs/entity"
+
+	
+		subgraph cluster_ddII2fp {
+	
+		
+    	ddII2fp [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddzh3Hk" bgcolor="#ead1dcff" rowspan="1" colspan="2">getWorkingDirFsReadOnly</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcVngkc" bgcolor="#ead1dcff" rowspan="1" colspan="2">NewFs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="7">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "fs/entity/function"
+
+	
+    }
+    }
+		subgraph cluster_dddRyrX {
+	
+		
+    	dddRyrX [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dCGvun" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Copy</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddWCIgh" bgcolor="#a2c4c9ff" rowspan="8" colspan="1">FileMeta</td>
+			<td port="dr08UR" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Name</td>
+			<td port="dbVSX09" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Filename</td>
+			<td port="dbCJjqx" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Path</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbkqte0" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Merge</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dWb4hK" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">PathWalk</td>
+			<td port="dbIUVj0" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OriginalFilename</td>
+			<td port="dem5XdA" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">BaseDir</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deLJzYC" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Open</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbDrkph" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">SourceRoot</td>
+			<td port="db1APG1" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">MountRoot</td>
+			<td port="dkBl0q" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Module</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="desqm7C" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">JoinStat</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcPdqTM" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Weight</td>
+			<td port="deiOMHp" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">IsOrdered</td>
+			<td port="dcoOIRL" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">IsSymlink</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddlFaxq" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">IsRootFile</td>
+			<td port="ddqRsvR" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">IsProject</td>
+			<td port="dd5O5xb" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Watch</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbWzAPC" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">SkipDir</td>
+			<td port="deoz0iW" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Lang</td>
+			<td port="dcmU1KT" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">TranslationBaseName</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbglf8O" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">TranslationBaseNameWithExt</td>
+			<td port="dch1uCe" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Translations</td>
+			<td port="ddYgxs3" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Fs</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dElt6I" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OpenFunc</td>
+			<td port="ddwjmzQ" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">JoinStatFunc</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db6J349" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Meta</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcGlEaJ" bgcolor="#a2c4c9ff" rowspan="1" colspan="1">fileInfoMeta</td>
+			<td port="dcTJ2jC" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">FileInfo</td>
+			<td port="dezbgiR" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">m</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbuKw8o" bgcolor="#a2c4c9ff" rowspan="2" colspan="1">RootMapping</td>
+			<td port="dmR8EJ" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">From</td>
+			<td port="dccuI1W" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">To</td>
+			<td port="dPghW2" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">ToBasedir</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddG6NcC" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">IsProject</td>
+			<td port="ddcVaG8" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">path</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dLKyG9" bgcolor="#ead1dcff" rowspan="1" colspan="1">Meta</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcnXarr" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">FileMetaInfo</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="10">valueobject</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "fs/valueobject"
+
+	
+		subgraph cluster_dbbWL24 {
+	
+		
+    	dbbWL24 [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dnez5x" bgcolor="#ead1dcff" rowspan="1" colspan="1">DecorateFileInfo</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d6C8Kw" bgcolor="#ead1dcff" rowspan="1" colspan="1">normalizeFilename</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="depacRy" bgcolor="#ead1dcff" rowspan="1" colspan="1">GetRms</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcSoX6f" bgcolor="#ead1dcff" rowspan="1" colspan="2">NewFileMeta</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deD3xu5" bgcolor="#ead1dcff" rowspan="1" colspan="2">NewFileMetaInfo</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "fs/valueobject/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_dctHGkf {
+	
+		
+    	dctHGkf [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddK2640" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">loadConfigFromDisk</td>
+			<td port="dckXbYW" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">loadModules</td>
+			<td port="db2x0eV" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Load</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dco61II" bgcolor="#ffd966ff" rowspan="2" colspan="1">Config</td>
+			<td port="dcF2NpY" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Path</td>
+			<td port="dcJxkvA" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Modules</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db8dWbp" bgcolor="#f4ccccff" rowspan="1" colspan="1">Mount</td>
+			<td port="dcJ2g6" bgcolor="#f4ccccff" rowspan="1" colspan="1">ModuleConfig</td>
+			<td port="dds8Sgr" bgcolor="#f4ccccff" rowspan="1" colspan="1">Import</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="decCI5H" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Logger</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcxrnrE" bgcolor="#ead1dcff" rowspan="1" colspan="1">SetDefaults</td>
+			<td port="dcYRcdm" bgcolor="#ead1dcff" rowspan="1" colspan="1">Set</td>
+			<td port="dTt114" bgcolor="#ead1dcff" rowspan="1" colspan="1">Get</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc7deqD" bgcolor="#9fc5e8ff" rowspan="2" colspan="1">Provider</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deAFAhq" bgcolor="#ead1dcff" rowspan="1" colspan="1">IsSet</td>
+			<td port="dbRqrtf" bgcolor="#ead1dcff" rowspan="1" colspan="1">GetString</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddsDs87" bgcolor="#ead1dcff" rowspan="1" colspan="1">Mounts</td>
+			<td port="dJ7oVA" bgcolor="#ead1dcff" rowspan="1" colspan="1">Owner</td>
+			<td port="dOLanH" bgcolor="#ead1dcff" rowspan="1" colspan="1">Config</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcwtwk0" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Module</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deCpFgh" bgcolor="#ead1dcff" rowspan="1" colspan="1">Layer</td>
+			<td port="dc3bKhL" bgcolor="#ead1dcff" rowspan="1" colspan="1">Base</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dd7Tk1Z" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">CompositeConfig</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="10">config</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/config"
+
+	
+		subgraph cluster_dedfMdt {
+	
+		
+    	dedfMdt [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deARvAw" bgcolor="#f4ccccff" rowspan="1" colspan="2">Params</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddWQQBh" bgcolor="#f4ccccff" rowspan="1" colspan="2">Modules</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="7">general</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "config/entity/Config/general"
+
+	
+    }
+		subgraph cluster_dLI3Vv {
+	
+		
+    	dLI3Vv [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "config/entity"
+
+	
+		subgraph cluster_d97PCi {
+	
+		
+    	d97PCi [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcSLodT" bgcolor="#f4ccccff" rowspan="1" colspan="4">Format</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">general</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "config/entity/general"
+
+	
+    }
+		subgraph cluster_ddRsd1k {
+	
+		
+    	ddRsd1k [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddp1FjC" bgcolor="#ead1dcff" rowspan="1" colspan="2">FormatFromString</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcLWo4o" bgcolor="#ead1dcff" rowspan="1" colspan="2">UnmarshalTo</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="7">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "config/entity/function"
+
+	
+    }
+    }
+		subgraph cluster_dbjiWUc {
+	
+		
+    	dbjiWUc [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbaGVfW" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">add</td>
+			<td port="dePcT4q" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">addAndRecurse</td>
+			<td port="dAAwxA" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">CollectModules</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddJkLV8" bgcolor="#a2c4c9ff" rowspan="1" colspan="1">ModuleCollector</td>
+			<td port="dqgHw4" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Modules</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddPRYGD" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Mounts</td>
+			<td port="dbkZG3x" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Config</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbgAW26" bgcolor="#a2c4c9ff" rowspan="2" colspan="1">moduleAdapter</td>
+			<td port="ddn7udY" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">projectMod</td>
+			<td port="deFcLeA" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">owner</td>
+			<td port="dqLLYv" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">mounts</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dLYLze" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Owner</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddqNUt3" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">config</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddpLmGQ" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">GetString</td>
+			<td port="dbjiorT" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">IsSet</td>
+			<td port="defHcZn" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Get</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcG2zGK" bgcolor="#a2c4c9ff" rowspan="2" colspan="1">CompositeConfig</td>
+			<td port="dcny5Ns" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Base</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcpQcyn" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">SetDefaults</td>
+			<td port="dbEAiKB" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Set</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcZm1kg" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Layer</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deFWscJ" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">getNestedKeyAndMap</td>
+			<td port="drKUNB" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">GetString</td>
+			<td port="dbzoaUq" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Get</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbkVtat" bgcolor="#a2c4c9ff" rowspan="2" colspan="1">DefaultConfigProvider</td>
+			<td port="dbL6RM" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Root</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbinuO4" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">IsSet</td>
+			<td port="ddVelVe" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">SetDefaults</td>
+			<td port="db3VcFg" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Set</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="10">valueobject</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "config/valueobject"
+
+	
+		subgraph cluster_ddVref9 {
+	
+		
+    	ddVref9 [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dblMdE2" bgcolor="#ead1dcff" rowspan="1" colspan="1">IsNil</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="demTJ2" bgcolor="#ead1dcff" rowspan="1" colspan="1">ToParamsAndPrepare</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db0FSv2" bgcolor="#ead1dcff" rowspan="1" colspan="1">PrepareParams</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbhQG7W" bgcolor="#ead1dcff" rowspan="1" colspan="1">ApplyProjectConfigDefaults</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcCtgDq" bgcolor="#ead1dcff" rowspan="1" colspan="1">ToStringMapE</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deFli4o" bgcolor="#ead1dcff" rowspan="1" colspan="1">ToStringE</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db7pasJ" bgcolor="#ead1dcff" rowspan="1" colspan="2">indirectToStringerOrError</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dPIxy2" bgcolor="#ead1dcff" rowspan="1" colspan="2">NewModuleCollector</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "config/valueobject/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_dd3W6xt {
+	
+		
+    	dd3W6xt [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddz2rrG" bgcolor="#ffd966ff" rowspan="3" colspan="1">Language</td>
+			<td port="ddDoa3v" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Lang</td>
+			<td port="dcKdltv" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Weight</td>
+			<td port="dbzffh5" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">ContentDir</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddaBdy3" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Cfg</td>
+			<td port="doBOZs" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">LocalCfg</td>
+			<td port="demCWsA" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Provider</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deIImnI" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">initErr</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">language</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/language"
+
+	
+		subgraph cluster_dbsPqWF {
+	
+		
+    	dbsPqWF [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "language/entity"
+
+	
+		subgraph cluster_dd3H1no {
+	
+		
+    	dd3H1no [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d6HkeR" bgcolor="#f4ccccff" rowspan="1" colspan="4">Languages</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">general</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "language/entity/general"
+
+	
+    }
+		subgraph cluster_dcGdaYC {
+	
+		
+    	dcGdaYC [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddRGpCz" bgcolor="#ead1dcff" rowspan="1" colspan="2">NewDefaultLanguage</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc4yY0u" bgcolor="#ead1dcff" rowspan="1" colspan="2">NewLanguage</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="7">function</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "language/entity/function"
+
+	
+    }
+    }
+    }
+		subgraph cluster_dcsgz25 {
+	
+		
+    	dcsgz25 [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db3an6O" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Tmpl</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d1WLf4" bgcolor="#ffd966ff" rowspan="3" colspan="1">Deps</td>
+			<td port="ddtvEql" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Cfg</td>
+			<td port="d6qL6i" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OutputFormatsConfig</td>
+			<td port="dcO0GAT" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Language</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddYcVlr" bgcolor="#f4ccccff" rowspan="1" colspan="1">TemplateProvider</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dR6z8W" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Site</td>
+			<td port="dGVcRs" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">TemplateProvider</td>
+			<td port="ddIDyw3" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">TemplateHandler</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dc9Gz31" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">PathSpec</td>
+			<td port="dF5GNH" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">ContentSpec</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddZdGym" bgcolor="#ead1dcff" rowspan="1" colspan="1">Tmpl</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcHG1bu" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Deps</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d7GOu3" bgcolor="#ead1dcff" rowspan="1" colspan="1">Clone</td>
+			<td port="defNrSp" bgcolor="#ead1dcff" rowspan="1" colspan="1">Update</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dd9IPQX" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">ResourceProvider</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="d33u2g" bgcolor="#ead1dcff" rowspan="1" colspan="1">Provider</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcYsGAI" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Cfg</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="9">deps</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/deps"
+
+	
+		subgraph cluster_d76LJT {
+	
+		
+    	d76LJT [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "deps/entity"
+
+	
+    }
+		subgraph cluster_ddWOjsU {
+	
+		
+    	ddWOjsU [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="den807P" bgcolor="#a4c2f4ff" rowspan="1" colspan="1">Provider</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dPwrvt" bgcolor="#a2c4c9ff" rowspan="3" colspan="1">DepsCfg</td>
+			<td port="ddhwzpt" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Fs</td>
+			<td port="d9WotI" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Cfg</td>
+			<td port="dcel51d" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Site</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dKmPTk" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Language</td>
+			<td port="db77KmV" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">MediaTypes</td>
+			<td port="dd1TOhN" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">OutputFormats</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="db8Mkr" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">TemplateProvider</td>
+			<td port="dna5R8" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">Logger</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">valueobject</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "deps/valueobject"
+
+	
+    }
+    }
+		subgraph cluster_dcfkkVV {
+	
+		
+    	dcfkkVV [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcz4kLe" bgcolor="#ffd966ff" rowspan="1" colspan="1">Template</td>
+			<td port="debcBdU" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">name</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbyOCU8" bgcolor="#ead1dcff" rowspan="1" colspan="1">GetFunc</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="deNHnMH" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">FuncGetter</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddQJgBK" bgcolor="#ead1dcff" rowspan="1" colspan="1">Prepare</td>
+			<td port="dbsfANU" bgcolor="#ead1dcff" rowspan="1" colspan="1">Name</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddxnV9C" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Template</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcSKhgH" bgcolor="#ead1dcff" rowspan="1" colspan="1">Lookup</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddMVrmU" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Lookup</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dgDeJx" bgcolor="#ead1dcff" rowspan="1" colspan="1">HasTemplate</td>
+			<td port="dbpQi8d" bgcolor="#ead1dcff" rowspan="1" colspan="1">ExecuteWithContext</td>
+			<td port="ddmqVfo" bgcolor="#ead1dcff" rowspan="1" colspan="1">Execute</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbNRDJ6" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Handler</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dcewgSS" bgcolor="#ead1dcff" rowspan="1" colspan="1">MarkReady</td>
+			<td port="dc8de3J" bgcolor="#ead1dcff" rowspan="1" colspan="1">AddTemplate</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="dbGql7T" bgcolor="#9fc5e8ff" rowspan="1" colspan="1">Manager</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="8">template</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "github.com/dddplayer/hugoverse/internal/domain/template"
+
+	
+		subgraph cluster_dcb31pz {
+	
+		
+    	dcb31pz [label=<
+        <table border="0" cellpadding="10">
+			
+				<tr>
+		
+			<td port="first_blank_row" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+			<td port="ddXpoTx" bgcolor="#ffe599ff" rowspan="1" colspan="1">TextTemplate</td>
+			<td port="dbRL8BZ" bgcolor="#f3f3f3ff" rowspan="1" colspan="1">name</td>
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="1"></td>
+	</tr>
+				<tr>
+		
+			<td port="" bgcolor="white" rowspan="1" colspan="6">entity</td>
+	</tr>
+        </table>
+        > ]
+	
+
+	label = "template/entity"
+
+	
+    }
+    }
+
+	
+		ddaltgo:db57M4b -> dcsgz25:dcHG1bu  [style=dotted arrowhead=normal label="1" tooltip="HugoSites.Deps -> Deps: \n\nFrom: hugosites.go (Line: 8, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dctHGkf:dcJxkvA -> dedfMdt:ddWQQBh  [style=dotted arrowhead=normal label="1" tooltip="Config.Modules -> Modules: \n\nFrom: config.go (Line: 27, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dbyOpe:ddgcF8m -> dcsgz25:dcHG1bu  [style=dotted arrowhead=normal label="1" tooltip="Site -> Deps: \n\nFrom: site.go (Line: 9, Column: 6) To: type.go (Line: 8, Column: 6)\n"]
+		ddII2fp:dcVngkc -> ddII2fp:ddzh3Hk  [style=solid arrowhead=normal label="1" tooltip="NewFs -> getWorkingDirFsReadOnly: \n\nFrom: fs.go (Line: 41, Column: 46) To: fs.go (Line: 57, Column: 6)\n"]
+		dbyOpe:dGJzp1 -> dd3W6xt:ddz2rrG  [style=dotted arrowhead=normal label="1" tooltip="Site.Language -> Language: \n\nFrom: site.go (Line: 16, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		demwjcF:dcmgQv7 -> dcSDPdd:dcAH18s  [style=dotted arrowhead=normal label="1" tooltip="PathSpec.Paths -> Paths: \n\nFrom: pathspec.go (Line: 11, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		d2GTbA:ddST7uy -> d2GTbA:db4stsZ  [style=dotted arrowhead=normal label="1" tooltip="SourceFilesystems.Layouts -> SourceFilesystem: \n\nFrom: sourcefs.go (Line: 15, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		demwjcF:dc6sg9K -> dcSDPdd  [style=dotted arrowhead=diamond label="1" tooltip="PathSpec -> entity: \n\n"]
+		dbjiWUc:ddqNUt3 -> dctHGkf:dcJ2g6  [style=dotted arrowhead=normal label="1" tooltip="moduleAdapter.config -> ModuleConfig: \n\nFrom: module.go (Line: 10, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dQal5L:ddfgK1A -> dQal5L:ddqBMVy  [style=dotted arrowhead=diamond label="1" tooltip="ContentSpec -> ProviderProvider: \n\n"]
+		dQal5L:ddfgK1A -> dQal5L:dHJeDG  [style=dotted arrowhead=diamond label="1" tooltip="ContentSpec -> Converter: \n\n"]
+		ddaltgo:dcSmxW5 -> dbyOpe:dOjUuK  [style=dotted arrowhead=normal label="1" tooltip="HugoSites.Init -> HugoSitesInit: \n\nFrom: hugosites.go (Line: 11, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dcsgz25:d1WLf4 -> dcsgz25:dcHG1bu  [style=dotted arrowhead=normal label="1" tooltip="Deps -> Deps: \n\nFrom: deps.go (Line: 14, Column: 6) To: type.go (Line: 8, Column: 6)\n"]
+		dd3W6xt:ddaBdy3 -> dctHGkf:dc7deqD  [style=dotted arrowhead=normal label="1" tooltip="Language.Cfg -> Provider: \n\nFrom: language.go (Line: 22, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		ddVref9:demTJ2 -> ddVref9:db0FSv2  [style=solid arrowhead=normal label="1" tooltip="ToParamsAndPrepare -> PrepareParams: \n\nFrom: provider.go (Line: 107, Column: 15) To: provider.go (Line: 150, Column: 6)\n"]
+		ddWOjsU:db8Mkr -> dcsgz25:dd9IPQX  [style=dotted arrowhead=normal label="1" tooltip="DepsCfg.TemplateProvider -> ResourceProvider: \n\nFrom: cfg.go (Line: 36, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dLI3Vv -> ddRsd1k  [style=dotted arrowhead=normal label="1" tooltip="entity -> function: \n\n"]
+		dbjiWUc:drKUNB -> ddVref9:deFli4o  [style=solid arrowhead=normal label="1" tooltip="DefaultConfigProvider.GetString -> ToStringE: \n\nFrom: provider.go (Line: 36, Column: 19) To: provider.go (Line: 179, Column: 6)\n"]
+		dcsgz25:ddtvEql -> dctHGkf:dc7deqD  [style=dotted arrowhead=normal label="1" tooltip="Deps.Cfg -> Provider: \n\nFrom: deps.go (Line: 15, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dUQ30Z -> dcfkkVV:dcz4kLe  [style=dotted arrowhead=diamond label="1" tooltip="hugoverse -> Template: \n\n"]
+		dbsPqWF -> dd3H1no  [style=dotted arrowhead=normal label="1" tooltip="entity -> general: \n\n"]
+		ddwukoU:dFBViT -> db3kXmX:dcebHzP  [style=solid arrowhead=normal label="1" tooltip="DecodeTypes -> Type.Type: \n\nFrom: type.go (Line: 56, Column: 14) To: type.go (Line: 20, Column: 15)\n"]
+		db3kXmX -> ddwukoU  [style=dotted arrowhead=normal label="1" tooltip="valueobject -> function: \n\n"]
+		d2GTbA:dcw7gh7 -> d2GTbA:dH8Bt6  [style=dotted arrowhead=normal label="1" tooltip="baseFileDecoratorFile.fs -> BaseFileDecoratorFs: \n\nFrom: basefiledecoratorfs.go (Line: 61, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dUQ30Z -> dehGEGK:dBzzq  [style=dotted arrowhead=diamond label="1" tooltip="hugoverse -> Fs: \n\n"]
+		dctHGkf:ddK2640 -> ddRsd1k:ddp1FjC  [style=solid arrowhead=normal label="1" tooltip="Config.loadConfigFromDisk -> FormatFromString: \n\nFrom: config.go (Line: 87, Column: 28) To: config.go (Line: 100, Column: 6)\n"]
+		dQal5L:ddfgK1A -> dQal5L:deuaTsk  [style=dotted arrowhead=diamond label="1" tooltip="ContentSpec -> DocumentContext: \n\n"]
+		ddaltgo:db0ygcI -> db3kXmX  [style=dotted arrowhead=diamond label="1" tooltip="HugoSites -> valueobject: \n\n"]
+		demwjcF:degZeO9 -> d2GTbA:dblbwUB  [style=dotted arrowhead=normal label="1" tooltip="PathSpec.BaseFs -> BaseFs: \n\nFrom: pathspec.go (Line: 12, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		d2GTbA:db8GfFt -> dbbWL24:depacRy  [style=solid arrowhead=normal label="1" tooltip="RootMappingFs.Abs -> GetRms: \n\nFrom: rootmappingfs.go (Line: 52, Column: 32) To: rootmapping.go (Line: 20, Column: 6)\n"]
+		dddRyrX -> dbbWL24  [style=dotted arrowhead=normal label="1" tooltip="valueobject -> function: \n\n"]
+		ddVref9:demTJ2 -> ddVref9:dblMdE2  [style=solid arrowhead=normal label="1" tooltip="ToParamsAndPrepare -> IsNil: \n\nFrom: provider.go (Line: 100, Column: 10) To: provider.go (Line: 112, Column: 6)\n"]
+		dbjiWUc -> ddVref9  [style=dotted arrowhead=normal label="1" tooltip="valueobject -> function: \n\n"]
+		dcsgz25:d1WLf4 -> dcsgz25:dcHG1bu  [style=dotted arrowhead=diamond label="1" tooltip="Deps -> Deps: \n\n"]
+		dcOkvOz:dbWVQuL -> dQal5L:dHJeDG  [style=dotted arrowhead=normal label="1" tooltip="mdConverter -> Converter: \n\nFrom: markdown.go (Line: 26, Column: 6) To: type.go (Line: 28, Column: 6)\n"]
+		dd3W6xt:doBOZs -> dctHGkf:dc7deqD  [style=dotted arrowhead=normal label="1" tooltip="Language.LocalCfg -> Provider: \n\nFrom: language.go (Line: 26, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		d2GTbA:dpvmeE -> d2GTbA:dbCpHF7  [style=solid arrowhead=normal label="1" tooltip="FilesystemsCollector.AddDirs -> FilesystemsCollector.addDir: \n\nFrom: filesystemscollector.go (Line: 23, Column: 11) To: filesystemscollector.go (Line: 27, Column: 32)\n"]
+		dd3W6xt:demCWsA -> dctHGkf:dc7deqD  [style=dotted arrowhead=normal label="1" tooltip="Language.Provider -> Provider: \n\nFrom: language.go (Line: 30, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dd3W6xt:ddz2rrG -> dbsPqWF  [style=dotted arrowhead=diamond label="1" tooltip="Language -> entity: \n\n"]
+		db3kXmX -> dccG6AA  [style=dotted arrowhead=normal label="1" tooltip="valueobject -> general: \n\n"]
+		d2GTbA:dxulst -> d2GTbA:db4stsZ  [style=dotted arrowhead=normal label="1" tooltip="SourceFilesystems.Static -> SourceFilesystem: \n\nFrom: sourcefs.go (Line: 30, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		d2GTbA:dbaNYFs -> d2GTbA:dd33y4k  [style=dotted arrowhead=normal label="1" tooltip="BaseFs.TheBigFs -> FilesystemsCollector: \n\nFrom: basefs.go (Line: 25, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dQal5L:ddfgK1A -> dQal5L:ddHQivx  [style=dotted arrowhead=diamond label="1" tooltip="ContentSpec -> ConverterRegistry: \n\n"]
+		dcOkvOz:dc4BaeJ -> dctHGkf:dc7deqD  [style=dotted arrowhead=normal label="1" tooltip="ConverterProvider -> Provider: \n\nFrom: converter.go (Line: 20, Column: 6) To: type.go (Line: 8, Column: 6)\n"]
+		dcOkvOz:d2DrI7 -> dQal5L:ddqBMVy  [style=dotted arrowhead=normal label="1" tooltip="provide -> ProviderProvider: \n\nFrom: markdown.go (Line: 10, Column: 6) To: type.go (Line: 14, Column: 6)\n"]
+		dbbWL24:dnez5x -> dbbWL24:deD3xu5  [style=solid arrowhead=normal label="1" tooltip="DecorateFileInfo -> NewFileMetaInfo: \n\nFrom: filemetainfo.go (Line: 39, Column: 24) To: filemetainfo.go (Line: 17, Column: 6)\n"]
+		ddWOjsU:dd1TOhN -> dccG6AA:deznck2  [style=dotted arrowhead=normal label="1" tooltip="DepsCfg.OutputFormats -> Formats: \n\nFrom: cfg.go (Line: 33, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dbjiWUc:dcZm1kg -> dctHGkf:dc7deqD  [style=dotted arrowhead=normal label="1" tooltip="CompositeConfig.Layer -> Provider: \n\nFrom: compositeConfig.go (Line: 9, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dcsgz25:ddIDyw3 -> dcfkkVV:dbNRDJ6  [style=dotted arrowhead=normal label="1" tooltip="Deps.TemplateHandler -> Handler: \n\nFrom: deps.go (Line: 25, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dcsgz25:ddYcVlr -> dcsgz25:dd9IPQX  [style=dotted arrowhead=normal label="1" tooltip="TemplateProvider -> ResourceProvider: \n\nFrom: type.go (Line: 26, Column: 6) To: type.go (Line: 17, Column: 6)\n"]
+		d2GTbA:ddHB34n -> d2GTbA:db4stsZ  [style=dotted arrowhead=normal label="1" tooltip="SourceFilesystems.I18n -> SourceFilesystem: \n\nFrom: sourcefs.go (Line: 14, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dLI3Vv -> d97PCi  [style=dotted arrowhead=normal label="1" tooltip="entity -> general: \n\n"]
+		dbjiWUc:dcny5Ns -> dctHGkf:dc7deqD  [style=dotted arrowhead=normal label="1" tooltip="CompositeConfig.Base -> Provider: \n\nFrom: compositeConfig.go (Line: 8, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		d2GTbA:doCtKQ -> dbbWL24:depacRy  [style=solid arrowhead=normal label="1" tooltip="RootMappingFs.getRootsWithPrefix -> GetRms: \n\nFrom: rootmappingfs.go (Line: 48, Column: 27) To: rootmapping.go (Line: 20, Column: 6)\n"]
+		dddRyrX:dCGvun -> dbbWL24:dcSoX6f  [style=solid arrowhead=normal label="1" tooltip="FileMeta.Copy -> NewFileMeta: \n\nFrom: filemeta.go (Line: 53, Column: 21) To: filemeta.go (Line: 47, Column: 6)\n"]
+		dcsgz25:d1WLf4 -> dcsgz25:dd9IPQX  [style=dotted arrowhead=diamond label="1" tooltip="Deps -> ResourceProvider: \n\n"]
+		dctHGkf:dco61II -> dctHGkf:dds8Sgr  [style=dotted arrowhead=diamond label="1" tooltip="Config -> Import: \n\n"]
+		ddWOjsU:dPwrvt -> dcsgz25:dcYsGAI  [style=dotted arrowhead=normal label="1" tooltip="DepsCfg -> Cfg: \n\nFrom: cfg.go (Line: 16, Column: 6) To: type.go (Line: 12, Column: 6)\n"]
+		dcGdaYC:ddRGpCz -> dcGdaYC:dc4yY0u  [style=solid arrowhead=normal label="1" tooltip="NewDefaultLanguage -> NewLanguage: \n\nFrom: language.go (Line: 45, Column: 20) To: language.go (Line: 49, Column: 6)\n"]
+		d2GTbA:db1k3S5 -> d2GTbA:db4stsZ  [style=dotted arrowhead=normal label="1" tooltip="SourceFilesystems.Archetypes -> SourceFilesystem: \n\nFrom: sourcefs.go (Line: 16, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dbjiWUc:dePcT4q -> dbjiWUc:dbaGVfW  [style=solid arrowhead=normal label="1" tooltip="ModuleCollector.addAndRecurse -> ModuleCollector.add: \n\nFrom: collect.go (Line: 41, Column: 15) To: collect.go (Line: 50, Column: 28)\n"]
+		dUQ30Z -> dctHGkf:dco61II  [style=dotted arrowhead=diamond label="1" tooltip="hugoverse -> Config: \n\n"]
+		dcsgz25:d1WLf4 -> dcsgz25:ddYcVlr  [style=dotted arrowhead=diamond label="1" tooltip="Deps -> TemplateProvider: \n\n"]
+		ddWOjsU:db77KmV -> dccG6AA:dcSlbaZ  [style=dotted arrowhead=normal label="1" tooltip="DepsCfg.MediaTypes -> Types: \n\nFrom: cfg.go (Line: 30, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dQal5L:ddfgK1A -> dcOkvOz  [style=dotted arrowhead=diamond label="1" tooltip="ContentSpec -> entity: \n\n"]
+		dehGEGK:dBzzq -> dehGEGK:dev1CdI  [style=dotted arrowhead=diamond label="1" tooltip="Fs -> Fs: \n\n"]
+		dctHGkf:dckXbYW -> dbjiWUc:dAAwxA  [style=solid arrowhead=normal label="1" tooltip="Config.loadModules -> ModuleCollector.CollectModules: \n\nFrom: config.go (Line: 75, Column: 19) To: collect.go (Line: 18, Column: 28)\n"]
+		dbjiWUc:drKUNB -> dbjiWUc:dbzoaUq  [style=solid arrowhead=normal label="1" tooltip="DefaultConfigProvider.GetString -> DefaultConfigProvider.Get: \n\nFrom: provider.go (Line: 35, Column: 12) To: provider.go (Line: 22, Column: 33)\n"]
+		dcfkkVV:dcz4kLe -> dcfkkVV:ddMVrmU  [style=dotted arrowhead=diamond label="1" tooltip="Template -> Lookup: \n\n"]
+		dd3W6xt:ddz2rrG -> dQal5L:doqypP  [style=dotted arrowhead=normal label="1" tooltip="Language -> Provider: \n\nFrom: language.go (Line: 9, Column: 6) To: type.go (Line: 8, Column: 6)\n"]
+		dehGEGK:dBzzq -> d2GTbA  [style=dotted arrowhead=diamond label="1" tooltip="Fs -> entity: \n\n"]
+		dctHGkf:ddK2640 -> ddRsd1k:dcLWo4o  [style=solid arrowhead=normal label="1" tooltip="Config.loadConfigFromDisk -> UnmarshalTo: \n\nFrom: config.go (Line: 90, Column: 23) To: config.go (Line: 116, Column: 6)\n"]
+		dbbWL24:dnez5x -> dbbWL24:d6C8Kw  [style=solid arrowhead=normal label="1" tooltip="DecorateFileInfo -> normalizeFilename: \n\nFrom: filemetainfo.go (Line: 49, Column: 32) To: filemetainfo.go (Line: 62, Column: 6)\n"]
+		dbbWL24:deD3xu5 -> dddRyrX:dbkqte0  [style=solid arrowhead=normal label="1" tooltip="NewFileMetaInfo -> FileMeta.Merge: \n\nFrom: filemetainfo.go (Line: 22, Column: 10) To: filemeta.go (Line: 59, Column: 20)\n"]
+		dcsgz25:d1WLf4 -> d76LJT  [style=dotted arrowhead=diamond label="1" tooltip="Deps -> entity: \n\n"]
+		dQal5L:ddfgK1A -> dQal5L:dcZqAHx  [style=dotted arrowhead=diamond label="1" tooltip="ContentSpec -> RenderContext: \n\n"]
+		dQal5L:ddfgK1A -> dQal5L:deDLG3T  [style=dotted arrowhead=diamond label="1" tooltip="ContentSpec -> Result: \n\n"]
+		d2GTbA:dbxeKX7 -> dbbWL24:depacRy  [style=solid arrowhead=normal label="1" tooltip="RootMappingFs.Fss -> GetRms: \n\nFrom: rootmappingfs.go (Line: 63, Column: 32) To: rootmapping.go (Line: 20, Column: 6)\n"]
+		dbjiWUc:deFcLeA -> dctHGkf:dcwtwk0  [style=dotted arrowhead=normal label="1" tooltip="moduleAdapter.owner -> Module: \n\nFrom: module.go (Line: 8, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		d2GTbA -> ddII2fp  [style=dotted arrowhead=normal label="1" tooltip="entity -> function: \n\n"]
+		dda6atd -> dctHGkf:db8dWbp  [style=dotted arrowhead=normal label="1" tooltip="ModuleConfig.Mounts -> Mount: \n\nFrom: type.go (Line: 67, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dctHGkf:dco61II -> dLI3Vv  [style=dotted arrowhead=diamond label="1" tooltip="Config -> entity: \n\n"]
+		dcsgz25:d6qL6i -> dccG6AA:deznck2  [style=dotted arrowhead=normal label="1" tooltip="Deps.OutputFormatsConfig -> Formats: \n\nFrom: deps.go (Line: 16, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dcsgz25:d1WLf4 -> dcsgz25:dcYsGAI  [style=dotted arrowhead=diamond label="1" tooltip="Deps -> Cfg: \n\n"]
+		dcsgz25:d1WLf4 -> ddWOjsU  [style=dotted arrowhead=diamond label="1" tooltip="Deps -> valueobject: \n\n"]
+		demwjcF:ddv1e6N -> dctHGkf:dc7deqD  [style=dotted arrowhead=normal label="1" tooltip="PathSpec.Cfg -> Provider: \n\nFrom: pathspec.go (Line: 18, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dbjiWUc:dqgHw4 -> dedfMdt:ddWQQBh  [style=dotted arrowhead=normal label="1" tooltip="ModuleCollector.Modules -> Modules: \n\nFrom: collect.go (Line: 9, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		ddVref9:demTJ2 -> ddVref9:dcCtgDq  [style=solid arrowhead=normal label="1" tooltip="ToParamsAndPrepare -> ToStringMapE: \n\nFrom: provider.go (Line: 103, Column: 24) To: provider.go (Line: 129, Column: 6)\n"]
+		d2GTbA:dci9vpr -> d2GTbA:doCtKQ  [style=solid arrowhead=normal label="1" tooltip="RootMappingFs.Dirs -> RootMappingFs.getRootsWithPrefix: \n\nFrom: rootmappingfs.go (Line: 26, Column: 31) To: rootmappingfs.go (Line: 47, Column: 25)\n"]
+		dctHGkf:dckXbYW -> ddVref9:dbhQG7W  [style=solid arrowhead=normal label="1" tooltip="Config.loadModules -> ApplyProjectConfigDefaults: \n\nFrom: config.go (Line: 73, Column: 41) To: module.go (Line: 36, Column: 6)\n"]
+		ddWOjsU:d9WotI -> dctHGkf:dc7deqD  [style=dotted arrowhead=normal label="1" tooltip="DepsCfg.Cfg -> Provider: \n\nFrom: cfg.go (Line: 21, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dcOkvOz:defRzcp -> dQal5L:doqypP  [style=dotted arrowhead=normal label="1" tooltip="ConverterRegistry.Converters -> Provider: \n\nFrom: converter.go (Line: 13, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dbyOpe:decaaE7 -> ddaltgo:db0ygcI  [style=dotted arrowhead=normal label="1" tooltip="Site.H -> HugoSites: \n\nFrom: site.go (Line: 14, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		d2GTbA:deiv7rq -> d2GTbA:db4stsZ  [style=dotted arrowhead=normal label="1" tooltip="SourceFilesystems.Content -> SourceFilesystem: \n\nFrom: sourcefs.go (Line: 12, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dctHGkf:dckXbYW -> ddVref9:dPIxy2  [style=solid arrowhead=normal label="1" tooltip="Config.loadModules -> NewModuleCollector: \n\nFrom: config.go (Line: 67, Column: 38) To: collect.go (Line: 12, Column: 6)\n"]
+		dbyOpe:d1xuz8 -> dccG6AA:deznck2  [style=dotted arrowhead=normal label="1" tooltip="Site.OutputFormatsConfig -> Formats: \n\nFrom: site.go (Line: 26, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		d2GTbA:dbPRB5P -> d2GTbA:debkWHk  [style=dotted arrowhead=normal label="1" tooltip="BaseFs.SourceFilesystems -> SourceFilesystems: \n\nFrom: basefs.go (Line: 13, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dehGEGK:dBzzq -> dehGEGK:dev1CdI  [style=dotted arrowhead=normal label="1" tooltip="Fs -> Fs: \n\nFrom: fs.go (Line: 9, Column: 6) To: type.go (Line: 8, Column: 6)\n"]
+		dctHGkf:dco61II -> dedfMdt  [style=dotted arrowhead=normal label="1" tooltip="Config -> general: \n\n"]
+		ddWOjsU:dKmPTk -> dd3W6xt:ddz2rrG  [style=dotted arrowhead=normal label="1" tooltip="DepsCfg.Language -> Language: \n\nFrom: cfg.go (Line: 27, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dcfkkVV:dcz4kLe -> dcfkkVV:dbGql7T  [style=dotted arrowhead=diamond label="1" tooltip="Template -> Manager: \n\n"]
+		dd3W6xt:ddz2rrG -> dctHGkf:dc7deqD  [style=dotted arrowhead=normal label="1" tooltip="Language -> Provider: \n\nFrom: language.go (Line: 9, Column: 6) To: type.go (Line: 8, Column: 6)\n"]
+		dddRyrX:dezbgiR -> dddRyrX:ddWCIgh  [style=dotted arrowhead=normal label="1" tooltip="fileInfoMeta.m -> FileMeta: \n\nFrom: fileinfometa.go (Line: 8, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dbbWL24:dnez5x -> dbbWL24:dcSoX6f  [style=solid arrowhead=normal label="1" tooltip="DecorateFileInfo -> NewFileMeta: \n\nFrom: filemetainfo.go (Line: 38, Column: 21) To: filemeta.go (Line: 47, Column: 6)\n"]
+		db0Wdbb -> dctHGkf:dds8Sgr  [style=dotted arrowhead=normal label="1" tooltip="ModuleConfig.Imports -> Import: \n\nFrom: type.go (Line: 68, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dbyOpe:dLrvDC -> dccG6AA:dcSlbaZ  [style=dotted arrowhead=normal label="1" tooltip="Site.MediaTypesConfig -> Types: \n\nFrom: site.go (Line: 27, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		ddaltgo:db0ygcI -> dbyOpe  [style=dotted arrowhead=diamond label="1" tooltip="HugoSites -> entity: \n\n"]
+		d2GTbA:dnxmAb -> d2GTbA:db4stsZ  [style=dotted arrowhead=normal label="1" tooltip="SourceFilesystems.Data -> SourceFilesystem: \n\nFrom: sourcefs.go (Line: 13, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dbjiWUc:dbgAW26 -> dctHGkf:dcwtwk0  [style=dotted arrowhead=normal label="1" tooltip="moduleAdapter -> Module: \n\nFrom: module.go (Line: 6, Column: 6) To: type.go (Line: 71, Column: 6)\n"]
+		dbjiWUc:dbL6RM -> dedfMdt:deARvAw  [style=dotted arrowhead=normal label="1" tooltip="DefaultConfigProvider.Root -> Params: \n\nFrom: provider.go (Line: 16, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dbjiWUc:dbkVtat -> dctHGkf:dc7deqD  [style=dotted arrowhead=normal label="1" tooltip="DefaultConfigProvider -> Provider: \n\nFrom: provider.go (Line: 15, Column: 6) To: type.go (Line: 8, Column: 6)\n"]
+		demwjcF:db8lZU4 -> dehGEGK:dev1CdI  [style=dotted arrowhead=normal label="1" tooltip="PathSpec.Fs -> Fs: \n\nFrom: pathspec.go (Line: 15, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		d2GTbA:derVQnR -> dcrBkxD:ddNiqJj  [style=solid arrowhead=normal label="1" tooltip="baseFileDecoratorFile.Readdir -> LstatIfPossible: \n\nFrom: basefiledecoratorfs.go (Line: 80, Column: 35) To: general.go (Line: 34, Column: 6)\n"]
+		dbjiWUc:dbkVtat -> dQal5L:doqypP  [style=dotted arrowhead=normal label="1" tooltip="DefaultConfigProvider -> Provider: \n\nFrom: provider.go (Line: 15, Column: 6) To: type.go (Line: 8, Column: 6)\n"]
+		d2GTbA:dbQin08 -> d2GTbA:db4stsZ  [style=dotted arrowhead=normal label="1" tooltip="SourceFilesystems.Assets -> SourceFilesystem: \n\nFrom: sourcefs.go (Line: 17, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dUQ30Z -> demwjcF:dc6sg9K  [style=dotted arrowhead=diamond label="1" tooltip="hugoverse -> PathSpec: \n\n"]
+		dbbWL24:dnez5x -> dddRyrX:dbkqte0  [style=solid arrowhead=normal label="1" tooltip="DecorateFileInfo -> FileMeta.Merge: \n\nFrom: filemetainfo.go (Line: 57, Column: 12) To: filemeta.go (Line: 59, Column: 20)\n"]
+		dehGEGK:dBzzq -> dddRyrX  [style=dotted arrowhead=diamond label="1" tooltip="Fs -> valueobject: \n\n"]
+		dcsgz25:dF5GNH -> dQal5L:ddfgK1A  [style=dotted arrowhead=normal label="1" tooltip="Deps.ContentSpec -> ContentSpec: \n\nFrom: deps.go (Line: 31, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dcOkvOz:djj42j -> dQal5L:ddHQivx  [style=dotted arrowhead=normal label="1" tooltip="ConverterRegistry -> ConverterRegistry: \n\nFrom: converter.go (Line: 8, Column: 6) To: type.go (Line: 3, Column: 6)\n"]
+		dcOkvOz:dc4BaeJ -> dQal5L:doqypP  [style=dotted arrowhead=normal label="1" tooltip="ConverterProvider -> Provider: \n\nFrom: converter.go (Line: 20, Column: 6) To: type.go (Line: 8, Column: 6)\n"]
+		dUQ30Z -> ddaltgo:db0ygcI  [style=dotted arrowhead=diamond label="1" tooltip="hugoverse -> HugoSites: \n\n"]
+		dbjiWUc:db3VcFg -> ddVref9:demTJ2  [style=solid arrowhead=normal label="1" tooltip="DefaultConfigProvider.Set -> ToParamsAndPrepare: \n\nFrom: provider.go (Line: 67, Column: 32) To: provider.go (Line: 99, Column: 6)\n"]
+		dbjiWUc:ddVelVe -> ddVref9:db0FSv2  [style=solid arrowhead=normal label="1" tooltip="DefaultConfigProvider.SetDefaults -> PrepareParams: \n\nFrom: provider.go (Line: 79, Column: 15) To: provider.go (Line: 150, Column: 6)\n"]
+		dctHGkf:dco61II -> dbjiWUc  [style=dotted arrowhead=diamond label="1" tooltip="Config -> valueobject: \n\n"]
+		dcsgz25:dc9Gz31 -> demwjcF:dc6sg9K  [style=dotted arrowhead=normal label="1" tooltip="Deps.PathSpec -> PathSpec: \n\nFrom: deps.go (Line: 28, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dUQ30Z -> dcsgz25:d1WLf4  [style=dotted arrowhead=diamond label="1" tooltip="hugoverse -> Deps: \n\n"]
+		dbyOpe:dbhVPgK -> dccG6AA:deznck2  [style=dotted arrowhead=normal label="1" tooltip="Site.OutputFormats -> Formats: \n\nFrom: site.go (Line: 21, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dbjiWUc:dcG2zGK -> dQal5L:doqypP  [style=dotted arrowhead=normal label="1" tooltip="CompositeConfig -> Provider: \n\nFrom: compositeConfig.go (Line: 7, Column: 6) To: type.go (Line: 8, Column: 6)\n"]
+		ddVref9:deFli4o -> ddVref9:db7pasJ  [style=solid arrowhead=normal label="1" tooltip="ToStringE -> indirectToStringerOrError: \n\nFrom: provider.go (Line: 180, Column: 31) To: provider.go (Line: 241, Column: 6)\n"]
+		dcfkkVV:dcz4kLe -> dcfkkVV:ddxnV9C  [style=dotted arrowhead=diamond label="1" tooltip="Template -> Template: \n\n"]
+		db3kXmX:db49g02 -> db3kXmX:dc24NLe  [style=dotted arrowhead=normal label="1" tooltip="Format.MediaType -> Type: \n\nFrom: format.go (Line: 14, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		ddwukoU:dcbOvP2 -> ddwukoU:ddYnEHi  [style=solid arrowhead=normal label="1" tooltip="CreateSiteOutputFormats -> createDefaultOutputFormats: \n\nFrom: format.go (Line: 63, Column: 29) To: format.go (Line: 72, Column: 6)\n"]
+		d2GTbA:dbCpHF7 -> d2GTbA:dci9vpr  [style=solid arrowhead=normal label="1" tooltip="FilesystemsCollector.addDir -> RootMappingFs.Dirs: \n\nFrom: filesystemscollector.go (Line: 28, Column: 23) To: rootmappingfs.go (Line: 24, Column: 25)\n"]
+		dbjiWUc:dbzoaUq -> dbjiWUc:deFWscJ  [style=solid arrowhead=normal label="1" tooltip="DefaultConfigProvider.Get -> DefaultConfigProvider.getNestedKeyAndMap: \n\nFrom: provider.go (Line: 26, Column: 32) To: provider.go (Line: 42, Column: 33)\n"]
+		dcsgz25:dcO0GAT -> dd3W6xt:ddz2rrG  [style=dotted arrowhead=normal label="1" tooltip="Deps.Language -> Language: \n\nFrom: deps.go (Line: 17, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dQal5L:dcNjZJU -> dQal5L:ddHQivx  [style=dotted arrowhead=normal label="1" tooltip="ContentSpec.Converters -> ConverterRegistry: \n\nFrom: contentspec.go (Line: 9, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dbyOpe:dccEg83 -> dcsgz25:dcHG1bu  [style=dotted arrowhead=normal label="1" tooltip="Site.Deps -> Deps: \n\nFrom: site.go (Line: 10, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dbsPqWF -> dcGdaYC  [style=dotted arrowhead=normal label="1" tooltip="entity -> function: \n\n"]
+		dcsgz25:dGVcRs -> dcsgz25:dd9IPQX  [style=dotted arrowhead=normal label="1" tooltip="Deps.TemplateProvider -> ResourceProvider: \n\nFrom: deps.go (Line: 22, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dcfkkVV:dcz4kLe -> dcb31pz  [style=dotted arrowhead=diamond label="1" tooltip="Template -> entity: \n\n"]
+		dcSDPdd:dd8axE8 -> dehGEGK:dev1CdI  [style=dotted arrowhead=normal label="1" tooltip="Paths.Fs -> Fs: \n\nFrom: paths.go (Line: 9, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dcfkkVV:dcz4kLe -> dcfkkVV:dbNRDJ6  [style=dotted arrowhead=diamond label="1" tooltip="Template -> Handler: \n\n"]
+		dQal5L:ddfgK1A -> dQal5L:doqypP  [style=dotted arrowhead=diamond label="1" tooltip="ContentSpec -> Provider: \n\n"]
+		dUQ30Z -> dQal5L:ddfgK1A  [style=dotted arrowhead=diamond label="1" tooltip="hugoverse -> ContentSpec: \n\n"]
+		ddaltgo:db0ygcI -> dcsgz25:dcHG1bu  [style=dotted arrowhead=normal label="1" tooltip="HugoSites -> Deps: \n\nFrom: hugosites.go (Line: 7, Column: 6) To: type.go (Line: 8, Column: 6)\n"]
+		dUQ30Z -> dd3W6xt:ddz2rrG  [style=dotted arrowhead=diamond label="1" tooltip="hugoverse -> Language: \n\n"]
+		dctHGkf:dco61II -> dctHGkf:dc7deqD  [style=dotted arrowhead=diamond label="1" tooltip="Config -> Provider: \n\n"]
+		dctHGkf:dco61II -> dctHGkf:dd7Tk1Z  [style=dotted arrowhead=diamond label="1" tooltip="Config -> CompositeConfig: \n\n"]
+		dbjiWUc:dcG2zGK -> dctHGkf:dc7deqD  [style=dotted arrowhead=normal label="1" tooltip="CompositeConfig -> Provider: \n\nFrom: compositeConfig.go (Line: 7, Column: 6) To: type.go (Line: 8, Column: 6)\n"]
+		dctHGkf:db2x0eV -> dctHGkf:dckXbYW  [style=solid arrowhead=normal label="1" tooltip="Config.Load -> Config.loadModules: \n\nFrom: config.go (Line: 46, Column: 32) To: config.go (Line: 56, Column: 18)\n"]
+		dctHGkf:dco61II -> dctHGkf:db8dWbp  [style=dotted arrowhead=diamond label="1" tooltip="Config -> Mount: \n\n"]
+		dcfkkVV:dcz4kLe -> db06hb6  [style=dotted arrowhead=diamond label="1" tooltip="Template -> Finder: \n\n"]
+		dctHGkf:db2x0eV -> dctHGkf:ddK2640  [style=solid arrowhead=normal label="1" tooltip="Config.Load -> Config.loadConfigFromDisk: \n\nFrom: config.go (Line: 32, Column: 32) To: config.go (Line: 80, Column: 18)\n"]
+		dbjiWUc:dbinuO4 -> dbjiWUc:deFWscJ  [style=solid arrowhead=normal label="1" tooltip="DefaultConfigProvider.IsSet -> DefaultConfigProvider.getNestedKeyAndMap: \n\nFrom: provider.go (Line: 89, Column: 32) To: provider.go (Line: 42, Column: 33)\n"]
+		ddWOjsU:ddhwzpt -> dehGEGK:dev1CdI  [style=dotted arrowhead=normal label="1" tooltip="DepsCfg.Fs -> Fs: \n\nFrom: cfg.go (Line: 18, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dcSDPdd:dAe52Z -> dedfMdt:ddWQQBh  [style=dotted arrowhead=normal label="1" tooltip="Paths.AllModules -> Modules: \n\nFrom: paths.go (Line: 10, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dehGEGK:dBzzq -> dcrBkxD  [style=dotted arrowhead=normal label="1" tooltip="Fs -> function: \n\n"]
+		dbjiWUc:dAAwxA -> dbjiWUc:dePcT4q  [style=solid arrowhead=normal label="1" tooltip="ModuleCollector.CollectModules -> ModuleCollector.addAndRecurse: \n\nFrom: collect.go (Line: 25, Column: 18) To: collect.go (Line: 36, Column: 28)\n"]
+		dctHGkf:dco61II -> dctHGkf:dcJ2g6  [style=dotted arrowhead=diamond label="1" tooltip="Config -> ModuleConfig: \n\n"]
+		dctHGkf:dco61II -> dctHGkf:dcwtwk0  [style=dotted arrowhead=diamond label="1" tooltip="Config -> Module: \n\n"]
+		dcfkkVV:dcz4kLe -> dcfkkVV:deNHnMH  [style=dotted arrowhead=diamond label="1" tooltip="Template -> FuncGetter: \n\n"]
+		dQal5L:ddAzs8r -> dctHGkf:dc7deqD  [style=dotted arrowhead=normal label="1" tooltip="ContentSpec.Cfg -> Provider: \n\nFrom: contentspec.go (Line: 10, Column: 2) To: . (Line: -1, Column: 0)\n"]
+		dddRyrX:dcGlEaJ -> dddRyrX:dcnXarr  [style=dotted arrowhead=normal label="1" tooltip="fileInfoMeta -> FileMetaInfo: \n\nFrom: fileinfometa.go (Line: 5, Column: 6) To: filemetainfo.go (Line: 12, Column: 6)\n"]
+		dbjiWUc:dePcT4q -> dbjiWUc:dbkZG3x  [style=solid arrowhead=normal label="1" tooltip="ModuleCollector.addAndRecurse -> moduleAdapter.Config: \n\nFrom: collect.go (Line: 37, Column: 30) To: module.go (Line: 13, Column: 25)\n"]
+
+	label = "\n\ngithub.com/dddplayer/hugoverse\nDomain Model\n\nPowered by DDD Player";
+    fontsize=20;
+}

@@ -3,6 +3,7 @@ package factory
 import (
 	"fmt"
 	"github.com/dddplayer/hugoverse/internal/domain/config"
+	"github.com/dddplayer/hugoverse/internal/domain/contentspec"
 	csFactory "github.com/dddplayer/hugoverse/internal/domain/contentspec/factory"
 	"github.com/dddplayer/hugoverse/internal/domain/deps"
 	"github.com/dddplayer/hugoverse/internal/domain/deps/entity"
@@ -51,10 +52,19 @@ func New(cfg valueobject.DepsCfg) (deps.Deps, error) {
 	cfg.Logger.Printf("PathSpec Fs: %+v", ps.Fs)
 	cfg.Logger.Printf("PathSpec Cfg: %+v", ps.Cfg)
 
+	cfg.Logger.Printf("NewContentSpec: %s", "")
 	contentSpec, err := csFactory.NewContentSpec(cfg.Language)
 	if err != nil {
 		return nil, err
 	}
+	cfg.Logger.Printf("ContentSpec Converters: %+v", contentSpec.Converters)
+	c, err := contentSpec.Converters.Get("markdown").New(contentspec.DocumentContext{
+		Document:     nil,
+		DocumentID:   "",
+		DocumentName: "",
+		Filename:     "",
+	})
+	cfg.Logger.Printf("ContentSpec Markdown converter: type(%T), %+v", c, c)
 
 	d := &entity.Deps{
 		Cfg:                 cfg.Language,
