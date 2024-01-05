@@ -3,10 +3,13 @@ package deps
 import (
 	"github.com/dddplayer/hugoverse/internal/domain/config"
 	"github.com/dddplayer/hugoverse/internal/domain/template"
+	"github.com/spf13/afero"
 )
 
 type Deps interface {
+	LoadResources() error
 	Tmpl() template.Handler
+	PublishFs() afero.Fs
 }
 
 type Cfg interface {
@@ -28,6 +31,12 @@ type TemplateProvider struct{}
 // Update updates the Hugo Template System in the provided Deps
 // with all the additional features, templates & functions.
 func (*TemplateProvider) Update(d Deps) error {
+	//TODO
+	//tmpl, err := newTemplateExec(d)
+	//if err != nil {
+	//	return err
+	//}
+	//return tmpl.postTransform()
 	return nil
 }
 

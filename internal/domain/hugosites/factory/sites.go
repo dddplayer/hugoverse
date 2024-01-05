@@ -10,6 +10,7 @@ import (
 	"github.com/dddplayer/hugoverse/internal/domain/template"
 	"github.com/dddplayer/hugoverse/pkg/lazy"
 	"github.com/dddplayer/hugoverse/pkg/log"
+	"github.com/dddplayer/hugoverse/pkg/radixtree"
 )
 
 func NewHugoSites(cfg *depsVO.DepsCfg, logger log.Logger) (*entity.HugoSites, error) {
@@ -108,9 +109,14 @@ func applyDeps(cfg *depsVO.DepsCfg, log log.Logger, sites ...*entity.Site) error
 			s.Deps = d
 
 			log.Printf("applyDeps-onCreate: %s", "set site publisher as DestinationPublisher")
-			//TODO
+			s.Publisher = &entity.DestinationPublisher{Fs: d.PublishFs()}
 
-			// d.Site = s.Info
+			//TODO: initialize site info, site owner, title, e.g.
+
+			s.PageCollections = newPageCollections(&entity.PageMap{
+				ContentMap: newContentMap(),
+				S:          s,
+			})
 
 			return nil
 		}
@@ -134,11 +140,37 @@ func applyDeps(cfg *depsVO.DepsCfg, log log.Logger, sites ...*entity.Site) error
 
 		log.Printf("applyDeps: %s", "deps LoadResources to update template provider, need to make template ready")
 
-		//TODO
-		//if err = d.LoadResources(); err != nil {
-		//	return fmt.Errorf("load resources: %w", err)
-		//}
+		if err = d.LoadResources(); err != nil {
+			return fmt.Errorf("load resources: %w", err)
+		}
 	}
 
 	return nil
+}
+
+func newContentMap() *entity.ContentMap {
+	m := &entity.ContentMap{
+		Pages:    &entity.ContentTree{Name: "pages", Tree: radixtree.New()},
+		Sections: &entity.ContentTree{Name: "sections", Tree: radixtree.New()},
+	}
+
+	m.PageTrees = []*entity.ContentTree{
+		m.Pages, m.Sections,
+	}
+
+	m.BundleTrees = []*entity.ContentTree{
+		m.Pages, m.Sections,
+	}
+
+	return m
+}
+
+func newPageCollections(m *entity.PageMap) *entity.PageCollections {
+	if m == nil {
+		panic("must provide a pageMap")
+	}
+
+	c := &entity.PageCollections{PageMap: m}
+
+	return c
 }

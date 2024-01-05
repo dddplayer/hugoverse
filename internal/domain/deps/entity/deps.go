@@ -1,6 +1,7 @@
 package entity
 
 import (
+	"fmt"
 	"github.com/dddplayer/hugoverse/internal/domain/config"
 	csEntity "github.com/dddplayer/hugoverse/internal/domain/contentspec/entity"
 	"github.com/dddplayer/hugoverse/internal/domain/deps"
@@ -25,7 +26,7 @@ type Deps struct {
 	TemplateHandler template.Handler
 
 	// The PathSpec to use
-	PathSpec *psEntity.PathSpec
+	*psEntity.PathSpec
 
 	// The ContentSpec to use
 	*csEntity.ContentSpec `json:"-"`
@@ -33,4 +34,13 @@ type Deps struct {
 
 func (d *Deps) Tmpl() template.Handler {
 	return d.TemplateHandler
+}
+
+// LoadResources loads translations and templates.
+func (d *Deps) LoadResources() error {
+	if err := d.TemplateProvider.Update(d); err != nil {
+		return fmt.Errorf("loading templates: %w", err)
+	}
+
+	return nil
 }

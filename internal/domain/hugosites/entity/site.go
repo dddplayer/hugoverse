@@ -2,6 +2,7 @@ package entity
 
 import (
 	"github.com/dddplayer/hugoverse/internal/domain/deps"
+	"github.com/dddplayer/hugoverse/internal/domain/hugosites"
 	"github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject"
 	langEntity "github.com/dddplayer/hugoverse/internal/domain/language/entity"
 )
@@ -25,4 +26,8 @@ type Site struct {
 	// finally, the language settings.
 	OutputFormatsConfig valueobject.Formats
 	MediaTypesConfig    valueobject.Types
+
+	Publisher hugosites.Publisher
+
+	*PageCollections
 }
