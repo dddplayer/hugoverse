@@ -1,7 +1,6 @@
 package factory
 
 import (
-	"github.com/dddplayer/hugoverse/internal/domain/fs"
 	"github.com/dddplayer/hugoverse/internal/domain/fs/entity"
 	"github.com/dddplayer/hugoverse/internal/domain/fs/valueobject"
 	"github.com/spf13/afero"
@@ -9,9 +8,9 @@ import (
 	"path/filepath"
 )
 
-// newBaseFileDecorator decorates the given Fs to provide the real filename
+// NewBaseFileDecorator decorates the given Fs to provide the real filename
 // and an Opener func.
-func newBaseFileDecorator(originFs afero.Fs) afero.Fs {
+func NewBaseFileDecorator(originFs afero.Fs) afero.Fs {
 	ffs := &entity.BaseFileDecoratorFs{Fs: originFs}
 
 	decorator := func(fi os.FileInfo, filename string) (os.FileInfo, error) {
@@ -22,7 +21,7 @@ func newBaseFileDecorator(originFs afero.Fs) afero.Fs {
 		if fi.IsDir() {
 			meta.JoinStatFunc = func(name string) (valueobject.FileMetaInfo, error) {
 				joinedFilename := filepath.Join(filename, name)
-				fi, _, err := fs.LstatIfPossible(originFs, joinedFilename)
+				fi, _, err := valueobject.LstatIfPossible(originFs, joinedFilename)
 				if err != nil {
 					return nil, err
 				}

@@ -17,9 +17,20 @@ func NewTemplateExec(d deps.Deps) (*entity.TemplateExec, error) {
 
 	h := &entity.TemplateHandler{
 		Main: newTemplateNamespace(funcMap),
+		Deps: d,
 	}
 
-	return nil, nil
+	if err := h.LoadTemplates(); err != nil {
+		return nil, err
+	}
+
+	e := &entity.TemplateExec{
+		Executor:        exec,
+		Funcs:           funcs,
+		TemplateHandler: h,
+	}
+
+	return e, nil
 }
 
 func newTemplateNamespace(funcs map[string]any) *entity.TemplateNamespace {

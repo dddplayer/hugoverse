@@ -36,6 +36,10 @@ func (d *Deps) Tmpl() template.Handler {
 	return d.TemplateHandler
 }
 
+func (d *Deps) SetTmpl(tmpl template.Handler) {
+	d.TemplateHandler = tmpl
+}
+
 // LoadResources loads translations and templates.
 func (d *Deps) LoadResources() error {
 	if err := d.TemplateProvider.Update(d); err != nil {
@@ -43,4 +47,8 @@ func (d *Deps) LoadResources() error {
 	}
 
 	return nil
+}
+
+func (d *Deps) OutputFormats() hugoSitesVO.Formats {
+	return d.OutputFormatsConfig
 }

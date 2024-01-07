@@ -22,3 +22,7 @@ type PathSpec struct {
 func (ps *PathSpec) PublishFs() afero.Fs {
 	return ps.BaseFs.PublishFs
 }
+
+func (ps *PathSpec) LayoutFs() afero.Fs {
+	return ps.BaseFs.SourceFilesystems.Layouts.Fs
+}

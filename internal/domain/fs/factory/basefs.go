@@ -11,8 +11,8 @@ import (
 func NewBaseFS(p *psEntity.Paths) (*entity.BaseFs, error) {
 	fs := p.Fs
 
-	publishFs := newBaseFileDecorator(fs.PublishDir())
-	sourceFs := newBaseFileDecorator(afero.NewBasePathFs(fs.Source(), p.WorkingDir))
+	publishFs := NewBaseFileDecorator(fs.PublishDir())
+	sourceFs := NewBaseFileDecorator(afero.NewBasePathFs(fs.Source(), p.WorkingDir))
 
 	b := &entity.BaseFs{
 		SourceFs:  sourceFs,

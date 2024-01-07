@@ -21,14 +21,38 @@ type Format struct {
 type Formats []Format
 
 // GetByName gets a format by its identifier name.
-func (formats Formats) GetByName(
-	name string) (f Format, found bool) {
+func (formats Formats) GetByName(name string) (f Format, found bool) {
 	for _, ff := range formats {
 		if strings.EqualFold(name, ff.Name) {
 			f = ff
 			found = true
 			return
 		}
+	}
+	return
+}
+
+// FromFilename gets a Format given a filename.
+func (formats Formats) FromFilename(filename string) (f Format, found bool) {
+	// mytemplate.amp.html
+	// mytemplate.html
+	// mytemplate
+	var ext, outFormat string
+
+	parts := strings.Split(filename, ".")
+	if len(parts) > 2 {
+		outFormat = parts[1]
+		ext = parts[2]
+	} else if len(parts) > 1 {
+		ext = parts[1]
+	}
+
+	if outFormat != "" {
+		return formats.GetByName(outFormat)
+	}
+
+	if ext != "" {
+		f, found = formats.GetByName(ext)
 	}
 	return
 }
@@ -69,8 +93,7 @@ const (
 	kind404  = "404"
 )
 
-func createDefaultOutputFormats(
-	allFormats Formats) map[string]Formats {
+func createDefaultOutputFormats(allFormats Formats) map[string]Formats {
 	htmlOut, _ := allFormats.GetByName(HTMLFormat.Name)
 
 	m := map[string]Formats{

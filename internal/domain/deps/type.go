@@ -2,14 +2,21 @@ package deps
 
 import (
 	"github.com/dddplayer/hugoverse/internal/domain/config"
+	hugoSitesVO "github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject"
 	"github.com/dddplayer/hugoverse/internal/domain/template"
+	tmplFactory "github.com/dddplayer/hugoverse/internal/domain/template/factory"
 	"github.com/spf13/afero"
 )
 
 type Deps interface {
 	LoadResources() error
-	Tmpl() template.Handler
 	PublishFs() afero.Fs
+	LayoutFs() afero.Fs
+
+	Tmpl() template.Handler
+	SetTmpl(template.Handler)
+
+	OutputFormats() hugoSitesVO.Formats
 }
 
 type Cfg interface {
@@ -31,11 +38,11 @@ type TemplateProvider struct{}
 // Update updates the Hugo Template System in the provided Deps
 // with all the additional features, templates & functions.
 func (*TemplateProvider) Update(d Deps) error {
-	//TODO
-	//tmpl, err := newTemplateExec(d)
-	//if err != nil {
-	//	return err
-	//}
+	exec, err := tmplFactory.NewTemplateExec(d)
+	if err != nil {
+		return err
+	}
+	d.SetTmpl(exec)
 	//return tmpl.postTransform()
 	return nil
 }

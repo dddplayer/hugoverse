@@ -3,6 +3,7 @@ package entity
 import (
 	"fmt"
 	"github.com/dddplayer/hugoverse/internal/domain/fs"
+	"github.com/dddplayer/hugoverse/internal/domain/fs/valueobject"
 	"github.com/spf13/afero"
 	"os"
 	"path/filepath"
@@ -77,7 +78,7 @@ func (l *baseFileDecoratorFile) Readdir(c int) (ofi []os.FileInfo, err error) {
 		}
 
 		// We need to resolve any symlink info.
-		fi, _, err := fs.LstatIfPossible(l.fs.Fs, filename)
+		fi, _, err := valueobject.LstatIfPossible(l.fs.Fs, filename)
 		if err != nil {
 			if os.IsNotExist(err) {
 				continue

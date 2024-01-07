@@ -20,7 +20,7 @@ func newSourceFilesystem(name string, fs afero.Fs, dirs []valueobject.FileMetaIn
 }
 
 func newSourceFilesystemsBuilder(p *psEntity.Paths, b *entity.BaseFs) *sourceFilesystemsBuilder {
-	sourceFs := newBaseFileDecorator(p.Fs.Source())
+	sourceFs := NewBaseFileDecorator(p.Fs.Source())
 	return &sourceFilesystemsBuilder{p: p, sourceFs: sourceFs, theBigFs: b.TheBigFs, result: &entity.SourceFilesystems{}}
 }
 

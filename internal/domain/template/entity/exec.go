@@ -2,80 +2,20 @@ package entity
 
 import (
 	"context"
-	"github.com/dddplayer/hugoverse/internal/domain/deps"
 	"github.com/dddplayer/hugoverse/internal/domain/template"
-	"github.com/spf13/afero"
 	"io"
 	"reflect"
-	"sync"
 )
 
 type TemplateExec struct {
-	d        deps.Deps
-	executor template.Executor
-	funcs    map[string]reflect.Value
+	Executor template.Executor
+	Funcs    map[string]reflect.Value
 
-	*templateHandler
+	*TemplateHandler
 }
 
-type templateHandler struct {
-	main      *TemplateNamespace
-	readyInit sync.Once
-	deps.Deps
-}
-
-type TemplateNamespace struct {
-	PrototypeText *TextTemplate
-	PrototypeHTML *HtmlTemplate
-
-	*TemplateStateMap
-}
-
-type TemplateStateMap struct {
-	mu        sync.RWMutex
-	Templates map[string]*TemplateState
-}
-
-type templateType int
-
-type TemplateState struct {
-	template.Template
-
-	typ       templateType
-	parseInfo ParseInfo
-
-	info     templateInfo
-	baseInfo templateInfo // Set when a base template is used.
-}
-
-type templateInfo struct {
-	name     string
-	template string
-	isText   bool // HTML or plain text template.
-
-	// Used to create some error context in error situations
-	fs afero.Fs
-
-	// The filename relative to the fs above.
-	filename string
-
-	// The real filename (if possible). Used for logging.
-	realFilename string
-}
-
-type ParseInfo struct {
-	// Set for shortcode Templates with any {{ .Inner }}
-	IsInner bool
-
-	// Set for partials with a return statement.
-	HasReturn bool
-
-	// Config extracted from template.
-	Config ParseConfig
-}
-
-type ParseConfig struct {
-	Version int
+func (t *TemplateExec) ExecuteWithContext(ctx context.Context, tmpl template.Template, wr io.Writer, data any) error {
+	return t.Executor.ExecuteWithContext(ctx, tmpl, wr, data)
 }
 
 type Executor struct {
