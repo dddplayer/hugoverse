@@ -51,7 +51,7 @@ title: "Post Title"
 Hello Blog
 -- layouts/index.html --
 {{ $entries := (readDir ".") }}
-START:|{{ range $entry := $entries }}{{ if not $entry.IsDir }}{{ $entry.Name }}|{{ end }}{{ end }}:END:
+START:|{{ range $entry := $entries }}{{ if not $entry.IsDir }}{{ $entry.TmplName }}|{{ end }}{{ end }}:END:
 -- layouts/_default/single.html --
 <p>hello single page</p>
 {{ .Content }}

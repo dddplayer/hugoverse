@@ -8,6 +8,7 @@ import (
 	"github.com/dddplayer/hugoverse/internal/domain/hugosites/entity"
 	langsFactory "github.com/dddplayer/hugoverse/internal/domain/language/factory"
 	"github.com/dddplayer/hugoverse/internal/domain/template"
+	"github.com/dddplayer/hugoverse/internal/domain/template/factory"
 	"github.com/dddplayer/hugoverse/pkg/lazy"
 	"github.com/dddplayer/hugoverse/pkg/log"
 	"github.com/dddplayer/hugoverse/pkg/radixtree"
@@ -93,12 +94,10 @@ func applyDeps(cfg *depsVO.DepsCfg, log log.Logger, sites ...*entity.Site) error
 	log.Printf("applyDeps: %s", "set cfg.TemplateProvider with DefaultTemplateProvider")
 
 	if cfg.TemplateProvider == nil {
-		cfg.TemplateProvider = deps.DefaultTemplateProvider
+		cfg.TemplateProvider = factory.DefaultTemplateProvider
 	}
 
-	var (
-		d deps.Deps
-	)
+	var d deps.Deps
 
 	for _, s := range sites {
 		if s.Deps != nil {
@@ -111,7 +110,7 @@ func applyDeps(cfg *depsVO.DepsCfg, log log.Logger, sites ...*entity.Site) error
 			log.Printf("applyDeps-onCreate: %s", "set site publisher as DestinationPublisher")
 			s.Publisher = &entity.DestinationPublisher{Fs: d.PublishFs()}
 
-			//TODO: initialize site info, site owner, title, e.g.
+			//Simplify: initialize site info, site owner, title, e.g.
 
 			s.PageCollections = newPageCollections(&entity.PageMap{
 				ContentMap: newContentMap(),

@@ -2,6 +2,8 @@ package entity
 
 import (
 	"github.com/dddplayer/hugoverse/internal/domain/template"
+	tmpl "github.com/dddplayer/hugoverse/pkg/template"
+	"github.com/dddplayer/hugoverse/pkg/template/parser"
 )
 
 // TextTemplate is the representation of a parsed template. The *parse.Tree
@@ -9,6 +11,7 @@ import (
 // as unexported by all other clients.
 type TextTemplate struct {
 	Name string
+	Doc  *parser.Document
 
 	*common
 }
@@ -35,4 +38,27 @@ func addFuncs(out, in template.FuncMap) {
 	for name, fn := range in {
 		out[name] = fn
 	}
+}
+
+// New allocates a new, undefined template associated with the given one and with the same
+// delimiters. The association, which is transitive, allows one template to
+// invoke another with a {{template}} action.
+//
+// Because associated templates share underlying data, template construction
+// cannot be done safely in parallel. Once the templates are constructed, they
+// can be executed in parallel.
+func (t *TextTemplate) New(name string) *TextTemplate {
+	return &TextTemplate{
+		Name: name,
+	}
+}
+
+func (t *TextTemplate) Parse(text string) (*TextTemplate, error) {
+	doc, err := tmpl.Parse(t.Name, text)
+	if err != nil {
+		return nil, err
+	}
+	t.Doc = doc
+
+	return t, nil
 }

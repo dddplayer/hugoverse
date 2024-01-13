@@ -94,7 +94,7 @@ func (w *Walkway) walk(path string, info FileMetaInfo, dirEntries []FileMetaInfo
 
 		meta := fim.Meta()
 
-		// Note that we use the original Name even if it's a symlink.
+		// Note that we use the original TmplName even if it's a symlink.
 		name := meta.Name
 		if name == "" {
 			name = fim.Name()

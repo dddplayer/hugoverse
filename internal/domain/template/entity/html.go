@@ -10,11 +10,11 @@ type HtmlTemplate struct {
 	// template's in sync.
 	Text *TextTemplate
 
-	*nameSpace // common to all associated templates
+	*NameSpace // common to all associated templates
 }
 
-// nameSpace is the data structure shared by all templates in an association.
-type nameSpace struct {
+// NameSpace is the data structure shared by all templates in an association.
+type NameSpace struct {
 	Set map[string]*HtmlTemplate
 }
 
@@ -26,4 +26,40 @@ type nameSpace struct {
 func (t *HtmlTemplate) Funcs(funcMap template.FuncMap) *HtmlTemplate {
 	t.Text.Funcs(funcMap)
 	return t
+}
+
+// New allocates a new, undefined template associated with the given one and with the same
+// delimiters. The association, which is transitive, allows one template to
+// invoke another with a {{template}} action.
+//
+// Because associated templates share underlying data, template construction
+// cannot be done safely in parallel. Once the templates are constructed, they
+// can be executed in parallel.
+func (t *HtmlTemplate) New(name string) *HtmlTemplate {
+	return &HtmlTemplate{
+		Text:      t.Text.New(name),
+		NameSpace: t.NameSpace,
+	}
+}
+
+func (t *HtmlTemplate) Parse(text string) (*HtmlTemplate, error) {
+	_, err := t.Text.Parse(text)
+	if err != nil {
+		return nil, err
+	}
+	return t, nil
+}
+
+func (t *HtmlTemplate) Name() string {
+	return t.Text.Name
+}
+
+// Prepare returns a template ready for execution.
+func (t *HtmlTemplate) Prepare() (template.Template, error) {
+	//if err := t.escape(); err != nil {
+	//	return nil, err
+	//}
+	//return t.text, nil
+
+	return nil, nil
 }

@@ -8,7 +8,6 @@ import (
 	"github.com/spf13/afero"
 	"path/filepath"
 	"strings"
-	"sync"
 )
 
 type TemplateHandler struct {
@@ -34,9 +33,36 @@ func (t *TemplateHandler) LoadTemplates() error {
 }
 
 func (t *TemplateHandler) addTemplateFile(name, path string) error {
-	//TODO 2
+	getTemplate := func(filename string) (templateInfo, error) {
+		afs := t.Deps.LayoutFs()
+		b, err := afero.ReadFile(afs, filename)
+		if err != nil {
+			return templateInfo{filename: filename, fs: afs}, err
+		}
+
+		return templateInfo{
+			name:     name,
+			template: string(b),
+			filename: filename,
+			fs:       afs,
+		}, nil
+	}
+
+	tinfo, err := getTemplate(path)
+	if err != nil {
+		return err
+	}
+
+	_, err = t.addTemplateTo(tinfo, t.Main)
+	if err != nil {
+		return tinfo.errWithFileContext("parse failed", err)
+	}
 
 	return nil
+}
+
+func (t *TemplateHandler) addTemplateTo(info templateInfo, to *TemplateNamespace) (*TemplateState, error) {
+	return to.parse(info)
 }
 
 func (t *TemplateHandler) Lookup(name string) (template.Template, bool) {
@@ -46,67 +72,4 @@ func (t *TemplateHandler) Lookup(name string) (template.Template, bool) {
 	}
 
 	return nil, false
-}
-
-type TemplateNamespace struct {
-	PrototypeText *TextTemplate
-	PrototypeHTML *HtmlTemplate
-
-	*TemplateStateMap
-}
-
-func (t *TemplateNamespace) Lookup(name string) (template.Template, bool) {
-	tmpl, found := t.Templates[name]
-	if !found {
-		return nil, false
-	}
-
-	return tmpl, found
-}
-
-type TemplateStateMap struct {
-	mu        sync.RWMutex
-	Templates map[string]*TemplateState
-}
-
-type templateType int
-
-type TemplateState struct {
-	template.Template
-
-	typ       templateType
-	parseInfo ParseInfo
-
-	info     templateInfo
-	baseInfo templateInfo // Set when a base template is used.
-}
-
-type templateInfo struct {
-	name     string
-	template string
-	isText   bool // HTML or plain text template.
-
-	// Used to create some error context in error situations
-	fs afero.Fs
-
-	// The filename relative to the fs above.
-	filename string
-
-	// The real filename (if possible). Used for logging.
-	realFilename string
-}
-
-type ParseInfo struct {
-	// Set for shortcode Templates with any {{ .Inner }}
-	IsInner bool
-
-	// Set for partials with a return statement.
-	HasReturn bool
-
-	// Config extracted from template.
-	Config ParseConfig
-}
-
-type ParseConfig struct {
-	Version int
 }

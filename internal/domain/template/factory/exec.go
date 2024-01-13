@@ -46,7 +46,8 @@ func newTemplateNamespace(funcs map[string]any) *entity.TemplateNamespace {
 // New allocates a new HTML template with the given name.
 func newHtmlTemplate(name string) *entity.HtmlTemplate {
 	tmpl := &entity.HtmlTemplate{
-		Text: newTextTemplate(name),
+		Text:      newTextTemplate(name),
+		NameSpace: &entity.NameSpace{Set: map[string]*entity.HtmlTemplate{}},
 	}
 	tmpl.Set[name] = tmpl
 	return tmpl
