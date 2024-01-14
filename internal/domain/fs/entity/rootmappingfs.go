@@ -32,6 +32,7 @@ func (m *RootMappingFs) Dirs(base string) ([]valueobject.FileMetaInfo, error) {
 	fss := make([]valueobject.FileMetaInfo, len(roots))
 	for i, r := range roots {
 		bfs := afero.NewBasePathFs(m.Fs, r.To)
+		bfs = decorateDirs(bfs, r.Meta)
 
 		fi, err := bfs.Stat("")
 		if err != nil {

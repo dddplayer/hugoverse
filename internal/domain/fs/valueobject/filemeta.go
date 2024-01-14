@@ -27,7 +27,7 @@ type FileMeta struct {
 	IsProject  bool
 	Watch      bool
 
-	//Classifier files.ContentClass
+	Classifier ContentClass
 
 	SkipDir bool
 

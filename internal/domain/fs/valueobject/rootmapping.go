@@ -15,6 +15,8 @@ type RootMapping struct {
 	IsProject bool
 	// The virtual mount point, e.g. "blog".
 	path string
+
+	Meta *FileMeta // File metadata (lang etc.)
 }
 
 func GetRms(t *radixtree.Tree, key string) []RootMapping {

@@ -1,6 +1,7 @@
 package entity
 
 import (
+	"fmt"
 	"github.com/dddplayer/hugoverse/internal/domain/deps"
 	"github.com/dddplayer/hugoverse/internal/domain/hugosites"
 	"github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject"
@@ -30,4 +31,24 @@ type Site struct {
 	Publisher hugosites.Publisher
 
 	*PageCollections
+}
+
+func (s *Site) process() error {
+	if err := s.readAndProcessContent(); err != nil {
+		err = fmt.Errorf("readAndProcessContent: %w", err)
+
+		return err
+	}
+
+	return nil
+}
+
+func (s *Site) readAndProcessContent() error {
+	proc := newPagesProcessor(s.H)
+	c := newPagesCollector(proc, s.Deps.ContentFs())
+	if err := c.Collect(); err != nil {
+		return err
+	}
+
+	return nil
 }

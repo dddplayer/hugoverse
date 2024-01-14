@@ -77,6 +77,9 @@ func (b *sourceFilesystemsBuilder) createOverlayFs(collector *entity.Filesystems
 			rm := valueobject.RootMapping{
 				From: mount.Target, // content
 				To:   mount.Source, // mycontent
+				Meta: &valueobject.FileMeta{
+					Classifier: valueobject.ContentClassContent,
+				},
 			}
 
 			isContentMount := b.isContentMount(mount.Target)

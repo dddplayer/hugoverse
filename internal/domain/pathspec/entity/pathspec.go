@@ -26,3 +26,7 @@ func (ps *PathSpec) PublishFs() afero.Fs {
 func (ps *PathSpec) LayoutFs() afero.Fs {
 	return ps.BaseFs.SourceFilesystems.Layouts.Fs
 }
+
+func (ps *PathSpec) ContentFs() afero.Fs {
+	return ps.BaseFs.SourceFilesystems.Content.Fs
+}

@@ -11,6 +11,7 @@ type Deps interface {
 	LoadResources() error
 	PublishFs() afero.Fs
 	LayoutFs() afero.Fs
+	ContentFs() afero.Fs
 
 	Tmpl() template.Handler
 	SetTmpl(template.Handler)

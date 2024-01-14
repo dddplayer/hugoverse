@@ -1,7 +1,6 @@
 package application
 
 import (
-	"fmt"
 	"github.com/dddplayer/hugoverse/internal/domain/config/entity"
 	depsFactory "github.com/dddplayer/hugoverse/internal/domain/deps/factory"
 	fsFactory "github.com/dddplayer/hugoverse/internal/domain/fs/factory"
@@ -33,9 +32,11 @@ func GenerateStaticSite(projPath string, logger log.Logger) error {
 	if err != nil {
 		return err
 	}
-	fmt.Println(hugoSites)
-
 	logger.Printf("=-= Section Site: %s", "end <==")
+
+	if err := hugoSites.Build(); err != nil {
+		return err
+	}
 
 	return nil
 }

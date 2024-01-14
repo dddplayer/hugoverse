@@ -9,6 +9,23 @@ import (
 	"path/filepath"
 )
 
+func decorateDirs(fs afero.Fs, meta *valueobject.FileMeta) afero.Fs {
+	ffs := &BaseFileDecoratorFs{Fs: fs}
+
+	decorator := func(fi os.FileInfo, name string) (os.FileInfo, error) {
+		if !fi.IsDir() {
+			// Leave regular files as they are.
+			return fi, nil
+		}
+
+		return valueobject.DecorateFileInfo(fi, fs, nil, "", "", meta), nil
+	}
+
+	ffs.Decorate = decorator
+
+	return ffs
+}
+
 type BaseFileDecoratorFs struct {
 	afero.Fs
 	Decorate func(fi os.FileInfo, filename string) (os.FileInfo, error)
