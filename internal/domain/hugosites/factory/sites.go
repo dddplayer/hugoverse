@@ -7,9 +7,7 @@ import (
 	depsVO "github.com/dddplayer/hugoverse/internal/domain/deps/valueobject"
 	"github.com/dddplayer/hugoverse/internal/domain/hugosites/entity"
 	langsFactory "github.com/dddplayer/hugoverse/internal/domain/language/factory"
-	"github.com/dddplayer/hugoverse/internal/domain/template"
 	"github.com/dddplayer/hugoverse/internal/domain/template/factory"
-	"github.com/dddplayer/hugoverse/pkg/lazy"
 	"github.com/dddplayer/hugoverse/pkg/log"
 	"github.com/dddplayer/hugoverse/pkg/radixtree"
 )
@@ -56,21 +54,7 @@ func newHugoSites(cfg *depsVO.DepsCfg, log log.Logger, sites ...*entity.Site) (*
 	h := &entity.HugoSites{
 		Sites:      sites,
 		NumWorkers: 1,
-		Init: &entity.HugoSitesInit{
-			Layouts: lazy.New(),
-		},
 	}
-
-	log.Printf("newHugoSites: %s", "add layouts to h.init")
-	h.Init.Layouts.Add(func() (any, error) {
-		log.Printf("newHugoSites: %s", "h.init register s.Tmpl().MarkReady when deps not set for all sites")
-		for _, s := range h.Sites {
-			if err := s.Tmpl().(template.Manager).MarkReady(); err != nil {
-				return nil, err
-			}
-		}
-		return nil, nil
-	})
 
 	for _, s := range sites {
 		s.H = h

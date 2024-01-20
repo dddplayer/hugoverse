@@ -32,7 +32,6 @@ type Manager interface {
 	Handler
 	FuncGetter
 	AddTemplate(name, tpl string) error
-	MarkReady() error
 }
 
 // FuncGetter allows to find a template func by name.

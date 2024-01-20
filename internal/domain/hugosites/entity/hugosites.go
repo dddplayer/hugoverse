@@ -2,6 +2,7 @@ package entity
 
 import (
 	"github.com/dddplayer/hugoverse/internal/domain/deps"
+	"github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject"
 	"github.com/dddplayer/hugoverse/pkg/para"
 	"sync"
 )
@@ -10,11 +11,13 @@ type HugoSites struct {
 	deps.Deps
 
 	Sites      []*Site
-	Init       *HugoSitesInit
 	NumWorkers int
 
 	contentInit sync.Once
 	content     *pageMaps
+
+	// Render output formats for all sites.
+	RenderFormats valueobject.Formats
 }
 
 func (h *HugoSites) Build() error {
@@ -50,9 +53,21 @@ func (h *HugoSites) assemble() error {
 }
 
 func (h *HugoSites) render() error {
-	// TODO: implement
+	h.RenderFormats = valueobject.Formats{}
+	h.withSite(func(s *Site) error {
+		s.initRenderFormats()
+		return nil
+	})
 
 	return nil
+}
+
+func (h *HugoSites) withSite(fn func(s *Site) error) {
+	for _, s := range h.Sites {
+		if err := fn(s); err != nil {
+			panic(err)
+		}
+	}
 }
 
 func (h *HugoSites) getContentMaps() *pageMaps {

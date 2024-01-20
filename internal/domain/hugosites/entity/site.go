@@ -113,3 +113,7 @@ func (s *Site) kindFromSections(sections []string) string {
 func (s *Site) kindFromSectionPath(sectionPath string) string {
 	return hugosites.KindSection
 }
+
+func (s *Site) initRenderFormats() {
+	// TODO 7
+}
