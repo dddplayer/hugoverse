@@ -2,6 +2,7 @@ package entity
 
 import (
 	"github.com/dddplayer/hugoverse/internal/domain/contentspec"
+	"github.com/dddplayer/hugoverse/internal/domain/hugosites"
 	"github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject"
 	"sync"
 )
@@ -74,4 +75,18 @@ type pageMeta struct {
 
 	contentConverterInit sync.Once
 	contentConverter     contentspec.Converter
+
+	f hugosites.File
+}
+
+func (p *pageMeta) setMetadata() {
+	p.markup = p.s.Deps.ResolveMarkup(p.markup) // ""
+}
+
+func (p *pageMeta) applyDefaultValues() { // buildConfig, markup, title
+	if p.markup == "" {
+		p.markup = "markdown"
+	}
+
+	p.title = "hardcode title"
 }

@@ -226,3 +226,27 @@ func printNode(n *node) {
 	fmt.Printf("node: prefix %s, value %s\n",
 		prefix, n.val)
 }
+
+// WalkFn is used when walking the tree. Takes a
+// key and value, returning if iteration should
+// be terminated.
+type WalkFn func(s string, v interface{}) bool
+
+func (t *Tree) Walk(fn WalkFn) {
+	recursiveWalk(t.root.prefix.name, t.root, fn)
+}
+
+// recursiveWalk is used to do a pre-order walk of a node
+// recursively. Returns true if the walk should be terminated
+func recursiveWalk(prefix string, n *node, fn WalkFn) bool {
+	pre := prefix + n.prefix.name
+	if fn(pre, n.val) {
+		return true
+	}
+	for _, e := range n.suffixes {
+		if recursiveWalk(pre, e.end, fn) {
+			return true
+		}
+	}
+	return false
+}

@@ -72,10 +72,6 @@ func (f *FileMeta) Merge(from *FileMeta) {
 			v.Set(srcv.Field(i))
 		}
 	}
-
-	//	if f.InclusionFilter == nil {
-	//		f.InclusionFilter = from.InclusionFilter
-	//	}
 }
 
 func (f *FileMeta) Open() (afero.File, error) {

@@ -17,6 +17,8 @@ type Deps interface {
 	SetTmpl(template.Handler)
 
 	OutputFormats() hugoSitesVO.Formats
+
+	ResolveMarkup(in string) string
 }
 
 type Cfg interface {

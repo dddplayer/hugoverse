@@ -3,8 +3,8 @@ package entity
 import (
 	"context"
 	fsFactory "github.com/dddplayer/hugoverse/internal/domain/fs/factory"
+	fsVO "github.com/dddplayer/hugoverse/internal/domain/fs/valueobject"
 	"github.com/spf13/afero"
-	"os"
 )
 
 func newPagesCollector(proc pagesCollectorProcessorProvider, fs afero.Fs) *pagesCollector {
@@ -34,20 +34,24 @@ func (c *pagesCollector) Collect() (collectErr error) {
 }
 
 func (c *pagesCollector) collectDir(dirname string) error {
-	fi, err := c.fs.Stat(dirname)
-
-	if err != nil {
-		if os.IsNotExist(err) {
-			// May have been deleted.
-			return nil
+	w := fsFactory.NewWalkway(c.fs, dirname, func(path string, info fsVO.FileMetaInfo, err error) error {
+		if err := c.handleFile(info); err != nil {
+			return err
 		}
-		return err
+		return nil
+	})
+
+	return w.Walk()
+}
+
+func (c *pagesCollector) handleFile(fi fsVO.FileMetaInfo) error {
+	if fi.IsDir() {
+		return nil
 	}
 
-	//TODO 3
-	fsFactory.NewWalkway(c.fs, dirname, func(item any) error {
-
-	})
+	if err := c.proc.Process(fi); err != nil {
+		return err
+	}
 
 	return nil
 }
