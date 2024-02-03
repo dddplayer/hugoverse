@@ -1,6 +1,8 @@
 package entity
 
 import (
+	"github.com/dddplayer/hugoverse/internal/domain/hugosites"
+	"github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject"
 	"github.com/dddplayer/hugoverse/pkg/compare"
 	"github.com/dddplayer/hugoverse/pkg/lazy"
 	"sync"
@@ -18,10 +20,10 @@ type pageCommon struct {
 
 	// All of these represents the common parts of a page.Page
 	//page.ChildCareProvider
-	//page.FileProvider
-	//page.OutputFormatsProvider
-	//page.PageMetaProvider
-	//page.SitesProvider
+	hugosites.FileProvider
+	hugosites.OutputFormatsProvider
+	hugosites.PageMetaProvider
+	//hugosites.SitesProvider
 	//page.TreeProvider
 	//resource.LanguageProvider
 	//resource.ResourceMetaProvider
@@ -31,9 +33,9 @@ type pageCommon struct {
 
 	// Describes how paths and URLs for this page and its descendants
 	// should look like.
-	//targetPathDescriptor page.TargetPathDescriptor
+	targetPathDescriptor TargetPathDescriptor
 
-	//layoutDescriptor     output.LayoutDescriptor
+	layoutDescriptor     valueobject.LayoutDescriptor
 	layoutDescriptorInit sync.Once
 
 	// The parsed page content.

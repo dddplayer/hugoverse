@@ -53,6 +53,7 @@ func (w *Walkway) Walk() error {
 // walk recursively descends path, calling walkFn.
 // It follows symlinks if supported by the filesystem, but only the same path once.
 func (w *Walkway) walk(path string, info FileMetaInfo, dirEntries []FileMetaInfo, walkFn WalkFunc) error {
+	fmt.Println(">>> walk: ", path)
 	err := walkFn(path, info, nil)
 	if err != nil {
 		if info.IsDir() && err == filepath.SkipDir {
@@ -85,6 +86,7 @@ func (w *Walkway) walk(path string, info FileMetaInfo, dirEntries []FileMetaInfo
 			return walkFn(path, info, fmt.Errorf("walk: Readdir: %w", err))
 		}
 
+		fmt.Println(">>> dirEntries: ", fis, path)
 		dirEntries = fileInfosToFileMetaInfos(fis)
 	}
 

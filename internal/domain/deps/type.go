@@ -2,6 +2,7 @@ package deps
 
 import (
 	"github.com/dddplayer/hugoverse/internal/domain/config"
+	"github.com/dddplayer/hugoverse/internal/domain/contentspec"
 	hugoSitesVO "github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject"
 	"github.com/dddplayer/hugoverse/internal/domain/template"
 	"github.com/spf13/afero"
@@ -19,6 +20,7 @@ type Deps interface {
 	OutputFormats() hugoSitesVO.Formats
 
 	ResolveMarkup(in string) string
+	GetContentProvider(name string) contentspec.Provider
 }
 
 type Cfg interface {

@@ -2,6 +2,10 @@ package entity
 
 import (
 	"errors"
+	"fmt"
+	"github.com/dddplayer/hugoverse/internal/domain/contentspec"
+	"github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject"
+	"github.com/dddplayer/hugoverse/internal/domain/template"
 	"github.com/dddplayer/hugoverse/pkg/parser/pageparser"
 )
 
@@ -58,4 +62,115 @@ Loop:
 	}
 
 	return nil
+}
+
+// This is serialized
+func (p *pageState) initOutputFormat() error {
+	if err := p.shiftToOutputFormat(); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+// shiftToOutputFormat is serialized. The output format idx refers to the
+// full set of output formats for all sites.
+func (p *pageState) shiftToOutputFormat() error {
+	if err := p.initPage(); err != nil {
+		return err
+	}
+
+	p.pageOutput = p.pageOutputs[0]
+	if p.pageOutput == nil {
+		panic(fmt.Sprintf("pageOutput is nil for output idx %d", 0))
+	}
+
+	cp := p.pageOutput.cp
+	if cp == nil {
+		var err error
+		cp, err = newPageContentOutput(p, p.pageOutput)
+		if err != nil {
+			return err
+		}
+	}
+	p.pageOutput.initContentProvider(cp)
+
+	return nil
+}
+
+// Must be run after the site section tree etc. is built and ready.
+func (p *pageState) initPage() error {
+	if _, err := p.init.Do(); err != nil {
+		return err
+	}
+	return nil
+}
+
+func (p *pageState) initCommonProviders(pp pagePaths) error {
+	p.OutputFormatsProvider = pp
+	p.targetPathDescriptor = pp.targetPathDescriptor
+
+	return nil
+}
+
+func (p *pageState) getContentConverter() contentspec.Converter {
+	var err error
+	p.m.contentConverterInit.Do(func() {
+		markup := p.m.markup
+		if markup == "html" {
+			// Only used for shortcode inner content.
+			markup = "markdown"
+		}
+		p.m.contentConverter, err = p.m.newContentConverter(p, markup)
+	})
+
+	if err != nil {
+		fmt.Printf("Failed to create content converter: %v", err)
+	}
+	return p.m.contentConverter
+}
+
+func (p *pageState) resolveTemplate() (template.Template, bool, error) {
+	f := p.outputFormat() // set in shiftToOutputFormat
+	d := p.getLayoutDescriptor()
+
+	lh := valueobject.NewLayoutHandler()
+	names, err := lh.For(d, f)
+	if err != nil {
+		return nil, false, err
+	}
+
+	return p.s.Tmpl().LookupLayout(names)
+}
+
+func (p *pageState) outputFormat() (f valueobject.Format) {
+	if p.pageOutput == nil {
+		panic("no pageOutput")
+	}
+	return p.pageOutput.f
+}
+
+func (p *pageState) getLayoutDescriptor() valueobject.LayoutDescriptor {
+	p.layoutDescriptorInit.Do(func() {
+		var section string
+		sections := p.SectionsEntries()
+
+		switch p.Kind() {
+		case valueobject.KindSection:
+			if len(sections) > 0 {
+				section = sections[0]
+			}
+		default:
+		}
+
+		p.layoutDescriptor = valueobject.LayoutDescriptor{
+			Kind:    p.Kind(),
+			Type:    p.Type(),
+			Lang:    "en",
+			Layout:  p.Layout(),
+			Section: section,
+		}
+	})
+
+	return p.layoutDescriptor
 }

@@ -50,8 +50,8 @@ title: "Post Title"
 ### first blog
 Hello Blog
 -- layouts/index.html --
-{{ $entries := (readDir ".") }}
-START:|{{ range $entry := $entries }}{{ if not $entry.IsDir }}{{ $entry.TmplName }}|{{ end }}{{ end }}:END:
+<p><!-- HTML comment -->abc</p>
+{{.Content}}
 -- layouts/_default/single.html --
 <p>hello single page</p>
 {{ .Content }}

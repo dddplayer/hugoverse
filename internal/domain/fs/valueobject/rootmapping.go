@@ -1,6 +1,10 @@
 package valueobject
 
-import "github.com/dddplayer/hugoverse/pkg/radixtree"
+import (
+	"github.com/dddplayer/hugoverse/pkg/radixtree"
+	"path/filepath"
+	"strings"
+)
 
 // RootMapping describes a virtual file or directory mount.
 type RootMapping struct {
@@ -17,6 +21,7 @@ type RootMapping struct {
 	path string
 
 	Meta *FileMeta // File metadata (lang etc.)
+	Fi   FileMetaInfo
 }
 
 func GetRms(t *radixtree.Tree, key string) []RootMapping {
@@ -26,4 +31,11 @@ func GetRms(t *radixtree.Tree, key string) []RootMapping {
 		mappings = v.([]RootMapping)
 	}
 	return mappings
+}
+
+func (r RootMapping) Filename(name string) string { // convert to disk absolute path
+	if name == "" {
+		return r.To
+	}
+	return filepath.Join(r.To, strings.TrimPrefix(name, r.From))
 }

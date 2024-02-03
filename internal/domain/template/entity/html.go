@@ -1,8 +1,11 @@
 package entity
 
-import "github.com/dddplayer/hugoverse/internal/domain/template"
+import (
+	"github.com/dddplayer/hugoverse/internal/domain/template"
+	pkgTmpl "github.com/dddplayer/hugoverse/pkg/template"
+)
 
-// HtmlTemplate is a specialized Template from "text/template" that produces a safe
+// HtmlTemplate is a specialized ExecTemplate from "text/template" that produces a safe
 // HTML document fragment.
 type HtmlTemplate struct {
 	// We could embed the text/template field, but it's safer not to because
@@ -55,11 +58,13 @@ func (t *HtmlTemplate) Name() string {
 }
 
 // Prepare returns a template ready for execution.
-func (t *HtmlTemplate) Prepare() (template.Template, error) {
-	//if err := t.escape(); err != nil {
-	//	return nil, err
-	//}
-	//return t.text, nil
-
-	return nil, nil
+func (t *HtmlTemplate) Prepare() (template.ExecTemplate, error) {
+	doc, err := pkgTmpl.Escape(t.Text.Doc)
+	if err != nil {
+		return nil, err
+	}
+	return &ExecTemplate{
+		name: t.Name(),
+		doc:  doc,
+	}, nil
 }

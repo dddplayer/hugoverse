@@ -24,6 +24,10 @@ func (m Type) Type() string {
 	return m.MainType + "/" + m.SubType
 }
 
+func (m Type) FullSuffix() string {
+	return m.Delimiter + m.SubType
+}
+
 // Types is a slice of media types.
 type Types []Type
 

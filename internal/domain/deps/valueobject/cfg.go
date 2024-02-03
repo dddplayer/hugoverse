@@ -32,7 +32,7 @@ type DepsCfg struct {
 	// The output formats configured.
 	OutputFormats hugoSitesVO.Formats
 
-	// Template handling.
+	// ExecTemplate handling.
 	TemplateProvider deps.ResourceProvider
 
 	Logger log.Logger

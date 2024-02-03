@@ -6,6 +6,8 @@ import (
 	"github.com/dddplayer/hugoverse/internal/domain/fs/valueobject"
 	"github.com/dddplayer/hugoverse/pkg/radixtree"
 	"github.com/spf13/afero"
+	"os"
+	"path/filepath"
 )
 
 // NewRootMappingFs creates a new RootMappingFs
@@ -18,6 +20,21 @@ func newRootMappingFs(afs afero.Fs, rms ...valueobject.RootMapping) *entity.Root
 	var virtualRoots []valueobject.RootMapping
 
 	for _, rm := range rms {
+		fi, err := afs.Stat(rm.To)
+		if err != nil {
+			if os.IsNotExist(err) {
+				continue
+			}
+			return nil
+		}
+		meta := rm.Meta.Copy()
+		if !fi.IsDir() {
+			_, name := filepath.Split(rm.From)
+			meta.Name = name
+		}
+
+		rm.Fi = valueobject.NewFileMetaInfo(fi, meta)
+
 		key := fs.FilepathSeparator + rm.From // /content
 		mappings := valueobject.GetRms(t, key)
 		mappings = append(mappings, rm)

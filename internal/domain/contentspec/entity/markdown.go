@@ -1,6 +1,7 @@
 package entity
 
 import (
+	"fmt"
 	"github.com/dddplayer/hugoverse/internal/domain/contentspec"
 )
 
@@ -28,5 +29,6 @@ type mdConverter struct {
 }
 
 func (c *mdConverter) Convert(ctx contentspec.RenderContext) (result contentspec.Result, err error) {
+	fmt.Println("markdown >>> ...")
 	return nil, nil
 }

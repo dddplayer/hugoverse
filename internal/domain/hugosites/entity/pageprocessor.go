@@ -99,6 +99,7 @@ func (p *sitePagesProcessor) Wait() error {
 }
 
 func (p *sitePagesProcessor) doProcess(item any) error {
+	fmt.Println("doProcess --- ")
 	m := p.m
 	switch v := item.(type) {
 	case fsVO.FileMetaInfo:

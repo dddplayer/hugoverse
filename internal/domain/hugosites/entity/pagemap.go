@@ -4,6 +4,7 @@ import (
 	"fmt"
 	fsVO "github.com/dddplayer/hugoverse/internal/domain/fs/valueobject"
 	"github.com/dddplayer/hugoverse/internal/domain/hugosites"
+	"github.com/dddplayer/hugoverse/internal/domain/hugosites/valueobject"
 	"github.com/dddplayer/hugoverse/pkg/hugio"
 	"github.com/dddplayer/hugoverse/pkg/parser/pageparser"
 	"github.com/dddplayer/hugoverse/pkg/radixtree"
@@ -23,6 +24,17 @@ type ContentTree struct {
 }
 
 type ContentTrees []*ContentTree
+
+type contentTreeNodeCallback func(s string, n *contentNode) bool
+
+func (c ContentTrees) Walk(fn contentTreeNodeCallback) {
+	for _, tree := range c {
+		tree.Walk(func(s string, v any) bool {
+			n := v.(*contentNode)
+			return fn(s, n)
+		})
+	}
+}
 
 type ContentMap struct {
 	// View of regular pages, sections, and taxonomies.
@@ -210,7 +222,7 @@ func (m *ContentMap) CreateMissingNodes() error {
 		_, found := m.Sections.Get(sect)
 		if !found {
 			mm := &contentNode{path: sectionPath} // ""
-			_ = m.Sections.Insert(sect, mm)       // "/"
+			_, _ = m.Sections.Insert(sect, mm)    // "/"
 		}
 	}
 
@@ -255,6 +267,8 @@ func (m *PageMap) AssembleSections() error {
 			kind = hugosites.KindHome
 		}
 		if n.fi != nil {
+			panic("assembleSections newPageFromContentNode not ready")
+		} else {
 			n.p = m.S.newPage(n, kind, sections...)
 		}
 
@@ -328,11 +342,58 @@ func (m *PageMap) newPageFromContentNode(n *contentNode) (*pageState, error) {
 	}
 	metaProvider.applyDefaultValues()
 	ps.init.Add(func() (any, error) {
-		// TODO 5 ps init
-		// page paths
-		// page outputs
+		fmt.Println("init === 111 ")
+		pp, err := newPagePaths(metaProvider.s, ps, metaProvider)
+		if err != nil {
+			return nil, err
+		}
+
+		makeOut := func(f valueobject.Format, render bool) *pageOutput {
+			return newPageOutput(ps, pp, f, render)
+		}
+
+		outputFormatsForPage := ps.m.outputFormats()
+		// Prepare output formats for all sites.
+		// We do this even if this page does not get rendered on
+		// its own. It may be referenced via .Site.GetPage and
+		// it will then need an output format.
+		ps.pageOutputs = make([]*pageOutput, len(ps.s.H.RenderFormats))
+		created := make(map[string]*pageOutput)
+		for i, f := range ps.s.H.RenderFormats {
+			po, found := created[f.Name]
+			if !found {
+				_, render := outputFormatsForPage.GetByName(f.Name)
+				po = makeOut(f, render)
+				created[f.Name] = po
+			}
+			// Create a content provider for the first,
+			// we may be able to reuse it.
+			if i == 0 {
+				contentProvider, err := newPageContentOutput(ps, po)
+				if err != nil {
+					return nil, err
+				}
+				po.initContentProvider(contentProvider)
+			}
+			ps.pageOutputs[i] = po
+		}
+		if err := ps.initCommonProviders(pp); err != nil {
+			return nil, err
+		}
+
 		return nil, nil
 	})
 
 	return ps, nil
+}
+
+// withEveryBundlePage applies fn to every Page, including those bundled inside
+// leaf bundles.
+func (m *PageMap) withEveryBundlePage(fn func(p *pageState) bool) {
+	m.BundleTrees.Walk(func(s string, n *contentNode) bool {
+		if n.p != nil {
+			return fn(n.p)
+		}
+		return false
+	})
 }

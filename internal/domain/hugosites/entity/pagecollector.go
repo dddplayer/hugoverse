@@ -2,6 +2,7 @@ package entity
 
 import (
 	"context"
+	"fmt"
 	fsFactory "github.com/dddplayer/hugoverse/internal/domain/fs/factory"
 	fsVO "github.com/dddplayer/hugoverse/internal/domain/fs/valueobject"
 	"github.com/spf13/afero"
@@ -36,6 +37,7 @@ func (c *pagesCollector) Collect() (collectErr error) {
 func (c *pagesCollector) collectDir(dirname string) error {
 	w := fsFactory.NewWalkway(c.fs, dirname, func(path string, info fsVO.FileMetaInfo, err error) error {
 		if err := c.handleFile(info); err != nil {
+			fmt.Println("collectDir --- ", path, err)
 			return err
 		}
 		return nil

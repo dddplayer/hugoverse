@@ -58,6 +58,8 @@ func newTextTemplate(name string) *entity.TextTemplate {
 	t := &entity.TextTemplate{
 		Name: name,
 	}
+	t = t.New(name)
+
 	return t
 }
 

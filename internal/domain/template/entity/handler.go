@@ -1,6 +1,7 @@
 package entity
 
 import (
+	"fmt"
 	"github.com/dddplayer/hugoverse/internal/domain/deps"
 	fsFactory "github.com/dddplayer/hugoverse/internal/domain/fs/factory"
 	fsVO "github.com/dddplayer/hugoverse/internal/domain/fs/valueobject"
@@ -22,6 +23,8 @@ func (t *TemplateHandler) LoadTemplates() error {
 		}
 
 		name := strings.TrimPrefix(filepath.ToSlash(path), "/")
+		fmt.Println(">>> add template: ", path, name)
+
 		if err := t.addTemplateFile(name, path); err != nil {
 			return err
 		}
@@ -72,4 +75,19 @@ func (t *TemplateHandler) Lookup(name string) (template.Template, bool) {
 	}
 
 	return nil, false
+}
+
+func (t *TemplateHandler) LookupLayout(layouts []string) (template.Template, bool, error) {
+	return t.findLayout(layouts)
+}
+
+func (t *TemplateHandler) findLayout(layouts []string) (template.Template, bool, error) {
+	for _, name := range layouts {
+		templ, found := t.Main.Lookup(name)
+		if found {
+			return templ, true, nil
+		}
+	}
+
+	return nil, false, nil
 }

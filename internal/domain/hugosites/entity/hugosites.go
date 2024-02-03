@@ -53,11 +53,26 @@ func (h *HugoSites) assemble() error {
 }
 
 func (h *HugoSites) render() error {
-	h.RenderFormats = valueobject.Formats{}
 	h.withSite(func(s *Site) error {
 		s.initRenderFormats()
 		return nil
 	})
+
+	h.RenderFormats = valueobject.Formats{}
+	for _, s := range h.Sites {
+		// TODO: remove duplication from different sites
+		h.RenderFormats = append(h.RenderFormats, s.RenderFormats...)
+	}
+
+	for _, s := range h.Sites {
+		// Get page output ready
+		if err := s.preparePagesForRender(); err != nil {
+			return err
+		}
+		if err := s.render(); err != nil {
+			return err
+		}
+	}
 
 	return nil
 }

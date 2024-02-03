@@ -26,6 +26,8 @@ func (t *TemplateNamespace) Lookup(name string) (template.Template, bool) {
 func (t *TemplateNamespace) parse(info templateInfo) (*TemplateState, error) {
 	prototype := t.PrototypeHTML
 
+	fmt.Printf("PrototypeText info: %+v\n", info)
+
 	tmpl, err := prototype.New(info.name).Parse(info.template)
 	if err != nil {
 		return nil, err

@@ -20,6 +20,13 @@ type Format struct {
 // Formats is a slice of Format.
 type Formats []Format
 
+func (formats Formats) Len() int      { return len(formats) }
+func (formats Formats) Swap(i, j int) { formats[i], formats[j] = formats[j], formats[i] }
+func (formats Formats) Less(i, j int) bool {
+	fi, fj := formats[i], formats[j]
+	return fi.Name < fj.Name
+}
+
 // GetByName gets a format by its identifier name.
 func (formats Formats) GetByName(name string) (f Format, found bool) {
 	for _, ff := range formats {
@@ -89,16 +96,18 @@ func CreateSiteOutputFormats(allFormats Formats) map[string]Formats {
 }
 
 const (
-	KindPage = "page"
-	kind404  = "404"
+	KindPage    = "page"
+	KindHome    = "home"
+	KindSection = "section"
 )
 
 func createDefaultOutputFormats(allFormats Formats) map[string]Formats {
 	htmlOut, _ := allFormats.GetByName(HTMLFormat.Name)
 
 	m := map[string]Formats{
-		KindPage: {htmlOut},
-		kind404:  {htmlOut},
+		KindPage:    {htmlOut},
+		KindHome:    {htmlOut},
+		KindSection: {htmlOut},
 	}
 
 	return m

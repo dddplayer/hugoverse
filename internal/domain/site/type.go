@@ -7,3 +7,6 @@ type Site interface {
 	// Title Returns the configured title for this Site.
 	Title() string
 }
+
+// Sites represents an ordered list of sites (languages).
+type Sites []Site

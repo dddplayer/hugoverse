@@ -1,8 +1,10 @@
 package entity
 
 import (
+	"bytes"
 	"context"
 	"github.com/dddplayer/hugoverse/internal/domain/template"
+	pkgTmpl "github.com/dddplayer/hugoverse/pkg/template"
 	"io"
 	"reflect"
 )
@@ -24,7 +26,22 @@ type Executor struct {
 
 // ExecuteWithContext Note: The context is currently not fully implemeted in Hugo. This is a work in progress.
 func (t *Executor) ExecuteWithContext(ctx context.Context, p template.Preparer, wr io.Writer, data any) error {
-	panic("not implemented")
+	execTmpl, err := p.Prepare()
+	if err != nil {
+		return err
+	}
+
+	buf := &bytes.Buffer{}
+	err = pkgTmpl.Execute(execTmpl, buf, data)
+	if err != nil {
+		return err
+	}
+
+	if _, err := wr.Write(buf.Bytes()); err != nil {
+		return err
+	}
+
+	return nil
 }
 
 type ExecHelper struct {

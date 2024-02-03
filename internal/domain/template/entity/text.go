@@ -50,6 +50,9 @@ func addFuncs(out, in template.FuncMap) {
 func (t *TextTemplate) New(name string) *TextTemplate {
 	return &TextTemplate{
 		Name: name,
+		common: &common{
+			parseFuncs: make(template.FuncMap),
+		},
 	}
 }
 

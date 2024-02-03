@@ -1,7 +1,6 @@
 package entity
 
 import (
-	"github.com/dddplayer/hugoverse/pkg/paths"
 	"github.com/spf13/afero"
 	"os"
 )
@@ -24,16 +23,14 @@ type Fs struct {
 
 // NewFs creates a new Fs.
 func NewFs(workingDir, publishDir string) *Fs {
-	absPublishDir := paths.AbsPathify(workingDir, publishDir)
-
 	afs := afero.NewOsFs()
 	workingFs := afero.NewBasePathFs(afs, workingDir)
 
 	// Make sure we always have the /public folder ready to use.
-	if err := workingFs.MkdirAll(absPublishDir, 0777); err != nil && !os.IsExist(err) {
+	if err := workingFs.MkdirAll(publishDir, 0777); err != nil && !os.IsExist(err) {
 		panic(err)
 	}
-	pubFs := afero.NewBasePathFs(workingFs, absPublishDir)
+	pubFs := afero.NewBasePathFs(workingFs, publishDir)
 
 	return &Fs{
 		source:             workingFs,

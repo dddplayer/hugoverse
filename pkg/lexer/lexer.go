@@ -74,7 +74,7 @@ func (l *lex) run() {
 		}
 		e := l.fsm.Process("continue")
 		if e != nil {
-			fmt.Println("break because of error")
+			fmt.Println("break because of run error")
 			break
 		}
 	}

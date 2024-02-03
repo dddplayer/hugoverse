@@ -2,6 +2,7 @@ package template
 
 import (
 	"context"
+	"github.com/dddplayer/hugoverse/pkg/template/parser"
 	"io"
 	"reflect"
 )
@@ -9,13 +10,19 @@ import (
 // Template is the common interface between text/template and html/template.
 type Template interface {
 	Name() string
-	Prepare() (Template, error)
+	Preparer
+}
+
+type ExecTemplate interface {
+	Name() string
+	Tree() *parser.Document
 }
 
 // Handler finds and executes templates.
 type Handler interface {
 	Finder
 	ExecuteWithContext(ctx context.Context, t Template, wr io.Writer, data any) error
+	LookupLayout(layoutNames []string) (Template, bool, error)
 }
 
 // Finder finds templates.
@@ -55,7 +62,7 @@ type Executor interface {
 
 // Preparer prepares the template before execution.
 type Preparer interface {
-	Prepare() (Template, error)
+	Prepare() (ExecTemplate, error)
 }
 
 // ExecHelper allows some custom eval hooks.

@@ -12,11 +12,18 @@ import (
 )
 
 func newSourceFilesystem(name string, fs afero.Fs, dirs []valueobject.FileMetaInfo) *entity.SourceFilesystem {
-	return &entity.SourceFilesystem{
+	sf := &entity.SourceFilesystem{
 		Name: name,
 		Fs:   fs,
 		Dirs: dirs,
 	}
+
+	info, _, err := valueobject.LstatIfPossible(fs, "")
+	if err != nil {
+		fmt.Println("0000111", info, err)
+	}
+
+	return sf
 }
 
 func newSourceFilesystemsBuilder(p *psEntity.Paths, b *entity.BaseFs) *sourceFilesystemsBuilder {
@@ -56,8 +63,8 @@ func (b *sourceFilesystemsBuilder) Build() (*entity.SourceFilesystems, error) {
 func (b *sourceFilesystemsBuilder) createMainOverlayFs(p *psEntity.Paths) (*entity.FilesystemsCollector, error) {
 	collector := &entity.FilesystemsCollector{
 		SourceProject:        b.sourceFs,
-		OverlayMounts:        overlayfs.New([]overlayfs.AbsStatFss{}),
-		OverlayMountsContent: overlayfs.New([]overlayfs.AbsStatFss{}),
+		OverlayMounts:        overlayfs.New([]afero.Fs{}),
+		OverlayMountsContent: overlayfs.New([]afero.Fs{}),
 		OverlayDirs:          make(map[string][]valueobject.FileMetaInfo),
 	}
 	err := b.createOverlayFs(collector, p)
