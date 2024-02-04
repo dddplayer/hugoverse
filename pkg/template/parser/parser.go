@@ -56,6 +56,8 @@ func (p *parser) parse() error {
 
 	for {
 		token := p.lexer.Next()
+		fmt.Printf(">>> token: %v\n", token)
+
 		if token.Type() == action.TokenEOF {
 			break
 		}

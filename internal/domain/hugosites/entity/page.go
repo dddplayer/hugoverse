@@ -34,6 +34,7 @@ func newPageFromMeta(n *contentNode, metaProvider *pageMeta) (*pageState, error)
 		}
 
 		makeOut := func(f valueobject.Format, render bool) *pageOutput {
+			fmt.Println("makeOut 333--- ", f.Name, f.BaseName, f.MediaType)
 			return newPageOutput(ps, pp, f, render)
 		}
 
@@ -52,6 +53,7 @@ func newPageFromMeta(n *contentNode, metaProvider *pageMeta) (*pageState, error)
 				created[f.Name] = po
 			}
 			ps.pageOutputs[i] = po
+			fmt.Println("makeOut 444--- ", i, po.f.Name, po.f.BaseName, po.f.MediaType)
 		}
 		if err := ps.initCommonProviders(pp); err != nil {
 			return nil, err

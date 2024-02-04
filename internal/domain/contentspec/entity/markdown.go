@@ -29,6 +29,15 @@ type mdConverter struct {
 }
 
 func (c *mdConverter) Convert(ctx contentspec.RenderContext) (result contentspec.Result, err error) {
-	fmt.Println("markdown >>> ...")
-	return nil, nil
+	fmt.Println("markdown >>> ...", string(ctx.Src))
+
+	return converterResult{bytes: ctx.Src}, nil
+}
+
+type converterResult struct {
+	bytes []byte
+}
+
+func (c converterResult) Bytes() []byte {
+	return c.bytes
 }

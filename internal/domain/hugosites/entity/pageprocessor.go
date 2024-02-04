@@ -100,10 +100,12 @@ func (p *sitePagesProcessor) Wait() error {
 
 func (p *sitePagesProcessor) doProcess(item any) error {
 	fmt.Println("doProcess --- ")
+	fmt.Printf("doProcess 123 --- %+v\n", item)
 	m := p.m
 	switch v := item.(type) {
 	case fsVO.FileMetaInfo:
 		meta := v.Meta()
+		fmt.Println("doProcess555 --- ", meta.Path)
 
 		classifier := meta.Classifier
 		switch classifier {

@@ -180,7 +180,6 @@ func (m *RootMappingFs) statRoot(root valueobject.RootMapping, name string) (val
 func (m *RootMappingFs) realDirOpener(name string, meta *valueobject.FileMeta) func() (afero.File, error) {
 	return func() (afero.File, error) {
 		f, err := m.Fs.Open(name)
-		fmt.Println(">>> RootMappingFs.realDirOpener", name, f, err)
 		if err != nil {
 			return nil, err
 		}

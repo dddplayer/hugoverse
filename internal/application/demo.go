@@ -44,9 +44,6 @@ Hello project!
 -- themes/mytheme/mytheme.txt --
 Hello theme!
 -- mycontent/blog/post.md --
----
-title: "Post Title"
----
 ### first blog
 Hello Blog
 -- layouts/index.html --
@@ -54,12 +51,7 @@ Hello Blog
 {{.Content}}
 -- layouts/_default/single.html --
 <p>hello single page</p>
-{{ .Content }}
-===
-Static Content
-===
-
-  `
+{{.Content}}`
 	data := txtar.Parse([]byte(files))
 	for _, f := range data.Files {
 		filename := filepath.Join(workingDir, f.Name)

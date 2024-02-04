@@ -242,6 +242,8 @@ func pageRenderer(s *Site, pages <-chan *pageState, results chan<- error, wg *sy
 	defer wg.Done()
 
 	for p := range pages {
+		fmt.Printf(">>>> page: %#+v\n", p)
+
 		templ, found, err := p.resolveTemplate()
 		if err != nil {
 			fmt.Println("failed to resolve template")

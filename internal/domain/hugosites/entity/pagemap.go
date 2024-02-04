@@ -70,14 +70,18 @@ func (m *ContentMap) AddFilesBundle(header fsVO.FileMetaInfo) error {
 	section, _ = m.getOrCreateSection(n, bundlePath) // /abc/
 	b = b.WithSection(section).ForPage(bundlePath).Insert(n)
 
+	fmt.Println("<<< AddFilesBundle section: ", section, bundlePath, n.p)
+
 	return nil
 }
 
 func (m *ContentMap) getBundleDir(meta *fsVO.FileMeta) string {
 	dir := cleanTreeKey(filepath.Dir(meta.Path))
-
+	fmt.Println(">>> getBundleDir dir: ", dir)
 	switch meta.Classifier {
 	case fsVO.ContentClassContent:
+		meta.TranslationBaseName = "post"
+		fmt.Println(">>> getBundleDir111 dir: ", path.Join(dir, meta.TranslationBaseName))
 		return path.Join(dir, meta.TranslationBaseName)
 	default:
 		return dir
@@ -237,7 +241,7 @@ func (m *PageMap) AssemblePages() error {
 
 	m.Pages.Walk(func(k string, v any) bool {
 		n := v.(*contentNode)
-		if n.p == nil {
+		if n.p != nil {
 			return false
 		}
 
@@ -247,6 +251,8 @@ func (m *PageMap) AssemblePages() error {
 		}
 
 		n.p, err = m.newPageFromContentNode(n)
+		fmt.Printf(">>> AssemblePages 000 %+v\n", n.p)
+
 		if err != nil {
 			return true
 		}
@@ -270,6 +276,8 @@ func (m *PageMap) AssembleSections() error {
 			panic("assembleSections newPageFromContentNode not ready")
 		} else {
 			n.p = m.S.newPage(n, kind, sections...)
+			fmt.Println(">>> assembleSections new page 999", sections, k)
+			fmt.Printf(">>> assembleSections new page 888 %+v\n", n.p)
 		}
 
 		return false
